@@ -4,3 +4,4 @@
 |---|---|---|
 | テキサス | text/usa/tx.md | 牧野 周(authors/makino-shu.md) |
 | ネバダ | text/usa/nv.md | 葛西 律(authors/kasai-ritsu.md) |
+| ワシントン | text/usa/wa.md | 牧野 周(authors/makino-shu.md) |
