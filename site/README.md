@@ -33,4 +33,5 @@
 ## 動かし方
 
 - 自動: mainへのpushで `.github/workflows/pages.yml` が走り、Pagesへ配備される
+- 初回のみ: リポジトリ設定の Pages で Source を「GitHub Actions」にする手動操作が要る(ワークフローのトークンではPagesサイトの新規作成が許可されないため。2026-08-24に設定済み)
 - 手元: `pip install markdown && python site/build.py` で `_site/` に出力される
