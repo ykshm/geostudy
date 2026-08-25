@@ -50,7 +50,17 @@
   .leaflet-popup-content { font-size: 13px; line-height: 1.6; margin: 0;
                            width: 250px !important; }
   .popup-photo { width: 250px; height: 140px; object-fit: cover;
-                 border-radius: 8px 8px 0 0; display: block; }
+                 border-radius: 8px 8px 0 0; display: block; cursor: zoom-in; }
+  #gs-lightbox { position: fixed; inset: 0; z-index: 20000;
+                 background: rgba(0,0,0,.92); display: none;
+                 align-items: center; justify-content: center;
+                 flex-direction: column; cursor: zoom-out; }
+  #gs-lightbox.open { display: flex; }
+  #gs-lightbox img { max-width: 96vw; max-height: 88vh; object-fit: contain;
+                     box-shadow: 0 4px 24px rgba(0,0,0,.6); }
+  #gs-lightbox .lb-caption { color: #ddd; font-size: 12px; margin-top: 10px;
+                             padding: 0 16px; text-align: center;
+                             max-width: 90vw; line-height: 1.6; }
   .popup-body { padding: 8px 12px 10px; }
   .popup-name { font-weight: 700; font-size: 14.5px; }
   .popup-sec { display: inline-block; margin-left: 6px; padding: 0 6px;
@@ -181,7 +191,8 @@ L.control.scale({ imperial: false }).addTo(map);
 function popupHtml(p) {
   let h = "";
   if (RICH) h += '<img class="popup-photo" src="' + p.img + '" alt="' +
-                 p.name + '" loading="lazy">';
+                 p.name + '" title="タップで拡大" data-caption="' +
+                 p.name + " — 写真: " + p.credit + '" loading="lazy">';
   h += '<div class="popup-body"><span class="popup-name">' + p.name +
        '</span><span class="popup-sec">' + p.sec + '</span><br>' + p.note;
   if (RICH) {
@@ -193,7 +204,8 @@ function popupHtml(p) {
 
 function snapPopupHtml(s) {
   return '<img class="popup-photo" src="' + s.img + '" alt="' + s.name +
-         '" loading="lazy">' +
+         '" title="タップで拡大" data-caption="' + s.name + "(" + s.era +
+         ") — 写真: " + s.credit + '" loading="lazy">' +
          '<div class="popup-body"><span class="popup-name">' + s.name +
          '</span><span class="popup-sec snap">📷 ' + s.era + '</span><br>' +
          s.text +
@@ -282,6 +294,29 @@ function focusSnap(i) {
   map.flyTo([s.lat, s.lng], 8, { duration: 0.9 });
   setTimeout(() => snapMarkers[i].openPopup(), 950);
 }
+
+// ---- 写真タップで拡大(親ページがあれば全画面、単体表示ならこの中で) ----
+function bigSrc(src) { return src.replace("/500px-", "/1280px-"); }
+
+const lb = document.createElement("div");
+lb.id = "gs-lightbox";
+lb.innerHTML = '<img alt=""><div class="lb-caption"></div>';
+document.body.appendChild(lb);
+lb.addEventListener("click", () => lb.classList.remove("open"));
+
+document.addEventListener("click", (e) => {
+  const img = e.target.closest && e.target.closest(".popup-photo");
+  if (!img) return;
+  const payload = { geostudy: "photo", src: bigSrc(img.src),
+                    caption: img.dataset.caption || img.alt || "" };
+  if (window.parent !== window) {
+    window.parent.postMessage(payload, "*");
+  } else {
+    lb.querySelector("img").src = payload.src;
+    lb.querySelector(".lb-caption").textContent = payload.caption;
+    lb.classList.add("open");
+  }
+});
 
 // ---- 記事側パネル(map-panel.js)からの操作を受け付ける ----
 window.addEventListener("message", (e) => {

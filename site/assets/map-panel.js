@@ -31,6 +31,17 @@
     " #gs-map-panel{top:0;right:0;bottom:0;width:50%;transform:translateX(101%);}",
     " html.gs-map-open #gs-map-panel{transform:none;}",
     " html.gs-map-open body{margin-right:50% !important;}}",
+    "#gs-photo-lightbox{position:fixed;inset:0;z-index:10002;",
+    " background:rgba(0,0,0,.92);display:none;align-items:center;",
+    " justify-content:center;flex-direction:column;cursor:zoom-out;}",
+    "#gs-photo-lightbox.open{display:flex;}",
+    "#gs-photo-lightbox img{max-width:96vw;max-height:86vh;object-fit:contain;",
+    " box-shadow:0 4px 24px rgba(0,0,0,.6);}",
+    "#gs-photo-lightbox .gs-lb-caption{color:#ddd;font-size:12px;",
+    " margin-top:10px;padding:0 16px;text-align:center;max-width:92vw;",
+    " line-height:1.6;font-family:inherit;}",
+    "#gs-photo-lightbox .gs-lb-close{position:absolute;top:12px;right:16px;",
+    " color:#fff;font-size:26px;line-height:1;opacity:.8;}",
   ].join("");
   var style = document.createElement("style");
   style.textContent = css;
@@ -47,6 +58,27 @@
   var iframe = null;
   var ready = false;
   var open = false;
+
+  // 地図(パネル/章末おまけのiframe)から写真タップを受けて全画面表示する
+  var box = document.createElement("div");
+  box.id = "gs-photo-lightbox";
+  box.innerHTML = '<span class="gs-lb-close">✕</span><img alt="">' +
+                  '<div class="gs-lb-caption"></div>';
+  document.body.appendChild(box);
+  function closeBox() { box.classList.remove("open"); }
+  box.addEventListener("click", closeBox);
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape") closeBox();
+  });
+  window.addEventListener("message", function (e) {
+    var d = e.data || {};
+    if (d.geostudy !== "photo" || typeof d.src !== "string") return;
+    if (!/^https:\/\/upload\.wikimedia\.org\//.test(d.src)) return;
+    box.querySelector("img").src = d.src;
+    box.querySelector(".gs-lb-caption").textContent =
+      typeof d.caption === "string" ? d.caption : "";
+    box.classList.add("open");
+  });
 
   function ensureIframe() {
     if (iframe) return;
