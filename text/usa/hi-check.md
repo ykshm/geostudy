@@ -33,9 +33,9 @@
 - 真珠湾: 1887年の使用権割譲→1908年海軍基地整備開始→1941年12月7日攻撃で米参戦。出典: 米海軍歴史遺産司令部。
 - 修正記録: 図2キャプションの誤字「パブリックダメイン」→「パブリックドメイン」に修正済み。
 
-## 図版の出所(すべて未収録。ネットワーク許可後または手動で取得して img/ に置く)
+## 図版の出所(2026-08-25 取得完了)
 
-- img/hi-locator.png = Hawaii in United States.svg(Wikimedia Commons、TUBS, CC BY-SA 3.0)をPNG化。他章の位置図と同シリーズ。本土左下に囲みで添える標準の構図。
-- img/hi-plantation-workers.jpg = サトウキビ農園の移民労働者(20世紀初頭)。候補: ハワイ州公文書館等のパブリックドメイン写真。撮影年・作者を確定し、PD以外ならキャプションの表記を修正。
-- img/hi-pineapple-field.jpg = パイナップル畑。候補: 米議会図書館(Carol M. Highsmith等)またはPD/CC0の畑写真。畝が斜面を覆う構図。PD以外を選ぶ場合はキャプション修正。
-- img/hi-pearl-harbor.jpg = 上空から見た真珠湾。候補: 米海軍(U.S. Navy)撮影の公式空撮(連邦政府著作物、パブリックドメイン)。
+- img/hi-locator.png = Wikimedia Commons「Hawaii in United States.svg」をPNG化(TUBS, CC BY-SA 3.0)。左下の囲みの中でハワイ諸島が赤く塗られていることを目視確認。キャプションと一致。
+- img/hi-plantation-workers.jpg = Commons「Gathering sugar cane, Hawaiian Islands LCCN2016824506.jpg」(National Photo Company Collection、1910〜1920年、米議会図書館、パブリックドメイン)。立ったサトウキビの列を想定していたキャプションを、実写真(刈り取ったキビを貨車に積む収穫風景)に合わせて修正。
+- img/hi-pineapple-field.jpg = Commons「Aerial view of pineapple fields, Oahu, Hawaii LCCN2010630037.tif」のJPEG縮小版(Carol M. Highsmith、2005、米議会図書館、パブリックドメイン)。地上からの構図を想定していたキャプションを空撮に合わせて修正。
+- img/hi-pearl-harbor.jpg = Commons「Aerial view of Ford Island and Pearl Harbor, Hawaii (USA), 2 June 2022 (220702-N-TL141-2057).jpg」(米海軍、RIMPAC 2022時の公式空撮、パブリックドメイン)。「山並み」は写真では目立たないため「基地と市街」に描写を修正。

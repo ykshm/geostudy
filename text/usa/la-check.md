@@ -30,9 +30,9 @@
 - 港湾: サウスルイジアナ港はバトンルージュ〜ニューオーリンズ間の約54マイル(約87km)の河川港で、貨物取扱量全米最大級(2024年約2.51億ショートトン)。米穀物輸出の6割以上がこの川筋経由。沿川は製油所・石化の集積地(ケミカル・コリドー)で、住民の健康被害への懸念も指摘される。出典: サウスルイジアナ港、USDA港湾資料。
 - 修正記録: 初稿6節の英字混入「port(港)」を「港」に修正。図版を1枚追加(図2フレンチクォーター)し番号を振り直した。
 
-## 図版の出所(すべて未収録。ネットワーク許可後または手動で取得して img/ に置く)
+## 図版の出所(2026-08-25 取得完了)
 
-- img/la-locator.png = Louisiana in United States.svg(Wikimedia Commons、TUBS, CC BY-SA 3.0)をPNG化。他章の位置図と同シリーズ。
-- img/la-french-quarter.jpg = フレンチクォーターの街並み(鉄細工のバルコニー)。候補: Carol M. Highsmith撮影(米議会図書館、パブリックドメイン)。PD以外を選ぶ場合はキャプション修正。
-- img/la-delta.jpg = ミシシッピ川河口(鳥趾状デルタ)の衛星写真。候補: NASA Earth Observatory(パブリックドメイン)。
-- img/la-katrina.jpg = カトリーナ後の水没市街の空撮。候補: 米沿岸警備隊または米軍撮影(連邦政府著作物、パブリックドメイン)。
+- img/la-locator.png = Wikimedia Commons「Louisiana in United States.svg」をPNG化(TUBS, CC BY-SA 3.0)。ルイジアナが赤く塗られ、南端の鳥趾状の河口も見えることを目視確認。
+- img/la-french-quarter.jpg = Commons「Bourbon Street in the French Quarter, New Orleans, Louisiana LCCN2011631420.tif」のJPEG縮小版(Carol M. Highsmith、米議会図書館、パブリックドメイン)。想定どおりHighsmithのPD写真。通りに人が写っていないため「歩道を観光客が歩く」の描写を実写真に合わせて修正。
+- img/la-delta.jpg = Commons「Mississippi delta from space.jpg」(NASA Terra衛星ASTER、2001-05-24、PIA03497、パブリックドメイン)。鳥趾状デルタと乳白色の堆積物の帯がキャプションと一致。
+- img/la-katrina.jpg = Commons「Katrina NOLA levee break FEMA.jpg」(Jocelyn Augustino/FEMA、2005-08-30、パブリックドメイン)。インダストリアル運河の堤防決壊部と水没した第9区の空撮。沿岸警備隊のPD写真で構図の合うものが見つからずFEMA写真を採用、帰属を「米沿岸警備隊」から「米連邦緊急事態管理庁(FEMA)」に修正。キャプションの描写も実写真に合わせて調整。

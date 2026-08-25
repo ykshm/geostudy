@@ -29,10 +29,10 @@
 - 石炭: ワイオミングは1988年以降、全米一の石炭産出州。パウダーリバー盆地が米国石炭生産の約4割で国内最大。近年は脱炭素で産出減少傾向。開けた高原で風力開発が進む。出典: EIA、WSGS、各種報道。
 - 修正記録: 初稿で紛れた英字断片「断層block運動」「北米最young級」を「断層ブロックの運動」「北米最若級」に修正済み。
 
-## 図版の出所(すべて未収録。ネットワーク許可後または手動で取得して img/ に置く)
+## 図版の出所(2026-08-25 取得完了)
 
-- img/wy-locator.png = Wyoming in United States.svg(Wikimedia Commons、TUBS, CC BY-SA 3.0)をPNG化。他章の位置図と同シリーズ。
-- img/wy-grand-prismatic.jpg = グランド・プリズマティック・スプリングの空撮。候補: 米国立公園局(NPS)またはUSGSのパブリックドメイン写真。中央が青、周縁が暖色で湯気の立つ構図。
-- img/wy-devils-tower.jpg = デビルスタワー。候補: NPS撮影(連邦政府著作物、パブリックドメイン)またはCarol M. Highsmith(米議会図書館、PD)。平原に立つ柱状の岩。
-- img/wy-trona.jpg = グリーンリバー盆地の地下トロナ層。候補: ワイオミング州地質調査所またはPD/CC0の鉱山写真。水平な白い鉱物層。入手が難しければ、地表のグリーンリバー層の露頭写真で代替も可(その場合キャプションを調整)。
-- img/wy-coal-mine.jpg = パウダーリバー盆地の露天掘り。候補: 米地質調査所(USGS)またはBLMのパブリックドメイン空撮。階段状の坑と露出した炭層。
+- img/wy-locator.png = Wikimedia Commons「Wyoming in United States.svg」をPNG化(TUBS, CC BY-SA 3.0)。ワイオミングが赤く塗られていることを目視確認。
+- img/wy-grand-prismatic.jpg = Commons「Grand prismatic spring.jpg」(Jim Peaco、米国立公園局、2001、パブリックドメイン)。中央が青・周縁が暖色・湯気の構図でキャプションと一致。
+- img/wy-devils-tower.jpg = Commons「Devils Tower, also known by more benign names ... LCCN2015634205.tif」のJPEG縮小版(Carol M. Highsmith、2015、米議会図書館、パブリックドメイン)。NPS写真で出所の確かなものが見つからずHighsmithを採用、帰属を「米国立公園局」から「パブリックドメイン」に修正。周囲は草原と松林のため「平原の中に」も描写を修正。
+- img/wy-trona.jpg = Commons「Trona (Wilkins Peak Member, Green River Formation, Lower Eocene; Blacks Fork Mine, near Granger, Wyoming, USA) 1 (48997441483).jpg」(James St. John、CC BY 2.0)。地下坑内の写真はPD/CCで見つからず、-checkの代替方針に沿って採掘標本(水平な層が見える塊)を採用。キャプションを標本写真に合わせて修正し、帰属をCC BY表示に変更。
+- img/wy-coal-mine.jpg = Commons「Massive machinery at work in the open-pit Wyodak coal mine ... LCCN2015634182.tif」のJPEG縮小版(Carol M. Highsmith、2015、米議会図書館、パブリックドメイン)。空撮のPD写真は解像度が足りず(ISS写真は540px)、坑内から炭層とローダーを写した本写真を採用。キャプションを実写真に合わせて修正。Wyodak鉱山はパウダーリバー盆地(ジレット近郊)にあり、図の題は変更不要。
