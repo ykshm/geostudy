@@ -58,6 +58,7 @@
   var iframe = null;
   var ready = false;
   var open = false;
+  var pendingFocus = null;
 
   // 地図(パネル/章末おまけのiframe)から写真タップを受けて全画面表示する
   var box = document.createElement("div");
@@ -96,7 +97,13 @@
     panel.appendChild(iframe);
   }
   window.addEventListener("message", function (e) {
-    if ((e.data || {}).geostudy === "ready") ready = true;
+    if ((e.data || {}).geostudy !== "ready") return;
+    ready = true;
+    if (pendingFocus !== null && iframe) {
+      iframe.contentWindow.postMessage(
+        { geostudy: "focus", i: pendingFocus }, "*");
+      pendingFocus = null;
+    }
   });
 
   function setOpen(v) {
@@ -115,10 +122,11 @@
     e.preventDefault();
     if (!open) setOpen(true);
     var i = parseInt(a.dataset.i, 10);
-    var send = function () {
+    if (ready) {
       iframe.contentWindow.postMessage({ geostudy: "focus", i: i }, "*");
-    };
-    if (ready) send(); else setTimeout(send, 900);
+    } else {
+      pendingFocus = i; // 地図の準備完了(readyメッセージ)を待って送る
+    }
   });
 
   // 前回開いていたら開いた状態で始める
