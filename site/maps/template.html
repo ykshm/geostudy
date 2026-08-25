@@ -218,7 +218,10 @@ function focusSnap(i) {
 }
 
 // ---- 写真タップで拡大(親ページがあれば全画面、単体表示ならこの中で) ----
-function bigSrc(src) { return src.replace("/500px-", "/1280px-"); }
+function bigSrc(src) {
+  // 通常: /500px-〜 、TIF由来: /lossy-page1-500px-〜 の両形式に対応
+  return src.replace(/\/(lossy-page\d+-)?500px-/, (m, p1) => "/" + (p1 || "") + "1280px-");
+}
 
 const lb = document.createElement("div");
 lb.id = "gs-lightbox";
