@@ -33,9 +33,9 @@
 - クラーク郡人口約241万(2025年)→「240万人の都市圏」。
 - 修正記録: 初稿の「西部でサンフランシスコに次ぐ都会」(バージニアシティ)は検証不能のため「西部有数のにぎやかな都会」に緩和。都市圏人口の初稿「400万人近い」は誤りで240万人に訂正。ユタの連邦所有地割合(2位)は今回未検証のため注13から削除。
 
-## 図版の出所(すべて未収録。ネットワーク許可後または手動で取得して img/ に置く)
+## 図版の出所(2026-08-25 取得完了)
 
-- img/nv-locator.png = Nevada in United States.svg(Wikimedia Commons、TUBS, CC BY-SA 3.0)をPNG化。テキサス章の位置図と同シリーズ。
-- img/nv-strip.jpg = ラスベガス・ストリップの昼景。候補: Carol M. Highsmith撮影の写真(米議会図書館、パブリックドメイン)から選定。本文の説明文(昼景、山と砂漠の地肌がのぞく)に合う一枚を選ぶこと。キャプションは(パブリックドメイン)としてあるので、PD以外を選ぶ場合はキャプションの表示を修正すること。
-- img/nv-hoover-dam.jpg = フーバーダム。候補: 米内務省開拓局(USBR)撮影の公式写真(連邦政府著作物、パブリックドメイン)。上流側の湖面が入る構図。
-- img/nv-atomic.jpg = ネバダ実験場の大気圏内核実験のキノコ雲。候補: 米エネルギー省/NNSA公開の実験写真(連邦政府著作物、パブリックドメイン)。
+- img/nv-locator.png = Wikimedia Commons「Nevada in United States.svg」をPNG化(TUBS, CC BY-SA 3.0)。テキサス章の位置図と同シリーズ。ネバダが赤く塗られていることを目視確認。
+- img/nv-strip.jpg = Commons「Daytime aerial view of the Strip, Las Vegas, Nevada LCCN2010630596.tif」のJPEG縮小版(Carol M. Highsmith、米議会図書館、パブリックドメイン)。昼景・山と砂漠の地肌の条件を満たす一枚として空撮を採用。街路レベルの写真を想定していたキャプションの描写を空撮に合わせて修正(誤りの訂正)。
+- img/nv-hoover-dam.jpg = Commons「Hoover dam from air.jpg」(投稿者LICKO撮影、パブリックドメイン)。USBR公式写真で構図の合うものが見つからず、キャプションの描写(黒い峡谷・白い弧・上流の湖面)に最も合うPD空撮を採用。帰属を「米内務省開拓局」から「パブリックドメイン」に修正。
+- img/nv-atomic.jpg = Commons「Operation Upshot-Knothole - Badger 001.jpg」(1953-04-18、NNSA Nevada Site Office公開、パブリックドメイン)。白黒を想定していたが、夜明け前の赤い光のカラー写真を採用(本文の「夜明け前…空が昼より明るく光り」と響き合う)。キャプションの「白黒写真」の記述を実写真に合わせて修正。

@@ -47,3 +47,8 @@
 - img/tx-lucas-gusher.jpg = Lucas gusher.jpg(1901, パブリックドメイン)
 - img/tx-wind-roscoe.jpg = Roscoe Wind Farm in West Texas.jpg(Matthew T Rader, CC BY-SA 4.0)
 - img/tx-brisket.jpg = Sausage, brisket and sides from Black's Barbecue.jpg(Heather Cowper, CC BY 2.0)
+
+## 図版の取得記録(2026-08-25)
+
+- 5点すべてWikimedia Commonsから取得(Special:FilePath、locatorとflagはSVGをPNG化)。各ファイルページのライセンス表示をAPI(extmetadata)で確認し、上記の想定と一致した。
+- 目視確認に伴うキャプションの微修正(誤りの訂正): 図4「乾いた平原に」→「西テキサスの平原に」(実写真は緑の綿花畑)。図5「輪切りのソーセージが紙の上に」→「輪の形のソーセージが皿に」(実写真はリング状ソーセージと発泡スチロールの皿)。

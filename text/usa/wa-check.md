@@ -32,10 +32,10 @@
 - WA税制: 個人所得税なし。柱は売上税とB&O税(事業総収入課税)。2021年に高額資本利得へ7%課税を新設(所得税なし州として異例)、ベゾスのフロリダ移住(2023)の一因と報道。出典: Seattle Times、GeekWire。
 - レーニア山: 標高14,411フィート(約4,392m)、WA最高峰・活火山、シアトルから視認可。「一万四千フィートの独立峰」と整合。出典: Britannica、NPS。
 
-## 図版の出所(すべて未収録。ネットワーク許可後または手動で取得して img/ に置く)
+## 図版の出所(2026-08-25 取得完了)
 
-- img/wa-locator.png = Washington in United States.svg(Wikimedia Commons、TUBS, CC BY-SA 3.0)をPNG化。テキサス・ネバダ章の位置図と同シリーズ。
-- img/wa-grand-coulee.jpg = グランドクーリーダム。候補: 米内務省開拓局(USBR)撮影の公式写真(連邦政府著作物、パブリックドメイン)。乾いた台地と越流が入る構図。
-- img/wa-hanford.jpg = ハンフォードのB原子炉。候補: 米エネルギー省(DOE)公開写真(連邦政府著作物、パブリックドメイン)。
-- img/wa-palouse.jpg = 東ワシントン(パルース)の小麦畑の丘。キャプションはLynn Suckow, CC BY 2.0(Flickr由来のCC BY画像を想定)。CC BYのため、実ファイル確定時に作者名と条件の表示が本文キャプションと一致することを確認。別のPD/CC0画像を採る場合はキャプションを修正。
-- img/wa-seattle.jpg = シアトル市街とレーニア山。候補: Carol M. Highsmith撮影(米議会図書館、パブリックドメイン)等のPD写真。港・高層ビル・奥にレーニア山の構図。PD以外を選ぶ場合はキャプションの(パブリックドメイン)表記を修正。
+- img/wa-locator.png = Wikimedia Commons「Washington in United States.svg」をPNG化(TUBS, CC BY-SA 3.0)。他章の位置図と同シリーズ。ワシントン州が赤く塗られていることを目視確認。
+- img/wa-grand-coulee.jpg = Commons「GrandCouleeDam6USBORJune2011.jpg」(米内務省開拓局撮影、2011-06-29、パブリックドメイン)。越流と乾いた岩の台地が入る構図で、キャプションと一致。原版が800pxとやや小さいが公式写真を優先。
+- img/wa-hanford.jpg = Commons「Hanford B Reactor Exterior.JPG」(Billatq撮影、2014、CC BY-SA 4.0)。DOEのPD写真は内部写真や1944年建設中の空撮しか見つからず、キャプション(史跡として保存された現在の外観)に合うCC BY-SA写真を採用。帰属を「米エネルギー省、パブリックドメイン」から「Billatq, CC BY-SA 4.0」に修正。
+- img/wa-palouse.jpg = Commons「Palouse hills northeast of Walla Walla.jpg」(Lynn Suckow撮影、2006、CC BY-SA 2.0)。想定していた作者の写真だが、ライセンスはCC BY 2.0ではなくCC BY-SA 2.0だったため表示を修正。「空が広い」の描写も実写真(空はわずか)に合わせて修正。
+- img/wa-seattle.jpg = Commons「Dusk view of the skyline, Seattle, Washington LCCN2011630307.tif」のJPEG縮小版(Carol M. Highsmith、米議会図書館、パブリックドメイン)。夕景でスペースニードルとレーニア山が入る。港は写らないため「手前は港と高層ビル」の描写を実写真に合わせて修正。
