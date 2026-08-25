@@ -11,12 +11,14 @@
     <iframe src="../maps/usa-tx.html" width="100%" height="480"
             style="border:1px solid #ccc" loading="lazy"></iframe>
 
-  ■ おまけモード（章末「地図で歩き直す」用・写真＋ストリートビュー付き）
+  ■ おまけモード（章末「地図で歩き直す」用・写真付き）
     <iframe src="../maps/usa-tx.html?rich" width="100%" height="520"
             style="border:1px solid #ccc" loading="lazy"></iframe>
 
   ・マーカーには節番号が表示され、上部のチップで1節から順に飛べる
-  ・別の章に使うときは PLACES 配列を差し替えるだけ
+  ・おまけモードでは📷の「暮らしのスナップ」ピンも出る（本文の筋とは独立の、
+    観光地でない生活の場面。SNAPS 配列で管理）
+  ・別の章に使うときは PLACES / SNAPS 配列を差し替えるだけ
 -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
@@ -40,6 +42,10 @@
          display: flex; align-items: center; justify-content: center;
          border: 2px solid #fff; box-shadow: 0 1px 4px rgba(0,0,0,.4); }
   .pin.mx { background: #B0413E; }
+  .pin.snap { background: #5B7553; font-size: 14px; }
+  .chip.snap b { color: #5B7553; }
+  .chip.snap.active { background: #5B7553; border-color: #5B7553; }
+  .popup-sec.snap { background: #5B7553; }
   .leaflet-popup-content-wrapper { border-radius: 8px; }
   .leaflet-popup-content { font-size: 13px; line-height: 1.6; margin: 0;
                            width: 250px !important; }
@@ -113,6 +119,39 @@ const PLACES = [
     img: W+"e/e2/Dallas_Skyline_at_Dusk.jpg/500px-Dallas_Skyline_at_Dusk.jpg",
     credit: "Matthew T Rader, CC BY-SA 4.0" },
 ];
+
+// ===== おまけモード限定「暮らしのスナップ」(本文の筋と独立。場面の良さで選ぶ) =====
+const T = "https://upload.wikimedia.org/wikipedia/commons/thumb/";
+const SNAPS = [
+  { name: "マグレガー", lat: 31.4443, lng: -97.4092, era: "いま",
+    text: "小さな町の建物の壁に、地元高校フットボール部の今年の対戦表が手描きで掲げられる。金曜の夜は、町中がスタジアムへ行く。",
+    img: T+"6/6a/Creative_display_of_the_local_high_school%27s_football_team_schedule_on_a_building_in_little_McGregor_in_McLennon_County%2C_Texas_LCCN2015630949.tif/lossy-page1-500px-Creative_display_of_the_local_high_school%27s_football_team_schedule_on_a_building_in_little_McGregor_in_McLennon_County%2C_Texas_LCCN2015630949.tif.jpg",
+    credit: "Carol M. Highsmith, パブリックドメイン" },
+  { name: "ウェスト", lat: 31.8024, lng: -97.0914, era: "いま",
+    text: "チェコ移民の子孫の町。民家のようなコラーチ(甘パン)とドーナツの店の前には、ピックアップトラックばかりが停まる。",
+    img: T+"e/eb/West_June_2016_16_%28The_Best_Donut_and_Kolache_Shop%29.jpg/500px-West_June_2016_16_%28The_Best_Donut_and_Kolache_Shop%29.jpg",
+    credit: "Michael Barera, CC BY-SA 4.0" },
+  { name: "バーネット", lat: 30.7582, lng: -98.2284, era: "いま",
+    text: "田舎町の社交場デイリークイーン。学校帰りも、農作業の休みも、まずここでソフトクリームである。",
+    img: T+"8/89/Dairy_Queen%2C_Burnet%2C_TX_IMG_2000.JPG/500px-Dairy_Queen%2C_Burnet%2C_TX_IMG_2000.JPG",
+    credit: "Billy Hathorn, CC BY-SA 3.0" },
+  { name: "ダラス・オーククリフ", lat: 32.7415, lng: -96.8537, era: "いま",
+    text: "ダラスの下町。原色に塗られたタケリアとビリヤード場が並び、看板の半分はスペイン語である。",
+    img: T+"2/25/Oak_Cliff_September_2016_28_%28Taqueria_Pedrito_and_Las_Ranitas%29.jpg/500px-Oak_Cliff_September_2016_28_%28Taqueria_Pedrito_and_Las_Ranitas%29.jpg",
+    credit: "Michael Barera, CC BY-SA 4.0" },
+  { name: "ルイーズ", lat: 29.1094, lng: -96.4064, era: "いま",
+    text: "平原の小さな町でいちばん高い建物は、教会でも役場でもなく、線路沿いの穀物エレベーターである。",
+    img: T+"c/c3/A_grain_elevator_in_the_town_of_Louise%2C_Texas_LCCN2014631059.tif/lossy-page1-500px-A_grain_elevator_in_the_town_of_Louise%2C_Texas_LCCN2014631059.tif.jpg",
+    credit: "Carol M. Highsmith, パブリックドメイン" },
+  { name: "ヒューストン航路", lat: 29.7345, lng: -95.2666, era: "1972年",
+    text: "岸辺で釣り竿と網を構える少女たちの向こうを、貨物船が航路をのぼっていく。地平線には油田のやぐら。暮らしと産業が同じ岸にある。",
+    img: T+"7/71/FREIGHTER_MOVES_SLOWLY_UP_THE_HOUSTON_SHIP_CHANNEL_AS_GIRLS_FISH_FROM_THE_SHORE._OIL_DERRICKS_ARE_VISIBLE_IN_THE..._-_NARA_-_550941.jpg/500px-FREIGHTER_MOVES_SLOWLY_UP_THE_HOUSTON_SHIP_CHANNEL_AS_GIRLS_FISH_FROM_THE_SHORE._OIL_DERRICKS_ARE_VISIBLE_IN_THE..._-_NARA_-_550941.jpg",
+    credit: "Blair Pittman/EPA(DOCUMERICA), パブリックドメイン" },
+  { name: "エルパソ下町", lat: 31.7550, lng: -106.4830, era: "1972年",
+    text: "国境の下町セグンド・バリオの街角。日干し煉瓦の家並みが、住む人の手でまっ赤に塗られていた。物干し台と木の柵が路地に続く。",
+    img: T+"0/07/FIFTH_AND_MESA_IN_THE_SECOND_WARD._EL_PASO%27S_%22BARRIO%22_-_NARA_-_545356.jpg/500px-FIFTH_AND_MESA_IN_THE_SECOND_WARD._EL_PASO%27S_%22BARRIO%22_-_NARA_-_545356.jpg",
+    credit: "Danny Lyon/EPA(DOCUMERICA), パブリックドメイン" },
+];
 // ====================================================================
 
 const OSM = '&copy; OpenStreetMap contributors';
@@ -146,14 +185,19 @@ function popupHtml(p) {
   h += '<div class="popup-body"><span class="popup-name">' + p.name +
        '</span><span class="popup-sec">' + p.sec + '</span><br>' + p.note;
   if (RICH) {
-    const sv = "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=" +
-               p.lat + "," + p.lng;
     h += '<br><span style="font-size:12px;color:#666">' + p.rich + '</span>' +
-         '<br><a style="font-size:12px" href="' + sv +
-         '" target="_blank" rel="noopener">ストリートビューで歩く ↗</a>' +
          '<div class="popup-credit">写真: ' + p.credit + '</div>';
   }
   return h + '</div>';
+}
+
+function snapPopupHtml(s) {
+  return '<img class="popup-photo" src="' + s.img + '" alt="' + s.name +
+         '" loading="lazy">' +
+         '<div class="popup-body"><span class="popup-name">' + s.name +
+         '</span><span class="popup-sec snap">📷 ' + s.era + '</span><br>' +
+         s.text +
+         '<div class="popup-credit">写真: ' + s.credit + '</div></div>';
 }
 
 const markers = [];
@@ -189,10 +233,41 @@ PLACES.forEach((p, i) => {
   chips.push(addChip("<b>" + p.sec + "</b>" + p.name, p.side === "mx" ? "mx" : "",
     () => focusPlace(i)));
 });
+
+// ---- 暮らしのスナップ(おまけモード限定) ----
+const snapMarkers = [];
+const snapChips = [];
+if (RICH) {
+  SNAPS.forEach((s, i) => {
+    const icon = L.divIcon({ className: "", iconSize: [44, 44],
+      iconAnchor: [22, 22], popupAnchor: [0, -16],
+      html: '<div class="pin snap">📷</div>' });
+    const m = L.marker([s.lat, s.lng], { icon }).addTo(map);
+    m.bindPopup(snapPopupHtml(s), { maxWidth: 250, minWidth: 250 });
+    m.on("click", () => setActiveSnap(i));
+    snapMarkers.push(m);
+  });
+  SNAPS.forEach((s, i) => {
+    snapChips.push(addChip("<b>📷</b>" + s.name, "snap", () => focusSnap(i)));
+  });
+}
+
+function clearActive() {
+  allChip.classList.remove("active");
+  chips.forEach((c) => c.classList.remove("active"));
+  snapChips.forEach((c) => c.classList.remove("active"));
+}
 function setActive(i) {
-  allChip.classList.toggle("active", i === -1);
-  chips.forEach((c, j) => c.classList.toggle("active", j === i));
-  if (i >= 0) chips[i].scrollIntoView(
+  clearActive();
+  if (i === -1) { allChip.classList.add("active"); return; }
+  chips[i].classList.add("active");
+  chips[i].scrollIntoView(
+    { behavior: "smooth", block: "nearest", inline: "center" });
+}
+function setActiveSnap(i) {
+  clearActive();
+  snapChips[i].classList.add("active");
+  snapChips[i].scrollIntoView(
     { behavior: "smooth", block: "nearest", inline: "center" });
 }
 function focusPlace(i) {
@@ -200,6 +275,12 @@ function focusPlace(i) {
   const p = PLACES[i];
   map.flyTo([p.lat, p.lng], 8, { duration: 0.9 });
   setTimeout(() => markers[i].openPopup(), 950);
+}
+function focusSnap(i) {
+  setActiveSnap(i);
+  const s = SNAPS[i];
+  map.flyTo([s.lat, s.lng], 8, { duration: 0.9 });
+  setTimeout(() => snapMarkers[i].openPopup(), 950);
 }
 
 // ---- 記事側パネル(map-panel.js)からの操作を受け付ける ----
