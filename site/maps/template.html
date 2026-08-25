@@ -3,22 +3,23 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>テキサス — 章の地名地図</title>
+<title>__TITLE__</title>
 <!--
-  geostudy 埋め込み地図 v3（1ファイル2モード）
+  geostudy 章別地図のテンプレート(1ファイル2モード)
 
-  ■ 本文モード（記事の地図パネル用・写真なしの見取り図）
-    <iframe src="../maps/usa-tx.html" width="100%" height="480"
-            style="border:1px solid #ccc" loading="lazy"></iframe>
+  このファイルは正本。build.py が site/geo/<略号>.json のデータを
+  __DATA__ に埋め込んで _site/maps/usa-<略号>.html を生成する。
+  出力HTMLを直接編集しないこと(次のビルドで消える)。
 
-  ■ おまけモード（章末「地図で歩き直す」用・写真付き）
-    <iframe src="../maps/usa-tx.html?rich" width="100%" height="520"
-            style="border:1px solid #ccc" loading="lazy"></iframe>
+  ■ 本文モード(記事の地図パネル用・写真なしの見取り図)
+    <iframe src="../maps/usa-xx.html" ...>
+  ■ おまけモード(章末「地図で歩き直す」用・写真付き)
+    <iframe src="../maps/usa-xx.html?rich" ...>
 
   ・マーカーには節番号が表示され、上部のチップで1節から順に飛べる
-  ・おまけモードでは📷の「暮らしのスナップ」ピンも出る（本文の筋とは独立の、
-    観光地でない生活の場面。SNAPS 配列で管理）
-  ・別の章に使うときは PLACES / SNAPS 配列を差し替えるだけ
+  ・おまけモードでは📷の「暮らしのスナップ」ピンも出る(本文の筋とは独立の、
+    観光地でない生活の場面。geo/*.json の snaps 配列で管理)
+  ・写真タップで拡大(親ページがあれば全画面、単体表示なら地図内で)
 -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
@@ -74,95 +75,16 @@
 <div id="map"></div>
 <script>
 const RICH = new URLSearchParams(location.search).has("rich");
-const W = "https://upload.wikimedia.org/wikipedia/commons/thumb/";
 
-// ===== 章ごとに差し替えるのはこの配列だけ（本文の登場順に並べる） =====
-const PLACES = [
-  { num: "1", sec: "1節", name: "スピンドルトップ", lat: 30.0232, lng: -94.0766, side: "tx",
-    note: "1901年、油が9日間噴き上がった丘",
-    rich: "写真は当時のルーカス・ガッシャー",
-    img: W+"d/d8/Lucas_gusher.jpg/500px-Lucas_gusher.jpg",
-    credit: "パブリックドメイン" },
-  { num: "2", sec: "2節", name: "ヒューストン", lat: 29.7601, lng: -95.3701, side: "tx",
-    note: "石油が育てた最大都市。宇宙センターは石油の上に建った",
-    rich: "ダウンタウンのスカイライン",
-    img: W+"6/62/Downtown_Houston%2C_TX_Skyline_-_2018.jpg/500px-Downtown_Houston%2C_TX_Skyline_-_2018.jpg",
-    credit: "David Daniel Turner, CC BY 4.0" },
-  { num: "3", sec: "3節", name: "ロスコー", lat: 32.4457, lng: -100.5386, side: "tx",
-    note: "西部の平原に立ち並ぶ風力発電所",
-    rich: "図4と同じ写真家による一枚",
-    img: W+"d/d4/Roscoe_Wind_Farm_in_West_Texas.jpg/500px-Roscoe_Wind_Farm_in_West_Texas.jpg",
-    credit: "Matthew T Rader, CC BY-SA 4.0" },
-  { num: "4", sec: "4節", name: "サンアントニオ", lat: 29.4252, lng: -98.4946, side: "tx",
-    note: "アラモの街。スペイン語地名",
-    rich: "写真は川沿いの遊歩道リバーウォーク",
-    img: W+"7/77/River_Walk_Reflections.jpg/500px-River_Walk_Reflections.jpg",
-    credit: "Corey Leopold, CC BY 2.0" },
-  { num: "4", sec: "4節", name: "アマリロ", lat: 35.2070, lng: -101.8320, side: "tx",
-    note: "北部パンハンドルのスペイン語地名",
-    rich: "写真は郊外の名物キャデラック・ランチ",
-    img: W+"6/63/Cadillac_Ranch_in_Texas.jpg/500px-Cadillac_Ranch_in_Texas.jpg",
-    credit: "DiscoA340, CC BY-SA 4.0" },
-  { num: "4", sec: "4節", name: "エルパソ", lat: 31.7619, lng: -106.4850, side: "tx",
-    note: "西端、リオグランデ沿いの国境の街",
-    rich: "写真の手前がフアレス、奥がエルパソ",
-    img: W+"b/bd/El_Paso_Ciudad_Juarez_%2816605799972%29.jpg/500px-El_Paso_Ciudad_Juarez_%2816605799972%29.jpg",
-    credit: "Kurt Bauschardt, CC BY-SA 2.0" },
-  { num: "4", sec: "4節", name: "シウダーフアレス", lat: 31.6904, lng: -106.4245, side: "mx",
-    note: "エルパソと橋でつながる双子都市（メキシコ）",
-    rich: "写真はパソ・デル・ノルテ橋",
-    img: W+"2/2c/Paso_Del_Norte_POE_El_Paso_Texas_%2827794615593%29.jpg/500px-Paso_Del_Norte_POE_El_Paso_Texas_%2827794615593%29.jpg",
-    credit: "U.S. CBP, パブリックドメイン" },
-  { num: "5", sec: "5節", name: "オースティン", lat: 30.2672, lng: -97.7431, side: "tx",
-    note: "州都。IT企業が集まる「シリコンヒルズ」",
-    rich: "コングレス・アベニュー橋から望むダウンタウン",
-    img: W+"5/5b/Downtown_Austin_Skyline_-_Ann_W._Richards_Congress_Avenue_Bridge_%2854987518915%29.jpg/500px-Downtown_Austin_Skyline_-_Ann_W._Richards_Congress_Avenue_Bridge_%2854987518915%29.jpg",
-    credit: "ajay_suresh, CC BY 4.0" },
-  { num: "6", sec: "6節", name: "ロックハート", lat: 29.8849, lng: -97.6700, side: "tx",
-    note: "ブリスケットの老舗が行列を作らせる町",
-    rich: "写真は老舗クロイツ・マーケットの店構え",
-    img: W+"2/28/Kreuz_market%2C_lockhart_texas_www.kreuzmarket.com_-_panoramio.jpg/500px-Kreuz_market%2C_lockhart_texas_www.kreuzmarket.com_-_panoramio.jpg",
-    credit: "Dameon Hudson, CC BY 3.0" },
-  { num: "注", sec: "注12", name: "ダラス", lat: 32.7767, lng: -96.7970, side: "tx",
-    note: "州内最大の都市圏。金融と航空の集積地",
-    rich: "夕暮れのスカイライン",
-    img: W+"e/e2/Dallas_Skyline_at_Dusk.jpg/500px-Dallas_Skyline_at_Dusk.jpg",
-    credit: "Matthew T Rader, CC BY-SA 4.0" },
-];
-
-// ===== おまけモード限定「暮らしのスナップ」(本文の筋と独立。場面の良さで選ぶ) =====
-const T = "https://upload.wikimedia.org/wikipedia/commons/thumb/";
-const SNAPS = [
-  { name: "マグレガー", lat: 31.4443, lng: -97.4092, era: "いま",
-    text: "小さな町の建物の壁に、地元高校フットボール部の今年の対戦表が手描きで掲げられる。金曜の夜は、町中がスタジアムへ行く。",
-    img: T+"6/6a/Creative_display_of_the_local_high_school%27s_football_team_schedule_on_a_building_in_little_McGregor_in_McLennon_County%2C_Texas_LCCN2015630949.tif/lossy-page1-500px-Creative_display_of_the_local_high_school%27s_football_team_schedule_on_a_building_in_little_McGregor_in_McLennon_County%2C_Texas_LCCN2015630949.tif.jpg",
-    credit: "Carol M. Highsmith, パブリックドメイン" },
-  { name: "ウェスト", lat: 31.8024, lng: -97.0914, era: "いま",
-    text: "チェコ移民の子孫の町。民家のようなコラーチ(甘パン)とドーナツの店の前には、ピックアップトラックばかりが停まる。",
-    img: T+"e/eb/West_June_2016_16_%28The_Best_Donut_and_Kolache_Shop%29.jpg/500px-West_June_2016_16_%28The_Best_Donut_and_Kolache_Shop%29.jpg",
-    credit: "Michael Barera, CC BY-SA 4.0" },
-  { name: "バーネット", lat: 30.7582, lng: -98.2284, era: "いま",
-    text: "田舎町の社交場デイリークイーン。学校帰りも、農作業の休みも、まずここでソフトクリームである。",
-    img: T+"8/89/Dairy_Queen%2C_Burnet%2C_TX_IMG_2000.JPG/500px-Dairy_Queen%2C_Burnet%2C_TX_IMG_2000.JPG",
-    credit: "Billy Hathorn, CC BY-SA 3.0" },
-  { name: "ダラス・オーククリフ", lat: 32.7415, lng: -96.8537, era: "いま",
-    text: "ダラスの下町。原色に塗られたタケリアとビリヤード場が並び、看板の半分はスペイン語である。",
-    img: T+"2/25/Oak_Cliff_September_2016_28_%28Taqueria_Pedrito_and_Las_Ranitas%29.jpg/500px-Oak_Cliff_September_2016_28_%28Taqueria_Pedrito_and_Las_Ranitas%29.jpg",
-    credit: "Michael Barera, CC BY-SA 4.0" },
-  { name: "ルイーズ", lat: 29.1094, lng: -96.4064, era: "いま",
-    text: "平原の小さな町でいちばん高い建物は、教会でも役場でもなく、線路沿いの穀物エレベーターである。",
-    img: T+"c/c3/A_grain_elevator_in_the_town_of_Louise%2C_Texas_LCCN2014631059.tif/lossy-page1-500px-A_grain_elevator_in_the_town_of_Louise%2C_Texas_LCCN2014631059.tif.jpg",
-    credit: "Carol M. Highsmith, パブリックドメイン" },
-  { name: "ヒューストン航路", lat: 29.7345, lng: -95.2666, era: "1972年",
-    text: "岸辺で釣り竿と網を構える少女たちの向こうを、貨物船が航路をのぼっていく。地平線には油田のやぐら。暮らしと産業が同じ岸にある。",
-    img: T+"7/71/FREIGHTER_MOVES_SLOWLY_UP_THE_HOUSTON_SHIP_CHANNEL_AS_GIRLS_FISH_FROM_THE_SHORE._OIL_DERRICKS_ARE_VISIBLE_IN_THE..._-_NARA_-_550941.jpg/500px-FREIGHTER_MOVES_SLOWLY_UP_THE_HOUSTON_SHIP_CHANNEL_AS_GIRLS_FISH_FROM_THE_SHORE._OIL_DERRICKS_ARE_VISIBLE_IN_THE..._-_NARA_-_550941.jpg",
-    credit: "Blair Pittman/EPA(DOCUMERICA), パブリックドメイン" },
-  { name: "エルパソ下町", lat: 31.7550, lng: -106.4830, era: "1972年",
-    text: "国境の下町セグンド・バリオの街角。日干し煉瓦の家並みが、住む人の手でまっ赤に塗られていた。物干し台と木の柵が路地に続く。",
-    img: T+"0/07/FIFTH_AND_MESA_IN_THE_SECOND_WARD._EL_PASO%27S_%22BARRIO%22_-_NARA_-_545356.jpg/500px-FIFTH_AND_MESA_IN_THE_SECOND_WARD._EL_PASO%27S_%22BARRIO%22_-_NARA_-_545356.jpg",
-    credit: "Danny Lyon/EPA(DOCUMERICA), パブリックドメイン" },
-];
+// ===== 章ごとのデータ(build.py が geo/<略号>.json から埋め込む) =====
+const DATA = __DATA__;
 // ====================================================================
+
+const PLACES = DATA.places.map((p) => Object.assign({}, p, {
+  num: p.sec ? p.sec : "注",
+  secLabel: p.sec ? p.sec + "節" : "注" + p.note,
+}));
+const SNAPS = DATA.snaps || [];
 
 const OSM = '&copy; OpenStreetMap contributors';
 const hillshade = L.tileLayer(
@@ -194,7 +116,7 @@ function popupHtml(p) {
                  p.name + '" title="タップで拡大" data-caption="' +
                  p.name + " — 写真: " + p.credit + '" loading="lazy">';
   h += '<div class="popup-body"><span class="popup-name">' + p.name +
-       '</span><span class="popup-sec">' + p.sec + '</span><br>' + p.note;
+       '</span><span class="popup-sec">' + p.secLabel + '</span><br>' + p.text;
   if (RICH) {
     h += '<br><span style="font-size:12px;color:#666">' + p.rich + '</span>' +
          '<div class="popup-credit">写真: ' + p.credit + '</div>';
@@ -217,7 +139,7 @@ const bounds = [];
 PLACES.forEach((p, i) => {
   const icon = L.divIcon({ className: "", iconSize: [44, 44],
     iconAnchor: [22, 22], popupAnchor: [0, -16],
-    html: '<div class="pin ' + p.side + '">' + p.num + '</div>' });
+    html: '<div class="pin ' + (p.side || "") + '">' + p.num + '</div>' });
   const m = L.marker([p.lat, p.lng], { icon }).addTo(map);
   m.bindPopup(popupHtml(p), { maxWidth: 250, minWidth: 250 });
   m.on("click", () => setActive(i));
@@ -226,7 +148,7 @@ PLACES.forEach((p, i) => {
 });
 map.fitBounds(bounds, { padding: [36, 36] });
 
-// ---- 章順ナビ（チップ） ----
+// ---- 章順ナビ(チップ) ----
 const nav = document.getElementById("nav");
 const chips = [];
 function addChip(label, cls, onTap) {
@@ -242,8 +164,8 @@ const allChip = addChip("全体", "", () => {
   map.flyToBounds(bounds, { padding: [36, 36] });
 });
 PLACES.forEach((p, i) => {
-  chips.push(addChip("<b>" + p.sec + "</b>" + p.name, p.side === "mx" ? "mx" : "",
-    () => focusPlace(i)));
+  chips.push(addChip("<b>" + p.secLabel + "</b>" + p.name,
+    p.side === "mx" ? "mx" : "", () => focusPlace(i)));
 });
 
 // ---- 暮らしのスナップ(おまけモード限定) ----

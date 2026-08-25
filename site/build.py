@@ -259,6 +259,44 @@ def transform_chapter(path: Path, author_file: Path | None,
     return (title, "\n".join(out))
 
 
+# ---------------------------------------------------------------- 章別地図
+
+MAP_TEMPLATE = ROOT / "site" / "maps" / "template.html"
+WIKIMEDIA_IMG = "https://upload.wikimedia.org/"
+
+
+def check_geo(slug: str, geo: dict) -> None:
+    """geo/<略号>.json の書式検査(ビルドはlintを兼ねる)。"""
+    src = f"site/geo/{slug}.json"
+    for key in ("map", "title", "places"):
+        if key not in geo:
+            err(f"{src}: 必須キー『{key}』がない")
+            return
+    for p in geo["places"]:
+        where = f"{src}: places『{p.get('name', '?')}』"
+        for key in ("i", "name", "lat", "lng", "text", "rich", "img", "credit"):
+            if key not in p:
+                err(f"{where}: キー『{key}』がない")
+        if bool(p.get("sec")) == bool(p.get("note")):
+            err(f"{where}: sec(節番号)とnote(注番号)はどちらか一方を指定する")
+        if "img" in p and not p["img"].startswith(WIKIMEDIA_IMG):
+            err(f"{where}: imgがWikimediaのURLではない")
+    for s in geo.get("snaps", []):
+        where = f"{src}: snaps『{s.get('name', '?')}』"
+        for key in ("name", "lat", "lng", "era", "text", "img", "credit"):
+            if key not in s:
+                err(f"{where}: キー『{key}』がない")
+        if "img" in s and not s["img"].startswith(WIKIMEDIA_IMG):
+            err(f"{where}: imgがWikimediaのURLではない")
+
+
+def render_map(geo: dict, template: str) -> str:
+    data = {"places": geo["places"], "snaps": geo.get("snaps", [])}
+    return (template
+            .replace("__TITLE__", html.escape(geo["title"]))
+            .replace("__DATA__", json.dumps(data, ensure_ascii=False)))
+
+
 # ---------------------------------------------------------------- 一覧の解釈
 
 CHAPTER_ROW_RE = re.compile(
@@ -301,6 +339,12 @@ def main() -> int:
         geo_path = ROOT / "site" / "geo" / f"{slug}.json"
         if geo_path.is_file():
             geo = json.loads(geo_path.read_text(encoding="utf-8"))
+            check_geo(slug, geo)
+            map_out = OUT / geo["map"]
+            map_out.parent.mkdir(parents=True, exist_ok=True)
+            map_out.write_text(
+                render_map(geo, MAP_TEMPLATE.read_text(encoding="utf-8")),
+                encoding="utf-8")
         title, body = transform_chapter(src, ch["author_file"], geo)
         extra = ""
         if geo:
@@ -319,11 +363,10 @@ def main() -> int:
     if img_dir.is_dir():
         shutil.copytree(img_dir, OUT / "usa" / "img")
 
-    # 地図機能の静的資産(あれば)を持っていく
-    for sub in ("assets", "maps"):
-        src_dir = ROOT / "site" / sub
-        if src_dir.is_dir():
-            shutil.copytree(src_dir, OUT / sub)
+    # 地図機能の静的資産(あれば)を持っていく(章別地図はgeo/*.jsonから生成済み)
+    assets_dir = ROOT / "site" / "assets"
+    if assets_dir.is_dir():
+        shutil.copytree(assets_dir, OUT / "assets")
 
     # トップページ: 章の一覧 + README全文
     MD.reset()
