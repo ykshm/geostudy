@@ -21,9 +21,9 @@
 
 - 右下の「地図」ボタンで開閉する地図パネル(`site/assets/map-panel.js`。スマホは画面上半分、PCは右半分に表示され、本文は自動退避。開閉状態はlocalStorageキー `gsMapOpen` で章をまたいで維持)
 - 本文の地名の📍リンク化(`<a class="geo" data-i="N">`)。geo/*.json の指定した節・注での初出1回だけ。タップでパネルが開き該当地点へ飛ぶ
-- 章末の「おまけ: 地図で歩き直す」節(`site/maps/` の章別地図を `?rich` パラメータ付きiframeで埋め込み。写真+ストリートビュー付き)
+- 章末の「おまけ: 地図で歩き直す」節(`site/maps/` の章別地図を `?rich` パラメータ付きiframeで埋め込み。写真付き)。richモードには📷の「暮らしのスナップ」ピンも出る——本文の筋とは独立に、観光地でない生活の場面を場面の良さで選んだ写真(地図HTML内の SNAPS 配列で管理)
 
-章別地図(`site/maps/usa-tx.html` 等)は Leaflet(unpkg CDN)+ CARTO/Esri/OpenStreetMapのタイルを使う。APIキーは不要。richモードの写真はWikimedia Commonsへの直リンクで、ポップアップ内のクレジット表示はCCライセンスの要件なので削除しないこと。別の章へ展開するときは、maps/ に PLACES 配列を差し替えた地図を作り、geo/ に対応表を足すだけ。
+章別地図(`site/maps/usa-tx.html` 等)は Leaflet(unpkg CDN)+ CARTO/Esri/OpenStreetMapのタイルを使う。APIキーは不要。richモードの写真はWikimedia Commonsへの直リンクで、ポップアップ内のクレジット表示はCCライセンスの要件なので削除しないこと。別の章へ展開するときは、maps/ に PLACES / SNAPS 配列を差し替えた地図を作り、geo/ に対応表を足すだけ。
 
 ## サイトに載せないもの
 
