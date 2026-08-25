@@ -229,12 +229,14 @@ lb.addEventListener("click", () => lb.classList.remove("open"));
 document.addEventListener("click", (e) => {
   const img = e.target.closest && e.target.closest(".popup-photo");
   if (!img) return;
-  const payload = { geostudy: "photo", src: bigSrc(img.src),
+  const payload = { geostudy: "photo", src: bigSrc(img.src), small: img.src,
                     caption: img.dataset.caption || img.alt || "" };
   if (window.parent !== window) {
     window.parent.postMessage(payload, "*");
   } else {
-    lb.querySelector("img").src = payload.src;
+    const el = lb.querySelector("img");
+    el.onerror = () => { el.onerror = null; el.src = payload.small; };
+    el.src = payload.src;
     lb.querySelector(".lb-caption").textContent = payload.caption;
     lb.classList.add("open");
   }

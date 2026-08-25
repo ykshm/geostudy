@@ -74,7 +74,15 @@
     var d = e.data || {};
     if (d.geostudy !== "photo" || typeof d.src !== "string") return;
     if (!/^https:\/\/upload\.wikimedia\.org\//.test(d.src)) return;
-    box.querySelector("img").src = d.src;
+    var el = box.querySelector("img");
+    // 原画像が小さく拡大版が無い場合は、元のサムネイルに戻す
+    if (typeof d.small === "string" &&
+        /^https:\/\/upload\.wikimedia\.org\//.test(d.small)) {
+      el.onerror = function () { el.onerror = null; el.src = d.small; };
+    } else {
+      el.onerror = null;
+    }
+    el.src = d.src;
     box.querySelector(".gs-lb-caption").textContent =
       typeof d.caption === "string" ? d.caption : "";
     box.classList.add("open");
