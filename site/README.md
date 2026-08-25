@@ -15,6 +15,16 @@
 - 章冒頭の著者名・プロフィール・目次 → 専用のスタイル
 - トップページ = 章の一覧(`authors/index.md` の割り振り表から生成)+ `README.md` 全文
 
+## 地図機能(ウェブ版限定)
+
+章に `site/geo/<略号>.json`(地名→地図の対応表)がある場合だけ、build.py がその章のページに次を付ける。正本のMarkdownには一切手を入れない(正本不可侵)ので、読書会の紙面には現れない。
+
+- 右下の「地図」ボタンで開閉する地図パネル(`site/assets/map-panel.js`。スマホは画面上半分、PCは右半分に表示され、本文は自動退避。開閉状態はlocalStorageキー `gsMapOpen` で章をまたいで維持)
+- 本文の地名の📍リンク化(`<a class="geo" data-i="N">`)。geo/*.json の指定した節・注での初出1回だけ。タップでパネルが開き該当地点へ飛ぶ
+- 章末の「おまけ: 地図で歩き直す」節(`site/maps/` の章別地図を `?rich` パラメータ付きiframeで埋め込み。写真+ストリートビュー付き)
+
+章別地図(`site/maps/usa-tx.html` 等)は Leaflet(unpkg CDN)+ CARTO/Esri/OpenStreetMapのタイルを使う。APIキーは不要。richモードの写真はWikimedia Commonsへの直リンクで、ポップアップ内のクレジット表示はCCライセンスの要件なので削除しないこと。別の章へ展開するときは、maps/ に PLACES 配列を差し替えた地図を作り、geo/ に対応表を足すだけ。
+
 ## サイトに載せないもの
 
 `-check` ファイル(編集用の楽屋)、CONCEPT.md / WRITING.md(執筆用の指示書)、`authors/` のプロフィール正本、`series.md`。いずれもリポジトリでは公開されているが、読み物のサイトの動線には置かない。

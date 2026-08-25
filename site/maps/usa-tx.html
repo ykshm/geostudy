@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>テキサス — 章の地名地図</title>
+<!--
+  geostudy 埋め込み地図 v3（1ファイル2モード）
+
+  ■ 本文モード（記事の地図パネル用・写真なしの見取り図）
+    <iframe src="../maps/usa-tx.html" width="100%" height="480"
+            style="border:1px solid #ccc" loading="lazy"></iframe>
+
+  ■ おまけモード（章末「地図で歩き直す」用・写真＋ストリートビュー付き）
+    <iframe src="../maps/usa-tx.html?rich" width="100%" height="520"
+            style="border:1px solid #ccc" loading="lazy"></iframe>
+
+  ・マーカーには節番号が表示され、上部のチップで1節から順に飛べる
+  ・別の章に使うときは PLACES 配列を差し替えるだけ
+-->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<style>
+  html, body { margin: 0; padding: 0; height: 100%; }
+  body { display: flex; flex-direction: column;
+         font-family: -apple-system, "Hiragino Sans", "Noto Sans JP", sans-serif; }
+  #nav { flex: 0 0 auto; display: flex; gap: 6px; padding: 8px 10px;
+         overflow-x: auto; white-space: nowrap; background: #fafafa;
+         border-bottom: 1px solid #e5e5e5; -webkit-overflow-scrolling: touch; }
+  .chip { flex: 0 0 auto; border: 1px solid #ccc; border-radius: 999px;
+          background: #fff; padding: 5px 12px; font-size: 12.5px;
+          line-height: 1; cursor: pointer; color: #333; }
+  .chip b { color: #2F4B7C; margin-right: 3px; }
+  .chip.mx b { color: #B0413E; }
+  .chip.active { background: #2F4B7C; border-color: #2F4B7C; color: #fff; }
+  .chip.active b { color: #fff; }
+  #map { flex: 1 1 auto; min-height: 380px; }
+  .pin { width: 28px; height: 28px; margin: 8px; border-radius: 50%;
+         background: #2F4B7C; color: #fff; font-weight: 700; font-size: 13px;
+         display: flex; align-items: center; justify-content: center;
+         border: 2px solid #fff; box-shadow: 0 1px 4px rgba(0,0,0,.4); }
+  .pin.mx { background: #B0413E; }
+  .leaflet-popup-content-wrapper { border-radius: 8px; }
+  .leaflet-popup-content { font-size: 13px; line-height: 1.6; margin: 0;
+                           width: 250px !important; }
+  .popup-photo { width: 250px; height: 140px; object-fit: cover;
+                 border-radius: 8px 8px 0 0; display: block; }
+  .popup-body { padding: 8px 12px 10px; }
+  .popup-name { font-weight: 700; font-size: 14.5px; }
+  .popup-sec { display: inline-block; margin-left: 6px; padding: 0 6px;
+               border-radius: 3px; font-size: 11px; color: #fff;
+               background: #2F4B7C; }
+  .popup-credit { color: #999; font-size: 10px; margin-top: 4px; }
+</style>
+</head>
+<body>
+<div id="nav"></div>
+<div id="map"></div>
+<script>
+const RICH = new URLSearchParams(location.search).has("rich");
+const W = "https://upload.wikimedia.org/wikipedia/commons/thumb/";
+
+// ===== 章ごとに差し替えるのはこの配列だけ（本文の登場順に並べる） =====
+const PLACES = [
+  { num: "1", sec: "1節", name: "スピンドルトップ", lat: 30.0232, lng: -94.0766, side: "tx",
+    note: "1901年、油が9日間噴き上がった丘",
+    rich: "写真は当時のルーカス・ガッシャー",
+    img: W+"d/d8/Lucas_gusher.jpg/500px-Lucas_gusher.jpg",
+    credit: "パブリックドメイン" },
+  { num: "2", sec: "2節", name: "ヒューストン", lat: 29.7601, lng: -95.3701, side: "tx",
+    note: "石油が育てた最大都市。宇宙センターは石油の上に建った",
+    rich: "ダウンタウンのスカイライン",
+    img: W+"6/62/Downtown_Houston%2C_TX_Skyline_-_2018.jpg/500px-Downtown_Houston%2C_TX_Skyline_-_2018.jpg",
+    credit: "David Daniel Turner, CC BY 4.0" },
+  { num: "3", sec: "3節", name: "ロスコー", lat: 32.4457, lng: -100.5386, side: "tx",
+    note: "西部の平原に立ち並ぶ風力発電所",
+    rich: "図4と同じ写真家による一枚",
+    img: W+"d/d4/Roscoe_Wind_Farm_in_West_Texas.jpg/500px-Roscoe_Wind_Farm_in_West_Texas.jpg",
+    credit: "Matthew T Rader, CC BY-SA 4.0" },
+  { num: "4", sec: "4節", name: "サンアントニオ", lat: 29.4252, lng: -98.4946, side: "tx",
+    note: "アラモの街。スペイン語地名",
+    rich: "写真は川沿いの遊歩道リバーウォーク",
+    img: W+"7/77/River_Walk_Reflections.jpg/500px-River_Walk_Reflections.jpg",
+    credit: "Corey Leopold, CC BY 2.0" },
+  { num: "4", sec: "4節", name: "アマリロ", lat: 35.2070, lng: -101.8320, side: "tx",
+    note: "北部パンハンドルのスペイン語地名",
+    rich: "写真は郊外の名物キャデラック・ランチ",
+    img: W+"6/63/Cadillac_Ranch_in_Texas.jpg/500px-Cadillac_Ranch_in_Texas.jpg",
+    credit: "DiscoA340, CC BY-SA 4.0" },
+  { num: "4", sec: "4節", name: "エルパソ", lat: 31.7619, lng: -106.4850, side: "tx",
+    note: "西端、リオグランデ沿いの国境の街",
+    rich: "写真の手前がフアレス、奥がエルパソ",
+    img: W+"b/bd/El_Paso_Ciudad_Juarez_%2816605799972%29.jpg/500px-El_Paso_Ciudad_Juarez_%2816605799972%29.jpg",
+    credit: "Kurt Bauschardt, CC BY-SA 2.0" },
+  { num: "4", sec: "4節", name: "シウダーフアレス", lat: 31.6904, lng: -106.4245, side: "mx",
+    note: "エルパソと橋でつながる双子都市（メキシコ）",
+    rich: "写真はパソ・デル・ノルテ橋",
+    img: W+"2/2c/Paso_Del_Norte_POE_El_Paso_Texas_%2827794615593%29.jpg/500px-Paso_Del_Norte_POE_El_Paso_Texas_%2827794615593%29.jpg",
+    credit: "U.S. CBP, パブリックドメイン" },
+  { num: "5", sec: "5節", name: "オースティン", lat: 30.2672, lng: -97.7431, side: "tx",
+    note: "州都。IT企業が集まる「シリコンヒルズ」",
+    rich: "コングレス・アベニュー橋から望むダウンタウン",
+    img: W+"5/5b/Downtown_Austin_Skyline_-_Ann_W._Richards_Congress_Avenue_Bridge_%2854987518915%29.jpg/500px-Downtown_Austin_Skyline_-_Ann_W._Richards_Congress_Avenue_Bridge_%2854987518915%29.jpg",
+    credit: "ajay_suresh, CC BY 4.0" },
+  { num: "6", sec: "6節", name: "ロックハート", lat: 29.8849, lng: -97.6700, side: "tx",
+    note: "ブリスケットの老舗が行列を作らせる町",
+    rich: "写真は老舗クロイツ・マーケットの店構え",
+    img: W+"2/28/Kreuz_market%2C_lockhart_texas_www.kreuzmarket.com_-_panoramio.jpg/500px-Kreuz_market%2C_lockhart_texas_www.kreuzmarket.com_-_panoramio.jpg",
+    credit: "Dameon Hudson, CC BY 3.0" },
+  { num: "注", sec: "注12", name: "ダラス", lat: 32.7767, lng: -96.7970, side: "tx",
+    note: "州内最大の都市圏。金融と航空の集積地",
+    rich: "夕暮れのスカイライン",
+    img: W+"e/e2/Dallas_Skyline_at_Dusk.jpg/500px-Dallas_Skyline_at_Dusk.jpg",
+    credit: "Matthew T Rader, CC BY-SA 4.0" },
+];
+// ====================================================================
+
+const OSM = '&copy; OpenStreetMap contributors';
+const hillshade = L.tileLayer(
+  "https://server.arcgisonline.com/ArcGIS/rest/services/Elevation/World_Hillshade/MapServer/tile/{z}/{y}/{x}",
+  { attribution: "Tiles &copy; Esri", maxNativeZoom: 15, maxZoom: 19, zIndex: 1 });
+const lightBase = L.tileLayer(
+  "https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}{r}.png",
+  { attribution: OSM + " &copy; CARTO", opacity: 0.55, maxZoom: 19, zIndex: 2 });
+const labels = L.tileLayer(
+  "https://{s}.basemaps.cartocdn.com/light_only_labels/{z}/{x}/{y}{r}.png",
+  { maxZoom: 19, zIndex: 3 });
+const hybrid = L.layerGroup([hillshade, lightBase, labels]);
+const std = L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+  { attribution: OSM, maxZoom: 19 });
+
+const map = L.map("map", { layers: [hybrid], scrollWheelZoom: false });
+const baseLayers = { "地形＋地名": hybrid, "標準": std };
+if (RICH) {
+  baseLayers["衛星"] = L.tileLayer(
+    "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+    { attribution: "Tiles &copy; Esri", maxZoom: 19 });
+}
+L.control.layers(baseLayers).addTo(map);
+L.control.scale({ imperial: false }).addTo(map);
+
+function popupHtml(p) {
+  let h = "";
+  if (RICH) h += '<img class="popup-photo" src="' + p.img + '" alt="' +
+                 p.name + '" loading="lazy">';
+  h += '<div class="popup-body"><span class="popup-name">' + p.name +
+       '</span><span class="popup-sec">' + p.sec + '</span><br>' + p.note;
+  if (RICH) {
+    const sv = "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=" +
+               p.lat + "," + p.lng;
+    h += '<br><span style="font-size:12px;color:#666">' + p.rich + '</span>' +
+         '<br><a style="font-size:12px" href="' + sv +
+         '" target="_blank" rel="noopener">ストリートビューで歩く ↗</a>' +
+         '<div class="popup-credit">写真: ' + p.credit + '</div>';
+  }
+  return h + '</div>';
+}
+
+const markers = [];
+const bounds = [];
+PLACES.forEach((p, i) => {
+  const icon = L.divIcon({ className: "", iconSize: [44, 44],
+    iconAnchor: [22, 22], popupAnchor: [0, -16],
+    html: '<div class="pin ' + p.side + '">' + p.num + '</div>' });
+  const m = L.marker([p.lat, p.lng], { icon }).addTo(map);
+  m.bindPopup(popupHtml(p), { maxWidth: 250, minWidth: 250 });
+  m.on("click", () => setActive(i));
+  markers.push(m);
+  bounds.push([p.lat, p.lng]);
+});
+map.fitBounds(bounds, { padding: [36, 36] });
+
+// ---- 章順ナビ（チップ） ----
+const nav = document.getElementById("nav");
+const chips = [];
+function addChip(label, cls, onTap) {
+  const b = document.createElement("button");
+  b.className = "chip " + (cls || "");
+  b.innerHTML = label;
+  b.addEventListener("click", onTap);
+  nav.appendChild(b);
+  return b;
+}
+const allChip = addChip("全体", "", () => {
+  setActive(-1); map.closePopup();
+  map.flyToBounds(bounds, { padding: [36, 36] });
+});
+PLACES.forEach((p, i) => {
+  chips.push(addChip("<b>" + p.sec + "</b>" + p.name, p.side === "mx" ? "mx" : "",
+    () => focusPlace(i)));
+});
+function setActive(i) {
+  allChip.classList.toggle("active", i === -1);
+  chips.forEach((c, j) => c.classList.toggle("active", j === i));
+  if (i >= 0) chips[i].scrollIntoView(
+    { behavior: "smooth", block: "nearest", inline: "center" });
+}
+function focusPlace(i) {
+  setActive(i);
+  const p = PLACES[i];
+  map.flyTo([p.lat, p.lng], 8, { duration: 0.9 });
+  setTimeout(() => markers[i].openPopup(), 950);
+}
+
+// ---- 記事側パネル(map-panel.js)からの操作を受け付ける ----
+window.addEventListener("message", (e) => {
+  const d = e.data || {};
+  if (d.geostudy === "focus" && typeof d.i === "number" && PLACES[d.i]) {
+    focusPlace(d.i);
+  } else if (d.geostudy === "overview") {
+    setActive(-1); map.closePopup();
+    map.flyToBounds(bounds, { padding: [36, 36] });
+  }
+});
+if (window.parent !== window) {
+  window.parent.postMessage({ geostudy: "ready" }, "*");
+}
+</script>
+</body>
+</html>

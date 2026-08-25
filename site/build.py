@@ -8,6 +8,7 @@
 """
 
 import html
+import json
 import re
 import shutil
 import sys
@@ -55,13 +56,14 @@ PAGE = """<!DOCTYPE html>
 <footer class="site-footer">
 <p>本文の正本は <a href="https://github.com/ykshm/geostudy">GitHubリポジトリ</a> のMarkdownファイルです。このページはそこから機械生成されています。</p>
 </footer>
-</body>
+{extra}</body>
 </html>
 """
 
 
-def render_page(title: str, body: str, home: str) -> str:
-    return PAGE.format(title=html.escape(title), css=CSS, body=body, home=home)
+def render_page(title: str, body: str, home: str, extra: str = "") -> str:
+    return PAGE.format(title=html.escape(title), css=CSS, body=body, home=home,
+                       extra=extra)
 
 
 # ---------------------------------------------------------------- 章の変換
@@ -72,13 +74,42 @@ NOTE_RE = re.compile(r"^注(\d+): ")
 TOC_ITEM_RE = re.compile(r"^(\d+)\. (.+?)\s*$")
 
 
-def transform_chapter(path: Path, author_file: Path | None) -> tuple[str, str]:
+def transform_chapter(path: Path, author_file: Path | None,
+                      geo: dict | None = None) -> tuple[str, str]:
     """章のMarkdownを、書式検査をかけながらHTML断片に変換する。
+
+    geo はウェブ版限定の地図設定(site/geo/*.json)。渡されると、指定の節/注の
+    初出の地名を <a class="geo" data-i="N"> でリンク化し、章末におまけ地図を
+    付ける。正本のMarkdownには一切手を入れない。
 
     戻り値: (章題, 本文HTML)
     """
     rel = path.relative_to(ROOT)
     lines = path.read_text(encoding="utf-8").split("\n")
+
+    geo_places = list(geo["places"]) if geo else []
+    geo_done: set[int] = set()
+    cur_sec = ""
+
+    def linkify(text: str, *, sec: str = "", note: str = "") -> str:
+        """text 中の対象地名(その節/注が指定と一致し、未リンクのもの)の
+        初出をリンク化して返す。text はHTML文脈(エスケープ済みか、
+        markdownに生HTMLとして通る行)であること。"""
+        for p in geo_places:
+            if p["i"] in geo_done:
+                continue
+            if note:
+                if p.get("note") != note:
+                    continue
+            elif not sec or p.get("sec") != sec:
+                continue
+            pos = text.find(p["name"])
+            if pos < 0:
+                continue
+            anchor = f'<a class="geo" data-i="{p["i"]}">{p["name"]}</a>'
+            text = text[:pos] + anchor + text[pos + len(p["name"]):]
+            geo_done.add(p["i"])
+        return text
 
     if not lines or not lines[0].startswith("# "):
         err(f"{rel}: 先頭が『# 章題』ではない")
@@ -136,6 +167,7 @@ def transform_chapter(path: Path, author_file: Path | None) -> tuple[str, str]:
         m = SEC_RE.match(line)
         if m:
             sec_numbers.append(int(m.group(1)))
+            cur_sec = m.group(1)
             flush_raw(f'<h2 id="sec-{m.group(1)}">{m.group(1)}. '
                       f"{html.escape(m.group(2))}</h2>")
             i += 1
@@ -167,10 +199,12 @@ def transform_chapter(path: Path, author_file: Path | None) -> tuple[str, str]:
             else:
                 warn(f"{rel}: 図{fig_no} の画像が未収録({img_rel})")
                 inner = '<p class="fig-missing">(画像は準備中)</p>'
+            cap_title = linkify(html.escape(fig_title), sec=cur_sec)
+            cap_body = linkify(html.escape(caption), sec=cur_sec)
             flush_raw(
                 f'<figure id="fig-{fig_no}">{inner}'
                 f'<figcaption><span class="fig-no">図{fig_no}:</span> '
-                f"{html.escape(fig_title)}<br>{html.escape(caption)}"
+                f"{cap_title}<br>{cap_body}"
                 f"</figcaption></figure>"
             )
             continue
@@ -179,11 +213,16 @@ def transform_chapter(path: Path, author_file: Path | None) -> tuple[str, str]:
         m = NOTE_RE.match(line)
         if m:
             note_numbers.append(int(m.group(1)))
+            note_html = linkify(html.escape(line.strip()), note=m.group(1))
             flush_raw(f'<p class="note" id="note-{m.group(1)}">'
-                      f"{html.escape(line.strip())}</p>")
+                      f"{note_html}</p>")
             i += 1
             continue
 
+        # 本文の段落: 指定の節の初出の地名をリンク化(表とHTMLブロックは除外)
+        if (geo_places and cur_sec and line.strip()
+                and not line.startswith(("|", "#", "<"))):
+            line = linkify(line, sec=cur_sec)
         body_md.append(line)
         i += 1
 
@@ -195,6 +234,26 @@ def transform_chapter(path: Path, author_file: Path | None) -> tuple[str, str]:
 
     MD.reset()
     out.append(MD.convert("\n".join(body_md)))
+
+    # ウェブ版限定のおまけ地図(章末)。正本には存在しない。
+    if geo:
+        for p in geo_places:
+            if p["i"] not in geo_done:
+                warn(f"{rel}: 地名『{p['name']}』をリンク化できなかった"
+                     f"(指定: {p.get('sec') and p['sec'] + '節' or '注' + p['note']})")
+        out.append(
+            '<hr class="sep">'
+            '<section class="map-appendix">'
+            '<h2 class="map-appendix-head">おまけ: 地図で歩き直す</h2>'
+            '<p class="map-appendix-note">ここから先は本文のおまけである。'
+            '写真は本文の論旨とは独立に、街の空気が伝わるものを選んだ。'
+            'ピンを押すと写真とストリートビューへの入口が開く。'
+            '(このおまけと本文中の📍リンクはウェブ版だけの機能である)</p>'
+            f'<iframe class="map-appendix-frame" src="../{geo["map"]}?rich" '
+            f'width="100%" height="520" loading="lazy" '
+            f'title="{html.escape(geo.get("title", "章の地名地図"))}"></iframe>'
+            '</section>'
+        )
     return (title, "\n".join(out))
 
 
@@ -235,9 +294,18 @@ def main() -> int:
         if not src.is_file():
             err(f"{ch['file']}: 割り振り表にあるが実体がない")
             continue
-        title, body = transform_chapter(src, ch["author_file"])
         slug = src.stem  # tx, nv, ...
-        page = render_page(f"{title} — geostudy", body, home="../index.html")
+        geo = None
+        geo_path = ROOT / "site" / "geo" / f"{slug}.json"
+        if geo_path.is_file():
+            geo = json.loads(geo_path.read_text(encoding="utf-8"))
+        title, body = transform_chapter(src, ch["author_file"], geo)
+        extra = ""
+        if geo:
+            extra = (f'<script src="../assets/map-panel.js" '
+                     f'data-map="../{geo["map"]}"></script>\n')
+        page = render_page(f"{title} — geostudy", body, home="../index.html",
+                           extra=extra)
         (OUT / "usa" / f"{slug}.html").write_text(page, encoding="utf-8")
         cards.append(
             f'<li><a href="usa/{slug}.html">{html.escape(title)}</a>'
@@ -248,6 +316,12 @@ def main() -> int:
     img_dir = SERIES_DIR / "img"
     if img_dir.is_dir():
         shutil.copytree(img_dir, OUT / "usa" / "img")
+
+    # 地図機能の静的資産(あれば)を持っていく
+    for sub in ("assets", "maps"):
+        src_dir = ROOT / "site" / sub
+        if src_dir.is_dir():
+            shutil.copytree(src_dir, OUT / sub)
 
     # トップページ: 章の一覧 + README全文
     MD.reset()
