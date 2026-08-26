@@ -6,7 +6,7 @@
 |---|---|---|---|
 | 牧野 周 | authors/makino-shu.md | エネルギーと土地利用の経済地理 | 執筆中(テキサス・ワシントン) |
 | 葛西 律 | authors/kasai-ritsu.md | 観光と盛り場の社会地理 | 執筆中(ネバダ・ルイジアナ・フロリダ) |
-| 千々石 洋 | authors/chichiwa-hiroshi.md | 作物と栽培の農業地理 | 執筆中(ハワイ) |
+| 千々石 洋 | authors/chichiwa-hiroshi.md | 作物と栽培の農業地理 | 執筆中(ハワイ・アイオワ) |
 | 沢井 環 | authors/sawai-tamaki.md | 火山と地形の自然地理 | 執筆中(ワイオミング) |
 | 三輪 遼 | authors/miwa-ryo.md | 機械と工場の産業地理 | 執筆中(ミシガン) |
 
@@ -22,3 +22,4 @@
 | ルイジアナ | text/usa/la.md | 葛西 律(authors/kasai-ritsu.md) |
 | ミシガン | text/usa/mi.md | 三輪 遼(authors/miwa-ryo.md) |
 | フロリダ | text/usa/fl.md | 葛西 律(authors/kasai-ritsu.md) |
+| アイオワ | text/usa/ia.md | 千々石 洋(authors/chichiwa-hiroshi.md) |
