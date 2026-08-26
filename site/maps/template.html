@@ -34,7 +34,7 @@
           background: #fff; padding: 5px 12px; font-size: 12.5px;
           line-height: 1; cursor: pointer; color: #333; }
   .chip b { color: #2F4B7C; margin-right: 3px; }
-  .chip.mx b { color: #B0413E; }
+  .chip.mx b, .chip.ca b { color: #B0413E; }
   .chip.active { background: #2F4B7C; border-color: #2F4B7C; color: #fff; }
   .chip.active b { color: #fff; }
   #map { flex: 1 1 auto; min-height: 380px; }
@@ -42,7 +42,7 @@
          background: #2F4B7C; color: #fff; font-weight: 700; font-size: 13px;
          display: flex; align-items: center; justify-content: center;
          border: 2px solid #fff; box-shadow: 0 1px 4px rgba(0,0,0,.4); }
-  .pin.mx { background: #B0413E; }
+  .pin.mx, .pin.ca { background: #B0413E; }
   .pin.snap { background: #5B7553; font-size: 14px; }
   .chip.snap b { color: #5B7553; }
   .chip.snap.active { background: #5B7553; border-color: #5B7553; }
@@ -165,7 +165,7 @@ const allChip = addChip("全体", "", () => {
 });
 PLACES.forEach((p, i) => {
   chips.push(addChip("<b>" + p.secLabel + "</b>" + p.name,
-    p.side === "mx" ? "mx" : "", () => focusPlace(i)));
+    p.side || "", () => focusPlace(i)));
 });
 
 // ---- 暮らしのスナップ(おまけモード限定) ----
