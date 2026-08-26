@@ -8,6 +8,7 @@
 | 葛西 律 | authors/kasai-ritsu.md | 観光と盛り場の社会地理 | 執筆中(ネバダ・ルイジアナ) |
 | 千々石 洋 | authors/chichiwa-hiroshi.md | 作物と栽培の農業地理 | 執筆中(ハワイ) |
 | 沢井 環 | authors/sawai-tamaki.md | 火山と地形の自然地理 | 執筆中(ワイオミング) |
+| 三輪 遼 | authors/miwa-ryo.md | 機械と工場の産業地理 | 執筆中(ミシガン) |
 
 ## 章の割り振り
 
@@ -19,3 +20,4 @@
 | ハワイ | text/usa/hi.md | 千々石 洋(authors/chichiwa-hiroshi.md) |
 | ワイオミング | text/usa/wy.md | 沢井 環(authors/sawai-tamaki.md) |
 | ルイジアナ | text/usa/la.md | 葛西 律(authors/kasai-ritsu.md) |
+| ミシガン | text/usa/mi.md | 三輪 遼(authors/miwa-ryo.md) |
