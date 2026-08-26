@@ -9,6 +9,7 @@
 | 千々石 洋 | authors/chichiwa-hiroshi.md | 作物と栽培の農業地理 | 執筆中(ハワイ・アイオワ) |
 | 沢井 環 | authors/sawai-tamaki.md | 火山と地形の自然地理 | 執筆中(ワイオミング) |
 | 三輪 遼 | authors/miwa-ryo.md | 機械と工場の産業地理 | 執筆中(ミシガン) |
+| 日下 梓 | authors/kusaka-azusa.md | 移民と住まいの都市地理 | 執筆中(ニューヨーク) |
 
 ## 章の割り振り
 
@@ -23,3 +24,4 @@
 | ミシガン | text/usa/mi.md | 三輪 遼(authors/miwa-ryo.md) |
 | フロリダ | text/usa/fl.md | 葛西 律(authors/kasai-ritsu.md) |
 | アイオワ | text/usa/ia.md | 千々石 洋(authors/chichiwa-hiroshi.md) |
+| ニューヨーク | text/usa/ny.md | 日下 梓(authors/kusaka-azusa.md) |
