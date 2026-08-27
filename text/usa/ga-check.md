@@ -79,6 +79,11 @@
 - リビアン: ソーシャルサークル近郊。2024年3月建設中断→DOE融資65.7億ドル(2025年1月成立、2026年4月に約45億ドルへ再編)→2025年整地再開、2026年に建屋着工。2026年8月時点で「建設は順調」、第1期能力30万台/年、R2/R3生産は2028年後半目標。→ 注15「着工の延期を経て、連邦の融資を得て建設が進む」と整合。出典: DOE、Rivian発表、AJC。
 - 州の事業環境ランキング: Area Development誌「Top State for Business」12年連続首位(2025年9月時点)。出典: 州知事室。
 
-## 図版の出所
+## 図版の出所(2026-08-27 取得。ライセンスはCommons APIのextmetadataで確認、全点目視済み)
 
-(収集後に記載)
+- img/ga-locator.png = Commons「Georgia in United States.svg」の1280px PNGサムネイル(TUBS, CC BY-SA 3.0)。他章の位置図と同シリーズ。ジョージアが赤く塗られていることを目視確認。※1024px指定はこのファイルでは400で弾かれ、APIが1280pxに割り当てた。
+- img/ga-atlanta-1864.jpg = Commons「Atlanta, Georgia. Railroad depot LOC cwpb.02222.jpg」(George N. Barnard撮影、1864年、米議会図書館の南北戦争ガラス原板コレクション、パブリックドメイン)。何本もの線路がれんが造りのアーチの駅舎(car shed)へ集まる構図。機関車は写っていないため、キャプションは貨車と人だかりの描写に修正。原板7.3MBのため1280pxサムネイルで取得。
+- img/ga-airport.jpg = Commons「Atlanta Hartsfield-Jackson Airport Concourse A aerial (49054916886).jpg」(formulanone撮影、CC BY-SA 2.0)。コンコースAの斜め空撮、デルタ機が両側に十数機。管制塔は目立たないためキャプションから外した。
+- img/ga-peanuts.jpg = Commons「2013 10 02 rdawson harvesting 15s.jpg」(Georgia Peanut Commission、CC BY 2.0)。2013年ジョージア州ドーソン兄弟農場の収穫。トラクター+Amadas 2110コンバインが畝のピーナッツ株を拾う場面、土煙と殻つきの実を目視確認。
+- img/ga-vogtle.jpg = Commons「Vogtle NPP.jpg」(米原子力規制委員会、パブリックドメイン)。夕景に冷却塔2基とドーム2基。写っているのは1・2号機(3・4号機の全景のPD写真はCommonsに無く、近接の視察写真のみ)のため、キャプションは「写っているのは1・2号機で、この並びに3・4号機が加わって全米最大になった」と実写真に合わせた。原版1015×676。
+- img/ga-ebenezer.jpg = Commons「Historic Ebenezer Baptist Church in Atlanta, June 2015.jpg」(Marc Merlin撮影、CC BY-SA 4.0)。赤れんが・双塔・青い縦看板を目視確認。
