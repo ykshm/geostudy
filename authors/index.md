@@ -8,7 +8,7 @@
 | 葛西 律 | authors/kasai-ritsu.md | 観光と盛り場の社会地理 | 執筆中(ネバダ・ルイジアナ・フロリダ) |
 | 千々石 洋 | authors/chichiwa-hiroshi.md | 作物と栽培の農業地理 | 執筆中(ハワイ・アイオワ) |
 | 沢井 環 | authors/sawai-tamaki.md | 火山と地形の自然地理 | 執筆中(ワイオミング・アラスカ) |
-| 三輪 遼 | authors/miwa-ryo.md | 機械と工場の産業地理 | 執筆中(ミシガン) |
+| 三輪 遼 | authors/miwa-ryo.md | 機械と工場の産業地理 | 執筆中(ミシガン・ペンシルベニア) |
 | 日下 梓 | authors/kusaka-azusa.md | 移民と住まいの都市地理 | 執筆中(ニューヨーク) |
 
 ## 章の割り振り
@@ -27,3 +27,4 @@
 | ニューヨーク | text/usa/ny.md | 日下 梓(authors/kusaka-azusa.md) |
 | ジョージア | text/usa/ga.md | 牧野 周(authors/makino-shu.md) |
 | アラスカ | text/usa/ak.md | 沢井 環(authors/sawai-tamaki.md) |
+| ペンシルベニア | text/usa/pa.md | 三輪 遼(authors/miwa-ryo.md) |
