@@ -9,7 +9,7 @@
 | 千々石 洋 | authors/chichiwa-hiroshi.md | 作物と栽培の農業地理 | 執筆中(ハワイ・アイオワ) |
 | 沢井 環 | authors/sawai-tamaki.md | 火山と地形の自然地理 | 執筆中(ワイオミング・アラスカ) |
 | 三輪 遼 | authors/miwa-ryo.md | 機械と工場の産業地理 | 執筆中(ミシガン・ペンシルベニア) |
-| 日下 梓 | authors/kusaka-azusa.md | 移民と住まいの都市地理 | 執筆中(ニューヨーク) |
+| 日下 梓 | authors/kusaka-azusa.md | 移民と住まいの都市地理 | 執筆中(ニューヨーク・マサチューセッツ) |
 
 ## 章の割り振り
 
@@ -29,3 +29,4 @@
 | アラスカ | text/usa/ak.md | 沢井 環(authors/sawai-tamaki.md) |
 | ペンシルベニア | text/usa/pa.md | 三輪 遼(authors/miwa-ryo.md) |
 | アリゾナ | text/usa/az.md | 牧野 周(authors/makino-shu.md) |
+| マサチューセッツ | text/usa/ma.md | 日下 梓(authors/kusaka-azusa.md) |
