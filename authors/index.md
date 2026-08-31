@@ -4,15 +4,15 @@
 
 | 著者 | ファイル | 専門 | 状態 |
 |---|---|---|---|
-| 牧野 周 | authors/makino-shu.md | エネルギーと土地利用の経済地理 | 執筆中(テキサス・ワシントン・ジョージア・アリゾナ) |
-| 葛西 律 | authors/kasai-ritsu.md | 観光と盛り場の社会地理 | 執筆中(ネバダ・ルイジアナ・フロリダ) |
-| 千々石 洋 | authors/chichiwa-hiroshi.md | 作物と栽培の農業地理 | 執筆中(ハワイ・アイオワ) |
-| 沢井 環 | authors/sawai-tamaki.md | 火山と地形の自然地理 | 執筆中(ワイオミング・アラスカ) |
-| 三輪 遼 | authors/miwa-ryo.md | 機械と工場の産業地理 | 執筆中(ミシガン・ペンシルベニア) |
-| 日下 梓 | authors/kusaka-azusa.md | 移民と住まいの都市地理 | 執筆中(ニューヨーク・マサチューセッツ・イリノイ) |
-| 戸川 奏 | authors/togawa-kanade.md | 音楽産業と電波のメディア文化地理 | 執筆中(テネシー) |
+| 牧野 周 | authors/makino-shu.md | エネルギーと土地利用の経済地理 | 執筆中(アメリカ50州: テキサス・ワシントン・ジョージア・アリゾナ) |
+| 葛西 律 | authors/kasai-ritsu.md | 観光と盛り場の社会地理 | 執筆中(アメリカ50州: ネバダ・ルイジアナ・フロリダ) |
+| 千々石 洋 | authors/chichiwa-hiroshi.md | 作物と栽培の農業地理 | 執筆中(アメリカ50州: ハワイ・アイオワ) |
+| 沢井 環 | authors/sawai-tamaki.md | 火山と地形の自然地理 | 執筆中(アメリカ50州: ワイオミング・アラスカ) |
+| 三輪 遼 | authors/miwa-ryo.md | 機械と工場の産業地理 | 執筆中(アメリカ50州: ミシガン・ペンシルベニア) |
+| 日下 梓 | authors/kusaka-azusa.md | 移民と住まいの都市地理 | 執筆中(アメリカ50州: ニューヨーク・マサチューセッツ・イリノイ) |
+| 戸川 奏 | authors/togawa-kanade.md | 音楽産業と電波のメディア文化地理 | 執筆中(アメリカ50州: テネシー) |
 
-## 章の割り振り
+## 章の割り振り(アメリカ50州)
 
 | 章 | ファイル | 著者 |
 |---|---|---|
@@ -33,3 +33,8 @@
 | マサチューセッツ | text/usa/ma.md | 日下 梓(authors/kusaka-azusa.md) |
 | テネシー | text/usa/tn.md | 戸川 奏(authors/togawa-kanade.md) |
 | イリノイ | text/usa/il.md | 日下 梓(authors/kusaka-azusa.md) |
+
+## 章の割り振り(臥遊風土記)
+
+| 章 | ファイル | 著者 |
+|---|---|---|
