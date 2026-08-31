@@ -19,6 +19,9 @@
   ・マーカーには節番号が表示され、上部のチップで1節から順に飛べる
   ・おまけモードでは📷の「暮らしのスナップ」ピンも出る(本文の筋とは独立の、
     観光地でない生活の場面。geo/*.json の snaps 配列で管理)
+  ・おまけモードでは✦の「補遺の見どころ」ピンも出る(著者が拾わなかった
+    見どころを裏方の別の目で足す層。geo/*.json の extras 配列で管理。
+    臥遊風土記では標準、他シリーズでは任意)
   ・写真タップで拡大(親ページがあれば全画面、単体表示なら地図内で)
 -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
@@ -47,6 +50,10 @@
   .chip.snap b { color: #5B7553; }
   .chip.snap.active { background: #5B7553; border-color: #5B7553; }
   .popup-sec.snap { background: #5B7553; }
+  .pin.extra { background: #9A6A1F; font-size: 14px; }
+  .chip.extra b { color: #9A6A1F; }
+  .chip.extra.active { background: #9A6A1F; border-color: #9A6A1F; color: #fff; }
+  .popup-sec.extra { background: #9A6A1F; }
   .leaflet-popup-content-wrapper { border-radius: 8px; }
   .leaflet-popup-content { font-size: 13px; line-height: 1.6; margin: 0;
                            width: 250px !important; }
@@ -85,6 +92,7 @@ const PLACES = DATA.places.map((p) => Object.assign({}, p, {
   secLabel: p.sec ? p.sec + "節" : "注" + p.note,
 }));
 const SNAPS = DATA.snaps || [];
+const EXTRAS = DATA.extras || [];
 
 const OSM = '&copy; OpenStreetMap contributors';
 const hillshade = L.tileLayer(
@@ -134,6 +142,16 @@ function snapPopupHtml(s) {
          '<div class="popup-credit">写真: ' + s.credit + '</div></div>';
 }
 
+function extraPopupHtml(x) {
+  return '<img class="popup-photo" src="' + x.img + '" alt="' + x.name +
+         '" title="タップで拡大" data-caption="' + x.name +
+         "(補遺) — 写真: " + x.credit + '" loading="lazy">' +
+         '<div class="popup-body"><span class="popup-name">' + x.name +
+         '</span><span class="popup-sec extra">✦ 補遺</span><br>' +
+         x.text +
+         '<div class="popup-credit">写真: ' + x.credit + '</div></div>';
+}
+
 const markers = [];
 const bounds = [];
 PLACES.forEach((p, i) => {
@@ -168,6 +186,24 @@ PLACES.forEach((p, i) => {
     p.side || "", () => focusPlace(i)));
 });
 
+// ---- 補遺の見どころ(おまけモード限定) ----
+const extraMarkers = [];
+const extraChips = [];
+if (RICH) {
+  EXTRAS.forEach((x, i) => {
+    const icon = L.divIcon({ className: "", iconSize: [44, 44],
+      iconAnchor: [22, 22], popupAnchor: [0, -16],
+      html: '<div class="pin extra">✦</div>' });
+    const m = L.marker([x.lat, x.lng], { icon }).addTo(map);
+    m.bindPopup(extraPopupHtml(x), { maxWidth: 250, minWidth: 250 });
+    m.on("click", () => setActiveExtra(i));
+    extraMarkers.push(m);
+  });
+  EXTRAS.forEach((x, i) => {
+    extraChips.push(addChip("<b>✦</b>" + x.name, "extra", () => focusExtra(i)));
+  });
+}
+
 // ---- 暮らしのスナップ(おまけモード限定) ----
 const snapMarkers = [];
 const snapChips = [];
@@ -190,6 +226,7 @@ function clearActive() {
   allChip.classList.remove("active");
   chips.forEach((c) => c.classList.remove("active"));
   snapChips.forEach((c) => c.classList.remove("active"));
+  extraChips.forEach((c) => c.classList.remove("active"));
 }
 function setActive(i) {
   clearActive();
@@ -203,6 +240,18 @@ function setActiveSnap(i) {
   snapChips[i].classList.add("active");
   snapChips[i].scrollIntoView(
     { behavior: "smooth", block: "nearest", inline: "center" });
+}
+function setActiveExtra(i) {
+  clearActive();
+  extraChips[i].classList.add("active");
+  extraChips[i].scrollIntoView(
+    { behavior: "smooth", block: "nearest", inline: "center" });
+}
+function focusExtra(i) {
+  setActiveExtra(i);
+  const x = EXTRAS[i];
+  map.flyTo([x.lat, x.lng], 8, { duration: 0.9 });
+  setTimeout(() => extraMarkers[i].openPopup(), 950);
 }
 function focusPlace(i) {
   setActive(i);
