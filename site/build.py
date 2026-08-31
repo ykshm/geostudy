@@ -247,6 +247,10 @@ def transform_chapter(path: Path, author_file: Path | None,
             if p["i"] not in geo_done:
                 warn(f"{rel}: 地名『{p['name']}』をリンク化できなかった"
                      f"(指定: {p.get('sec') and p['sec'] + '節' or '注' + p['note']})")
+        extras_note = ""
+        if geo.get("extras"):
+            extras_note = ('✦のピンは「補遺の見どころ」——'
+                           '著者が拾わなかった見どころを、裏方が別の目で足した。')
         out.append(
             '<hr class="sep">'
             '<section class="map-appendix">'
@@ -257,6 +261,7 @@ def transform_chapter(path: Path, author_file: Path | None,
             '本文の筋とは関係なく、観光地でもない、'
             f'この{"州" if rel.parts[1] == "usa" else "土地"}のふだんの生活の一場面を'
             '場面の良さだけで選んだ。'
+            f'{extras_note}'
             '(このおまけと本文中の📍リンクはウェブ版だけの機能である)</p>'
             f'<iframe class="map-appendix-frame" src="../{geo["map"]}?rich" '
             f'width="100%" height="520" loading="lazy" '
@@ -297,10 +302,18 @@ def check_geo(series: str, slug: str, geo: dict) -> None:
                 err(f"{where}: キー『{key}』がない")
         if "img" in s and not s["img"].startswith(WIKIMEDIA_IMG):
             err(f"{where}: imgがWikimediaのURLではない")
+    for x in geo.get("extras", []):
+        where = f"{src}: extras『{x.get('name', '?')}』"
+        for key in ("name", "lat", "lng", "text", "img", "credit"):
+            if key not in x:
+                err(f"{where}: キー『{key}』がない")
+        if "img" in x and not x["img"].startswith(WIKIMEDIA_IMG):
+            err(f"{where}: imgがWikimediaのURLではない")
 
 
 def render_map(geo: dict, template: str) -> str:
-    data = {"places": geo["places"], "snaps": geo.get("snaps", [])}
+    data = {"places": geo["places"], "snaps": geo.get("snaps", []),
+            "extras": geo.get("extras", [])}
     return (template
             .replace("__TITLE__", html.escape(geo["title"]))
             .replace("__DATA__", json.dumps(data, ensure_ascii=False)))
