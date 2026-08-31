@@ -18,7 +18,13 @@ import markdown
 
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "_site"
-SERIES_DIR = ROOT / "text" / "usa"
+
+# シリーズの一覧(トップページの表示順)。text/<キー>/ の章を _site/<キー>/ に出す。
+# 章別地図のデータは site/geo/<キー>/<slug>.json、出力は _site/maps/<キー>-<slug>.html。
+SERIES = {
+    "usa": "第1シリーズ: アメリカ50州",
+    "japan": "第2シリーズ: 臥遊風土記",
+}
 
 MD = markdown.Markdown(extensions=["tables"])
 
@@ -265,13 +271,15 @@ MAP_TEMPLATE = ROOT / "site" / "maps" / "template.html"
 WIKIMEDIA_IMG = "https://upload.wikimedia.org/"
 
 
-def check_geo(slug: str, geo: dict) -> None:
-    """geo/<略号>.json の書式検査(ビルドはlintを兼ねる)。"""
-    src = f"site/geo/{slug}.json"
+def check_geo(series: str, slug: str, geo: dict) -> None:
+    """geo/<シリーズ>/<slug>.json の書式検査(ビルドはlintを兼ねる)。"""
+    src = f"site/geo/{series}/{slug}.json"
     for key in ("map", "title", "places"):
         if key not in geo:
             err(f"{src}: 必須キー『{key}』がない")
             return
+    if geo["map"] != f"maps/{series}-{slug}.html":
+        err(f"{src}: mapは『maps/{series}-{slug}.html』でなければならない")
     for p in geo["places"]:
         where = f"{src}: places『{p.get('name', '?')}』"
         for key in ("i", "name", "lat", "lng", "text", "rich", "img", "credit"):
@@ -325,21 +333,25 @@ def parse_assignments() -> list[dict]:
 def main() -> int:
     if OUT.exists():
         shutil.rmtree(OUT)
-    (OUT / "usa").mkdir(parents=True)
+    OUT.mkdir(parents=True)
 
     chapters = parse_assignments()
-    cards = []
+    cards: dict[str, list[str]] = {key: [] for key in SERIES}
     for ch in chapters:
         src = ROOT / ch["file"]
         if not src.is_file():
             err(f"{ch['file']}: 割り振り表にあるが実体がない")
             continue
-        slug = src.stem  # tx, nv, ...
+        series = ch["file"].parts[1]  # text/<シリーズ>/<slug>.md
+        if series not in SERIES:
+            err(f"{ch['file']}: 未知のシリーズ『{series}』(build.py の SERIES に無い)")
+            continue
+        slug = src.stem  # tx, nv, ... / hachijo, izu, ...
         geo = None
-        geo_path = ROOT / "site" / "geo" / f"{slug}.json"
+        geo_path = ROOT / "site" / "geo" / series / f"{slug}.json"
         if geo_path.is_file():
             geo = json.loads(geo_path.read_text(encoding="utf-8"))
-            check_geo(slug, geo)
+            check_geo(series, slug, geo)
             map_out = OUT / geo["map"]
             map_out.parent.mkdir(parents=True, exist_ok=True)
             map_out.write_text(
@@ -352,29 +364,40 @@ def main() -> int:
                      f'data-map="../{geo["map"]}"></script>\n')
         page = render_page(f"{title} — geostudy", body, home="../index.html",
                            extra=extra)
-        (OUT / "usa" / f"{slug}.html").write_text(page, encoding="utf-8")
-        cards.append(
-            f'<li><a href="usa/{slug}.html">{html.escape(title)}</a>'
+        (OUT / series).mkdir(exist_ok=True)
+        (OUT / series / f"{slug}.html").write_text(page, encoding="utf-8")
+        cards[series].append(
+            f'<li><a href="{series}/{slug}.html">{html.escape(title)}</a>'
             f'<span class="byline">{html.escape(ch["author"])}</span></li>'
         )
 
-    # 画像(あれば)をそのまま持っていく
-    img_dir = SERIES_DIR / "img"
-    if img_dir.is_dir():
-        shutil.copytree(img_dir, OUT / "usa" / "img")
+    # 画像(あれば)をシリーズごとにそのまま持っていく
+    for series in SERIES:
+        img_dir = ROOT / "text" / series / "img"
+        if img_dir.is_dir():
+            (OUT / series).mkdir(exist_ok=True)
+            shutil.copytree(img_dir, OUT / series / "img")
 
     # 地図機能の静的資産(あれば)を持っていく(章別地図はgeo/*.jsonから生成済み)
     assets_dir = ROOT / "site" / "assets"
     if assets_dir.is_dir():
         shutil.copytree(assets_dir, OUT / "assets")
 
-    # トップページ: 章の一覧 + README全文
+    # トップページ: シリーズごとの章の一覧 + README全文
     MD.reset()
     readme_html = MD.convert((ROOT / "README.md").read_text(encoding="utf-8"))
+    series_lists = []
+    for series, label in SERIES.items():
+        if not cards[series]:
+            continue
+        series_lists.append(
+            f'<h2 class="series-head">{html.escape(label)}</h2>'
+            '<ul class="chapter-list">' + "".join(cards[series]) + "</ul>"
+        )
     index_body = (
         '<h1 class="site-title">geostudy</h1>'
-        '<p class="site-sub">読書会のための教養の読み物 — 第1シリーズ: アメリカ50州</p>'
-        '<ul class="chapter-list">' + "".join(cards) + "</ul>"
+        '<p class="site-sub">読書会のための教養の読み物</p>'
+        + "".join(series_lists) +
         '<hr class="sep">'
         '<section class="about">' + readme_html + "</section>"
     )
@@ -387,7 +410,8 @@ def main() -> int:
         for e in errors:
             print(f"error: {e}", file=sys.stderr)
         return 1
-    print(f"built {len(cards)} chapters -> {OUT}")
+    n_chapters = sum(len(c) for c in cards.values())
+    print(f"built {n_chapters} chapters -> {OUT}")
     return 0
 
 
