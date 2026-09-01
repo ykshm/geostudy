@@ -1,0 +1,221 @@
+{
+  "_comment": "多摩章の地図データ。build.py がこのファイルと site/maps/template.html から maps/japan-tama.html を生成し、章ページに地名リンク・地図パネル・章末おまけを付ける(すべてウェブ版限定。正本のMarkdownには手を入れない)。extras は臥遊風土記の標準の層(補遺の見どころ)。書き方は site/MAPS.md 参照。",
+  "map": "maps/japan-tama.html",
+  "title": "多摩 — 章の地名地図",
+  "places": [
+    {
+      "i": 0,
+      "name": "立川駅",
+      "sec": "1",
+      "lat": 35.6979,
+      "lng": 139.4139,
+      "text": "多摩の玄関口。駅直結の伊勢丹が「デパート基準」を壊す",
+      "rich": "夜の北口デッキ。正面のビルが伊勢丹立川店である",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/2015_Tachikawa_North_%2818281269556%29.jpg/500px-2015_Tachikawa_North_%2818281269556%29.jpg",
+      "credit": "Hector Martin, CC BY-SA 2.0"
+    },
+    {
+      "i": 1,
+      "name": "青梅市",
+      "sec": "2",
+      "lat": 35.7903,
+      "lng": 139.2584,
+      "text": "市街地の染みの西端。人口の8割が面積の2割弱に住む、境目の市",
+      "rich": "青梅駅のホーム。東京から来た電車はここで全て折り返す",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/JR_Ome-Line_Ome_Station_Platform.jpg/500px-JR_Ome-Line_Ome_Station_Platform.jpg",
+      "credit": "Mister0124, CC BY-SA 4.0"
+    },
+    {
+      "i": 2,
+      "name": "日の出町",
+      "sec": "2",
+      "lat": 35.7421,
+      "lng": 139.2574,
+      "text": "統計上は「市街地なし」。それでも大型モールが建つ町",
+      "rich": "イオンモール日の出。白紙の統計地図の側のにぎわいである",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/AEON_Mall_Hinode_3.jpg/500px-AEON_Mall_Hinode_3.jpg",
+      "credit": "103momo, CC BY-SA 3.0"
+    },
+    {
+      "i": 3,
+      "name": "檜原村",
+      "sec": "3",
+      "lat": 35.7268,
+      "lng": 139.1489,
+      "text": "島を除く都内で唯一の村。面積の93%が森である",
+      "rich": "数馬集落の檜原街道。兜造りの茅葺き屋根が道端に残る",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%AA%9C%E5%8E%9F%E6%9D%91%E6%95%B0%E9%A6%AC.JPG/500px-%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%AA%9C%E5%8E%9F%E6%9D%91%E6%95%B0%E9%A6%AC.JPG",
+      "credit": "誾千代, CC BY-SA 4.0"
+    },
+    {
+      "i": 4,
+      "name": "奥多摩町",
+      "sec": "2",
+      "lat": 35.809,
+      "lng": 139.096,
+      "text": "都内最大の面積を持つ、法律上の「田舎」の町",
+      "rich": "町の中心・氷川。多摩川の谷に家々が寄り添う",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Okutama-HikawaBridge-2016100202.jpg/500px-Okutama-HikawaBridge-2016100202.jpg",
+      "credit": "Hasec, CC0(パブリックドメイン相当)"
+    },
+    {
+      "i": 5,
+      "name": "練馬区",
+      "sec": "3",
+      "lat": 35.7378,
+      "lng": 139.6536,
+      "text": "23区最大の農地とキャベツの区。畑の物差しなら「田舎」の極大点",
+      "rich": "羽沢の畑。マンションの谷間にネギの列が走る",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/A_field_in_Hazawa_Nerima.jpg/500px-A_field_in_Hazawa_Nerima.jpg",
+      "credit": "Koujigenba, CC BY-SA 3.0"
+    },
+    {
+      "i": 6,
+      "name": "雲取山",
+      "sec": "4",
+      "lat": 35.8553,
+      "lng": 138.9436,
+      "text": "東京都の最高峰、2,017メートル。都域の西北の隅",
+      "rich": "冬枯れの山頂。標柱の向こうは埼玉と山梨である",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Summit_of_Mount_Kumotori_%2811169733253%29.jpg/500px-Summit_of_Mount_Kumotori_%2811169733253%29.jpg",
+      "credit": "Guilhem Vellut, CC BY 2.0"
+    },
+    {
+      "i": 7,
+      "name": "日原",
+      "sec": "5",
+      "lat": 35.855,
+      "lng": 139.0427,
+      "text": "石灰石の谷。青梅線を奥多摩まで延ばした張本人である",
+      "rich": "日原鍾乳洞の入口。谷そのものが石灰岩でできている",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nippara_limestone_cave_entrance_gate.jpg/500px-Nippara_limestone_cave_entrance_gate.jpg",
+      "credit": "さかおり, CC BY-SA 4.0"
+    },
+    {
+      "i": 8,
+      "name": "奥多摩駅",
+      "sec": "5",
+      "lat": 35.8092,
+      "lng": 139.0967,
+      "text": "東京都でいちばん西の駅。旧名は氷川",
+      "rich": "山小屋の顔の駅舎。軒に「東京アドベンチャーライン」の幟が立つ",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Okutama_Station_2019.jpg/500px-Okutama_Station_2019.jpg",
+      "credit": "Kaze315, CC BY-SA 4.0"
+    },
+    {
+      "i": 9,
+      "name": "御岳山",
+      "sec": "5",
+      "lat": 35.7828,
+      "lng": 139.15,
+      "text": "山上に御師の宿坊集落を載せた、標高929メートルの霊山",
+      "rich": "武蔵御嶽神社の社殿。宿坊の集落の石段の上に鎮座する",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Musashi_Mitake_Shrine%2C_Tokyo%3B_August_2016_%2802%29.jpg/500px-Musashi_Mitake_Shrine%2C_Tokyo%3B_August_2016_%2802%29.jpg",
+      "credit": "雷太, CC BY 2.0"
+    },
+    {
+      "i": 10,
+      "name": "奥多摩湖",
+      "sec": "7",
+      "lat": 35.7896,
+      "lng": 139.0489,
+      "text": "小河内ダムがせき止めた東京の水がめ。湖面の標高はおよそ530メートル",
+      "rich": "紅葉の湖。945世帯の村がこの水面の下に沈んでいる",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Lake_Okutama_%40_Ogouchi_Dam_%2811131615856%29.jpg/500px-Lake_Okutama_%40_Ogouchi_Dam_%2811131615856%29.jpg",
+      "credit": "Guilhem Vellut, CC BY 2.0"
+    },
+    {
+      "i": 11,
+      "name": "成木",
+      "sec": "7",
+      "lat": 35.8348,
+      "lng": 139.2802,
+      "text": "江戸城の白壁の石灰を焼いた里。青梅街道はここへの道から始まった",
+      "rich": "里を流れる成木川。石灰の谷の水は多摩川ではなく荒川水系へ下る",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/%E6%88%90%E6%9C%A8%E5%B7%9D.jpg/500px-%E6%88%90%E6%9C%A8%E5%B7%9D.jpg",
+      "credit": "Hanasakijijii, CC BY-SA 3.0"
+    }
+  ],
+  "snaps": [
+    {
+      "name": "立川駅北口のバスのりば",
+      "lat": 35.6982,
+      "lng": 139.4136,
+      "era": "いま",
+      "text": "デッキの下のロータリーから、多摩じゅうへバスが散っていく。玄関口の朝は発車の連続である。",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Tachikawa_bus_at_the_north_exit_of_Tachikawa_station.jpg/500px-Tachikawa_bus_at_the_north_exit_of_Tachikawa_station.jpg",
+      "credit": "Sittaka, CC BY-SA 4.0"
+    },
+    {
+      "name": "イオンモール日の出のフードコート",
+      "lat": 35.7346,
+      "lng": 139.2751,
+      "era": "いま",
+      "text": "統計が「市街地なし」と言う町の、いちばん人の集まる屋内。昼どきは席取りから始まる。",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Food_Court_IN_Hinode_Aeon_Mall_-_panoramio.jpg/500px-Food_Court_IN_Hinode_Aeon_Mall_-_panoramio.jpg",
+      "credit": "moonwalker76, CC BY 3.0"
+    },
+    {
+      "name": "青梅・住江町の商店街",
+      "lat": 35.7893,
+      "lng": 139.26,
+      "era": "2015年",
+      "text": "昭和の商品を集めた博物館の前で、散策の人が足を止める。この町は「昭和」を看板に掲げてきた。",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/%E6%98%AD%E5%92%8C%E3%83%AC%E3%83%88%E3%83%AD%E5%95%86%E5%93%81%E5%8D%9A%E7%89%A9%E9%A4%A8_2015_%2822057046293%29.jpg/500px-%E6%98%AD%E5%92%8C%E3%83%AC%E3%83%88%E3%83%AD%E5%95%86%E5%93%81%E5%8D%9A%E7%89%A9%E9%A4%A8_2015_%2822057046293%29.jpg",
+      "credit": "Stephen Kelly, CC BY 2.0"
+    },
+    {
+      "name": "御岳山ケーブルカーの車内",
+      "lat": 35.7878,
+      "lng": 139.1577,
+      "era": "いま",
+      "text": "雪の残る斜面を6分で上がる。先頭の窓際は、いつの季節も特等席である。",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Mount_Mitake_cable_car_%2813438727493%29.jpg/500px-Mount_Mitake_cable_car_%2813438727493%29.jpg",
+      "credit": "Guilhem Vellut, CC BY 2.0"
+    },
+    {
+      "name": "武蔵五日市駅のホーム",
+      "lat": 35.7322,
+      "lng": 139.2281,
+      "era": "いま",
+      "text": "五日市線の終点。ここから先の檜原村へは、鉄道ではなくバスが受け持つ。",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/JR_Itsukaichi-Line_Musashi-Itsukaichi_Station_Platform.jpg/500px-JR_Itsukaichi-Line_Musashi-Itsukaichi_Station_Platform.jpg",
+      "credit": "Mister0124, CC BY-SA 4.0"
+    },
+    {
+      "name": "数馬の分校の教室",
+      "lat": 35.7275,
+      "lng": 139.108,
+      "era": "2008年",
+      "text": "黒板と机と日本地図、そして柵に囲われたストーブ。山の学校では、暖房が教室の主役の位置にいる。",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/%E5%B0%8F%E5%AD%A6%E6%A0%A1%E5%86%85_%E3%82%B9%E3%83%88%E3%83%BC%E3%83%96_2008_%E6%AA%9C%E5%8E%9F%E6%9D%91_%283013297253%29.jpg/500px-%E5%B0%8F%E5%AD%A6%E6%A0%A1%E5%86%85_%E3%82%B9%E3%83%88%E3%83%BC%E3%83%96_2008_%E6%AA%9C%E5%8E%9F%E6%9D%91_%283013297253%29.jpg",
+      "credit": "Hajime NAKANO, CC BY 2.0"
+    }
+  ],
+  "extras": [
+    {
+      "name": "塩船観音寺",
+      "lat": 35.8043,
+      "lng": 139.2812,
+      "text": "すり鉢状の境内の斜面が、春はつつじで一面に染まる。花の季節だけ、青梅の丘が観音様の劇場になる。",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Azalea_Festival_%40_Shiofune_Kannon-ji_temple_%40_Ome_%2814051354564%29.jpg/500px-Azalea_Festival_%40_Shiofune_Kannon-ji_temple_%40_Ome_%2814051354564%29.jpg",
+      "credit": "Guilhem Vellut, CC BY 2.0"
+    },
+    {
+      "name": "払沢の滝",
+      "lat": 35.7272,
+      "lng": 139.1386,
+      "text": "檜原の谷の奥に落ちる四段の滝。厳冬には凍り、どこまで凍ったかが村の冬の話題になる。",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Hossawa_Falls_%40_Hinohara_%2814156434451%29.jpg/500px-Hossawa_Falls_%40_Hinohara_%2814156434451%29.jpg",
+      "credit": "Guilhem Vellut, CC BY 2.0"
+    },
+    {
+      "name": "羽村取水堰",
+      "lat": 35.7616,
+      "lng": 139.3069,
+      "text": "多摩川の水がここで玉川上水へ取り分けられる。1653年に江戸へ水を引いた取水口が、位置を変えずにいまも現役である。",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/TamagawaJosui_HamuraWeir.JPG/500px-TamagawaJosui_HamuraWeir.JPG",
+      "credit": "sewmew, パブリックドメイン"
+    }
+  ]
+}
