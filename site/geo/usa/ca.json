@@ -1,0 +1,186 @@
+{
+  "_comment": "カリフォルニア章の地図データ。build.py がこのファイルと site/maps/template.html から maps/usa-ca.html を生成し、章ページに地名リンク・地図パネル・章末おまけを付ける(すべてウェブ版限定。正本のMarkdownには手を入れない)。書き方は site/MAPS.md 参照。",
+  "map": "maps/usa-ca.html",
+  "title": "カリフォルニア — 章の地名地図",
+  "places": [
+    {
+      "i": 0,
+      "name": "セントラルバレー",
+      "sec": "1",
+      "lat": 36.7378,
+      "lng": -119.7871,
+      "text": "二つの山脈に挟まれた長さ700キロの窪み。アメリカの果物とナッツの4割が育つ",
+      "rich": "冬の濃霧が谷の形どおりに溜まった衛星写真。白い霧の器の縁が、章にいう両側の山脈である",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Tule_Fog_California_-_2005.jpg/500px-Tule_Fog_California_-_2005.jpg",
+      "credit": "NASA(Jeff Schmaltz), パブリックドメイン"
+    },
+    {
+      "i": 1,
+      "name": "サンフランシスコ",
+      "sec": "2",
+      "lat": 37.7749,
+      "lng": -122.4194,
+      "text": "金鉱の入り江の村が2年で都市になった。いまはAI景気で家賃が全米最速で上がる",
+      "rich": "ツインピークスから見た市街。夏の午後、海霧が街を呑みに来るところ",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/San_Francisco_with_approaching_fog.jpg/500px-San_Francisco_with_approaching_fog.jpg",
+      "credit": "Brocken Inaglory, CC BY-SA 3.0"
+    },
+    {
+      "i": 2,
+      "name": "エンジェル島",
+      "sec": "2",
+      "lat": 37.868,
+      "lng": -122.425,
+      "text": "太平洋を渡った移民が審査と収容を受けた島。収容棟の壁に漢詩が残る",
+      "rich": "丘の中腹に残る木造の収容棟。この建物の壁に、章の図2の詩が彫られている",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Angel_Island_detention_barracks.JPG/500px-Angel_Island_detention_barracks.JPG",
+      "credit": "Hispalois, CC BY-SA 4.0"
+    },
+    {
+      "i": 3,
+      "name": "マンザナー",
+      "sec": "2",
+      "lat": 36.7283,
+      "lng": -118.1544,
+      "text": "日系人収容所の跡。ロサンゼルスが水を引き抜いたオーウェンズバレーに建てられた",
+      "rich": "1943年、写真家アンセル・アダムズが収容所内で撮った下校の列。バラックの奥にシエラネバダの山なみ",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Manzanar_school_children_00153u.jpg/500px-Manzanar_school_children_00153u.jpg",
+      "credit": "Ansel Adams, パブリックドメイン"
+    },
+    {
+      "i": 4,
+      "name": "ロサンゼルス",
+      "sec": "3",
+      "lat": 34.0537,
+      "lng": -118.2428,
+      "text": "地理的な必然のない土地に、気候の広告で建った全米2位の都市",
+      "rich": "夜のダウンタウン。手前を走るのは西部最古の高速道路、110号アロヨセコ・パークウェイ",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Downtown_Los_Angeles_and_110_freeway.jpg/500px-Downtown_Los_Angeles_and_110_freeway.jpg",
+      "credit": "Camiloarenivar, CC BY-SA 4.0"
+    },
+    {
+      "i": 5,
+      "name": "レイクウッド",
+      "sec": "3",
+      "lat": 33.8536,
+      "lng": -118.134,
+      "text": "1950年から3年で1万7,500戸。庭つき一戸建てが大量生産品になった現場",
+      "rich": "現在の街路。1950年代の平屋がそのまま並び、芝生と私道の型も当時のままである",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Neighborhood_in_Lakewood_California.jpg/500px-Neighborhood_in_Lakewood_California.jpg",
+      "credit": "Puddles eyes, CC BY-SA 4.0"
+    },
+    {
+      "i": 6,
+      "name": "ワッツ地区",
+      "sec": "3",
+      "lat": 33.9389,
+      "lng": -118.2416,
+      "text": "囲い込まれた南ロサンゼルスの一角。1965年、差額の請求書が火の形で回ってきた",
+      "rich": "地区の象徴ワッツタワーズ。イタリア移民の左官職人が33年かけて独りで建てた、鉄筋と貝殻とタイル片の塔",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Watts_towers_from_below.jpg/500px-Watts_towers_from_below.jpg",
+      "credit": "Isabelle Acatauassú Alves Almeida, CC BY 2.0"
+    },
+    {
+      "i": 7,
+      "name": "パロアルト",
+      "sec": "5",
+      "lat": 37.4464,
+      "lng": -122.1553,
+      "text": "章の冒頭の車庫がある町。住宅街の地価は車庫を史跡にした",
+      "rich": "章の図4と同じ車庫。緑の扉の小屋が、この住宅街でいちばん有名な史跡である",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/HP_garage_front.JPG/500px-HP_garage_front.JPG",
+      "credit": "BrokenSphere, CC BY-SA 3.0"
+    },
+    {
+      "i": 8,
+      "name": "マウンテンビュー",
+      "sec": "5",
+      "lat": 37.3894,
+      "lng": -122.0819,
+      "text": "IT企業の門前の通りにキャンピングカーの列が停まる町",
+      "rich": "グーグル本社の空撮。屋根は太陽電池で覆われ、この周りの公道がキャンピングカーの住所になっている",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Google_Campus%2C_Mountain_View%2C_CA.jpg/500px-Google_Campus%2C_Mountain_View%2C_CA.jpg",
+      "credit": "Austin McKinley, CC BY 3.0"
+    },
+    {
+      "i": 9,
+      "name": "デラノ",
+      "sec": "6",
+      "lat": 35.7688,
+      "lng": -119.2471,
+      "text": "1965年、葡萄畑の座り込みから農場労働者組合が生まれた町",
+      "rich": "組合の本拠地フォーティエーカーズに残る平屋の会館。素っ気ない建物ごと国定歴史建造物である",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Roy_L._Reuther_Hall_at_Forty_Acres_%2839b9b2b0-3203-4ead-a1d6-3c7e45908b33%29.jpg/500px-Roy_L._Reuther_Hall_at_Forty_Acres_%2839b9b2b0-3203-4ead-a1d6-3c7e45908b33%29.jpg",
+      "credit": "NPS Photo, パブリックドメイン"
+    },
+    {
+      "i": 10,
+      "name": "パシフィック・パリセーズ",
+      "sec": "7",
+      "lat": 34.048,
+      "lng": -118.526,
+      "text": "2025年1月7日の朝、尾根の火が街区を焼いた海沿いの住宅地",
+      "rich": "1月7日のパリセーズ通り。ヤシの並木の向こうの尾根で、藪が燃え上がっている",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/2025_Palisades_Fire_Seen_From_Palisades_Drive.jpg/500px-2025_Palisades_Fire_Seen_From_Palisades_Drive.jpg",
+      "credit": "Ariam23, CC BY 4.0"
+    },
+    {
+      "i": 11,
+      "name": "アルタデナ",
+      "sec": "7",
+      "lat": 34.19,
+      "lng": -118.131,
+      "text": "黒人世帯が持ち家のはしごを登り切った山裾の町を、同じ日の夕方の火が焼いた",
+      "rich": "章の図6と同じ焼け跡。門扉と庭木と、焼けた車だけが残った",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Destroyed_home_and_vehicle_caused_by_the_Eaton_Fire%2C_2025.jpg/500px-Destroyed_home_and_vehicle_caused_by_the_Eaton_Fire%2C_2025.jpg",
+      "credit": "カリフォルニア州の公開記録写真, パブリックドメイン"
+    }
+  ],
+  "snaps": [
+    {
+      "name": "ウェストウッドの交差点",
+      "lat": 34.0472,
+      "lng": -118.4441,
+      "era": "いま",
+      "text": "ガソリンスタンドの角に、緑と黄色のタコス・トラックが店を開く。注文口に客がひとり。歩道が食堂になる時間である。",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Food_truck_Tacos_Super_Gallito_%28Westwood_Bld_X_Santa_Monica_Bld%29.jpg/500px-Food_truck_Tacos_Super_Gallito_%28Westwood_Bld_X_Santa_Monica_Bld%29.jpg",
+      "credit": "Alexis Doine, CC0"
+    },
+    {
+      "name": "ダウンタウンの陸橋",
+      "lat": 34.0565,
+      "lng": -118.2415,
+      "era": "いま",
+      "text": "高速道路をまたぐ橋の歩道に、テントと荷物が金網沿いに一列に並ぶ。橋の下は通勤の車の川である。",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Homeless_encampment_in_Downtown_Los_Angeles_over_the_freeway_DSF8315.jpg/500px-Homeless_encampment_in_Downtown_Los_Angeles_over_the_freeway_DSF8315.jpg",
+      "credit": "Levi Clancy, CC0"
+    },
+    {
+      "name": "ナパの朝市",
+      "lat": 38.2975,
+      "lng": -122.2869,
+      "era": "いま",
+      "text": "折り畳み台にいちごが箱ごと積まれ、手書きの札が1箱6ドルと言う。谷の農産物は、スーパーに行く前にまずここに並ぶ。",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Napa_Farmers_Market_-_April_2023_-_Sarah_Stierch.jpg/500px-Napa_Farmers_Market_-_April_2023_-_Sarah_Stierch.jpg",
+      "credit": "Missvain, CC BY 4.0"
+    },
+    {
+      "name": "ロサンゼルスの高速道路",
+      "lat": 34.03,
+      "lng": -118.22,
+      "era": "1972年",
+      "text": "煙霧の昼下がり。ビルの輪郭が溶けかけている。車の州の空がいちばん悪かったころの色である。",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/LOW-HANGING_SMOG_-_NARA_-_542682.jpg/500px-LOW-HANGING_SMOG_-_NARA_-_542682.jpg",
+      "credit": "Gene Daniels(EPA・DOCUMERICA), パブリックドメイン"
+    },
+    {
+      "name": "ブライスの路肩",
+      "lat": 33.6103,
+      "lng": -114.5964,
+      "era": "1936年",
+      "text": "アリゾナとの州境を越えてすぐの路肩で、一家が木陰に幌を張った。綿摘みの仕事を探しに来た、と検問所の記録にある。",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Dorothea_Lange%2C_Drought_refugees_from_Oklahoma_camping_by_the_roadside%2C_Blythe%2C_California%2C_1936.jpg/500px-Dorothea_Lange%2C_Drought_refugees_from_Oklahoma_camping_by_the_roadside%2C_Blythe%2C_California%2C_1936.jpg",
+      "credit": "Dorothea Lange(FSA), パブリックドメイン"
+    }
+  ]
+}
