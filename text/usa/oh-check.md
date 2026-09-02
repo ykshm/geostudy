@@ -62,6 +62,19 @@
 - 「先住民の痕跡は」→ 注3(ホープウェル土塁)と注1(州名)。テカムセら18世紀末の戦争史は章の軸から外れるため深追いせず、方眼測量が「先住民の土地の分配機構」でもあった件は注2の範囲にとどめた(判断)。
 - 「インテルは本当にできるのか」→ 注40に延期の経緯と2026年8月時点の現況を明記し、本文も「予定」で閉じた。
 
-## 図版の記録
+## 図版の出所
 
-(収集後に記入)
+- img/oh-locator.png = File:Ohio in United States.svg(TUBS, CC BY-SA 3.0)の1024px PNG
+- img/oh-airdock.jpg = File:USS Akron under construction, nov 1930.jpg(米海軍撮影・1930年11月5日, パブリックドメイン)
+- img/oh-owens-machine.jpg = File:Owens bottle machine - DPLA - 7fa1b257e5fbdac06fdc542fbc728448.jpg(DPLA経由の記録写真, パブリックドメイン。原画像734px、原寸で取得)
+- img/oh-huffman.jpg = File:1905 Wright Flyer III (flight 46).jpg(Wilbur Wright撮影・1905年10月4日・1905年に撮影された最後の飛行写真, パブリックドメイン)
+- img/oh-engine.jpg = File:CFM56 below the wing of a Lufthansa A320.jpg(Olivier Cleynen, CC BY 4.0——キャプション末尾に作者名とライセンスを記載)
+- img/oh-cuyahoga.jpg = File:HERE ON THE BANKS OF THE CUYAHOGA RIVER … - NARA - 550226.jpg(Frank John Aleksandrowicz, EPAドキュメリカ事業, 米国立公文書館所蔵, パブリックドメイン)
+- img/oh-columbus.jpg = File:View of Downtown Columbus Ohio OH from North Bank Park Pavillion on Scioto River.jpg(Rfgagel, パブリックドメイン)
+
+## 図版の取得記録(2026-09-02)
+
+- 7点すべてWikimedia Commonsから取得。ライセンスはimageinfo APIのextmetadata(LicenseShortName/Artist)で確認し、上記の通り。User-Agentは「geostudy-image-collection/1.0 (+https://github.com/ykshm/geostudy)」。
+- レート制限は今回も強く、検索・メタデータ・ダウンロードの各段で429が頻発した。60〜90秒空けての再試行と、リクエスト間25〜35秒の待ちで全点取得。取得幅は標準幅1280px(写真)と1024px(位置図)、原画像が小さいオーエンズ機のみ原寸。
+- 全点を目視で確認し、キャプションを実写に合わせて書き直した——エアドックは骨組みと足場・床の人影、オーエンズ機は無人の記録写真であること(当初案の「脇に一人」を削除)、ハフマンは正面からの空中写真で草地が写らないこと(当初案の「小屋が見える」を削除し、撮影日10月4日・撮影者ウィルバーをメタデータから確定)、エンジンは客室窓からのCFM56、カヤホガは「モーゼス・クリーブランド上陸地」の記念板と油色の川面(綴りCleavelandの件をキャプションに追記)、コロンバスはAEP本社ビルが大きく写ること。
+- ジープ組立ラインの検索は該当なし。図3はオーエンズ機で確定し、ジープ案は取り下げた。不採用候補のダウンロードは行っていない。
