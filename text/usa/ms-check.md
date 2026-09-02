@@ -80,7 +80,7 @@
 ## 図版の記録(2026-09-02、Wikimedia Commons、ライセンスはextmetadataで確認)
 
 - img/ms-locator.png — File:Mississippi in United States.svg(TUBS、CC BY-SA 3.0)の1024px PNG。
-- img/ms-cotton.jpg — File:Mississippi Delta Cotton Field, 2009-01-11.jpg(Jglasper、CC BY-SA 3.0)。
+- img/ms-cotton.jpg — File:Day laborers picking cotton near Clarksdale, Miss. Delta LCCN2017877489.jpg(マリオン・ポスト・ウォルコット撮影、1939年11月、FSA/米議会図書館、パブリックドメイン)の1280px縮小。当初候補の File:Mississippi Delta Cotton Field, 2009-01-11.jpg は目視検査で油絵(写真ではない)と判明し不採用。
 - img/ms-dockery.jpg — File:Dockery Farms, Sunflower County, MS.JPG(The old perfesser、CC BY-SA 3.0)。
 - img/ms-flood.jpg — File:1927 Mississippi Flood Greenville Mississippi.jpg(NOAA所蔵の1927年撮影写真、パブリックドメイン)。
 - img/ms-crossroads.jpg — File:Crossroads sign in Clarksdale, Mississippi.jpg(Bigmacthealmanac、CC BY-SA 4.0)の1024px縮小。
