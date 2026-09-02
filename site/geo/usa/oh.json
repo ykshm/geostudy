@@ -1,0 +1,140 @@
+{
+  "_comment": "オハイオ章の地図データ。build.py がこのファイルと site/maps/template.html から maps/usa-oh.html を生成し、章ページに地名リンク・地図パネル・章末おまけを付ける(すべてウェブ版限定。正本のMarkdownには手を入れない)。書き方は site/MAPS.md 参照。",
+  "map": "maps/usa-oh.html",
+  "title": "オハイオ — 章の地名地図",
+  "places": [
+    {
+      "i": 0,
+      "name": "ニューアーク",
+      "note": "3",
+      "lat": 40.0529,
+      "lng": -82.4442,
+      "text": "月の出の18.6年周期に軸を合わせた二千年前の八角形土塁。上で115年ゴルフ場が営業していた",
+      "rich": "PLACEHOLDER",
+      "img": "PLACEHOLDER",
+      "credit": "PLACEHOLDER"
+    },
+    {
+      "i": 1,
+      "name": "アクロン",
+      "sec": "2",
+      "lat": 41.0814,
+      "lng": -81.519,
+      "text": "運河の峠に生まれ、タイヤのビッグフォーが一つの町に揃った「ゴムの都」",
+      "rich": "PLACEHOLDER",
+      "img": "PLACEHOLDER",
+      "credit": "PLACEHOLDER"
+    },
+    {
+      "i": 2,
+      "name": "トレド",
+      "sec": "3",
+      "lat": 41.6528,
+      "lng": -83.5379,
+      "text": "大湿地の排水口の港町。ガラス四社が育ち、ジープを85年組み続ける",
+      "rich": "PLACEHOLDER",
+      "img": "PLACEHOLDER",
+      "credit": "PLACEHOLDER"
+    },
+    {
+      "i": 3,
+      "name": "デイトン",
+      "sec": "4",
+      "lat": 39.7589,
+      "lng": -84.1916,
+      "text": "レジスター、セルモーター、飛行機。人口あたりの特許で全米の先頭に立った発明の作業台",
+      "rich": "PLACEHOLDER",
+      "img": "PLACEHOLDER",
+      "credit": "PLACEHOLDER"
+    },
+    {
+      "i": 4,
+      "name": "ハフマン・プレーリー",
+      "sec": "4",
+      "lat": 39.8039,
+      "lng": -84.062,
+      "text": "ライト兄弟が千回近い離着陸で飛行機を実用品にした牛の放牧地。いまも原っぱのまま",
+      "rich": "PLACEHOLDER",
+      "img": "PLACEHOLDER",
+      "credit": "PLACEHOLDER"
+    },
+    {
+      "i": 5,
+      "name": "シンシナティ",
+      "sec": "5",
+      "lat": 39.1031,
+      "lng": -84.512,
+      "text": "豚の解体ラインと石鹸の坂の町。ブランド経営とソープオペラの出生地",
+      "rich": "PLACEHOLDER",
+      "img": "PLACEHOLDER",
+      "credit": "PLACEHOLDER"
+    },
+    {
+      "i": 6,
+      "name": "エヴァンデール",
+      "sec": "5",
+      "lat": 39.2461,
+      "lng": -84.4225,
+      "text": "B-29のエンジン工場を引き継いだGEの本丸。旅客機の「翼の下の筒」の最終組立がここ",
+      "rich": "PLACEHOLDER",
+      "img": "PLACEHOLDER",
+      "credit": "PLACEHOLDER"
+    },
+    {
+      "i": 7,
+      "name": "クリーブランド",
+      "sec": "6",
+      "lat": 41.4993,
+      "lng": -81.6944,
+      "text": "鉄鉱石と石炭の落ち合う湖港。カヤホガ川の30分の小火がEPAを生んだ",
+      "rich": "PLACEHOLDER",
+      "img": "PLACEHOLDER",
+      "credit": "PLACEHOLDER"
+    },
+    {
+      "i": 8,
+      "name": "ヤングスタウン",
+      "sec": "6",
+      "lat": 41.0998,
+      "lng": -80.6495,
+      "text": "1977年9月19日「ブラックマンデー」の鉄の谷。人口17万の町は6万人を切った",
+      "rich": "PLACEHOLDER",
+      "img": "PLACEHOLDER",
+      "credit": "PLACEHOLDER"
+    },
+    {
+      "i": 9,
+      "name": "ロードスタウン",
+      "sec": "6",
+      "lat": 41.159,
+      "lng": -80.832,
+      "text": "GMの組立工場が閉じ、道路の向かいに電池工場が立った村。戻ってきたのは中身の仕事",
+      "rich": "PLACEHOLDER",
+      "img": "PLACEHOLDER",
+      "credit": "PLACEHOLDER"
+    },
+    {
+      "i": 10,
+      "name": "コロンバス",
+      "sec": "7",
+      "lat": 39.9612,
+      "lng": -82.9988,
+      "text": "州の真ん中に机上で作られた州都。全米の縮図として試される「テストマーケットの首都」",
+      "rich": "PLACEHOLDER",
+      "img": "PLACEHOLDER",
+      "credit": "PLACEHOLDER"
+    },
+    {
+      "i": 11,
+      "name": "ニューオールバニー",
+      "sec": "7",
+      "lat": 40.0812,
+      "lng": -82.8088,
+      "text": "畑の方眼にデータセンター群とインテルの工場が積み上がる。最初のウェハーは2030〜31年の予定",
+      "rich": "PLACEHOLDER",
+      "img": "PLACEHOLDER",
+      "credit": "PLACEHOLDER"
+    }
+  ],
+  "snaps": []
+}
