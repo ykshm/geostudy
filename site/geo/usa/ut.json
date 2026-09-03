@@ -1,0 +1,186 @@
+{
+  "_comment": "ユタ章の地図データ。build.py がこのファイルと site/maps/template.html から maps/usa-ut.html を生成し、章ページに地名リンク・地図パネル・章末おまけを付ける(すべてウェブ版限定。正本のMarkdownには手を入れない)。書き方は site/MAPS.md 参照。",
+  "map": "maps/usa-ut.html",
+  "title": "ユタ — 章の地名地図",
+  "places": [
+    {
+      "i": 0,
+      "name": "ソルトレークシティ",
+      "sec": "1",
+      "lat": 40.7608,
+      "lng": -111.891,
+      "text": "断層と湖にはさまれた州都。干上がった湖の底に建つ",
+      "rich": "エンサインピークから見下ろした市街。手前に州議事堂、奥にワサッチ山脈",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Salt_Lake_City_skyline_%282020%29_from_Ensign_Peak.jpg/500px-Salt_Lake_City_skyline_%282020%29_from_Ensign_Peak.jpg",
+      "credit": "Iansmh98, CC BY-SA 4.0"
+    },
+    {
+      "i": 1,
+      "name": "マグナ",
+      "sec": "2",
+      "lat": 40.7091,
+      "lng": -112.1016,
+      "text": "2020年、M5.7の震源になった州都の西郊",
+      "rich": "メインストリートの街並み",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Magna%2C_Utah_%282018%29.jpg/500px-Magna%2C_Utah_%282018%29.jpg",
+      "credit": "Nicolas Henderson, CC BY 2.0"
+    },
+    {
+      "i": 2,
+      "name": "アルタ",
+      "note": "6",
+      "lat": 40.5883,
+      "lng": -111.6383,
+      "text": "年13メートルの雪が積もる、リトルコットンウッド峡谷の奥",
+      "rich": "リトルコットンウッド峡谷の最奥部。リフトと山小屋の上に峰が立つ",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Alta_Little_Cottonwood_Canyon.JPG/500px-Alta_Little_Cottonwood_Canyon.JPG",
+      "credit": "Baileypalblue, パブリックドメイン"
+    },
+    {
+      "i": 3,
+      "name": "レッドロック峠",
+      "sec": "3",
+      "lat": 42.3556,
+      "lng": -112.0444,
+      "text": "ボンネビル湖の水があふれ出た北の峠(アイダホ州)",
+      "rich": "決壊口の跡の峠。いまは国道が静かに越えていく",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/RedRockPassIdaho071710.JPG/500px-RedRockPassIdaho071710.JPG",
+      "credit": "Wilson44691, パブリックドメイン"
+    },
+    {
+      "i": 4,
+      "name": "ボンネビル・ソルトフラッツ",
+      "sec": "3",
+      "lat": 40.7686,
+      "lng": -113.818,
+      "text": "速度記録の実験台になった、干上がった湖の底の塩の床",
+      "rich": "薄く水の張った季節の夕暮れ。塩の床に人と車が集まる",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Bonneville_Salt_Flats_%2817235453660%29.jpg/500px-Bonneville_Salt_Flats_%2817235453660%29.jpg",
+      "credit": "米土地管理局, パブリックドメイン"
+    },
+    {
+      "i": 5,
+      "name": "グレートソルト湖",
+      "sec": "4",
+      "lat": 40.95,
+      "lng": -112.45,
+      "text": "出口のない水の終着点。西半球最大の塩湖",
+      "rich": "アンテロープ島から見た湖面。対岸にワサッチ山脈",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/2012.10.01.103755_Great_Salt_Lake_Antelope_Island_Utah.jpg/500px-2012.10.01.103755_Great_Salt_Lake_Antelope_Island_Utah.jpg",
+      "credit": "Hermann Luyken, CC0"
+    },
+    {
+      "i": 6,
+      "name": "スパイラル・ジェッティ",
+      "sec": "4",
+      "lat": 41.4377,
+      "lng": -112.6689,
+      "text": "干上がった湖底に露出したままの渦巻き。いまでは水位計",
+      "rich": "2020年冬の渦巻き。水際は、はるか向こうに退いた",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Spiral_jetty_winter_2020.jpg/500px-Spiral_jetty_winter_2020.jpg",
+      "credit": "Sanjuro noname, CC BY-SA 4.0"
+    },
+    {
+      "i": 7,
+      "name": "グースネックス",
+      "sec": "5",
+      "lat": 37.1742,
+      "lng": -109.9265,
+      "text": "隆起する台地をその場で掘り下げた、深さ300メートルの嵌入蛇行",
+      "rich": "章の図5と同じ、展望台からの嵌入蛇行",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Goosenecks_State_Park%2C_March_2019.jpg/500px-Goosenecks_State_Park%2C_March_2019.jpg",
+      "credit": "Steven Baltakatei Sandoval, CC BY-SA 4.0"
+    },
+    {
+      "i": 8,
+      "name": "アーチーズ国立公園",
+      "sec": "5",
+      "lat": 38.7436,
+      "lng": -109.4993,
+      "text": "地下の塩が持ち上げた砂岩に、2,000のアーチが開く",
+      "rich": "デリケートアーチ。下に立つ人と見比べると大きさが分かる",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/USA_10400_Arches_National_Park_Luca_Galuzzi_2007.jpg/500px-USA_10400_Arches_National_Park_Luca_Galuzzi_2007.jpg",
+      "credit": "Luca Galuzzi, CC BY-SA 2.5"
+    },
+    {
+      "i": 9,
+      "name": "パウエル湖",
+      "sec": "5",
+      "lat": 37.0,
+      "lng": -111.45,
+      "text": "コロラド川を堰き止めた全米2位の人造湖。2026年、史上最低の水位",
+      "rich": "空から見た2016年の湖。岩壁の白い縁取りは、下がった水位の跡",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Lac_Powell_2016_%28from_plane%29_view_on_the_bathtub_ring_%281%29.JPG/500px-Lac_Powell_2016_%28from_plane%29_view_on_the_bathtub_ring_%281%29.JPG",
+      "credit": "Pierre André, CC BY-SA 4.0"
+    },
+    {
+      "i": 10,
+      "name": "プロモントリー",
+      "sec": "6",
+      "lat": 41.6177,
+      "lng": -112.5478,
+      "text": "1869年、大陸横断鉄道の東西の線路が出会った地点",
+      "rich": "1869年5月10日、金の犬釘の式典。二台の機関車が鼻を突き合わせた",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/East_and_West_Shaking_hands_at_the_laying_of_last_rail_Union_Pacific_Railroad_-_Restoration.jpg/500px-East_and_West_Shaking_hands_at_the_laying_of_last_rail_Union_Pacific_Railroad_-_Restoration.jpg",
+      "credit": "Andrew J. Russell, パブリックドメイン"
+    },
+    {
+      "i": 11,
+      "name": "ビンガムキャニオン銅山",
+      "sec": "6",
+      "lat": 40.523,
+      "lng": -112.151,
+      "text": "史上最多の銅を産んだ、人間が地面に開けた最大級の穴",
+      "rich": "章の図6と同じ写真。段々に刻まれたすり鉢の内壁",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/2019_Bingham_Canyon_Mine_04.jpg/500px-2019_Bingham_Canyon_Mine_04.jpg",
+      "credit": "Farragutful, CC BY-SA 4.0"
+    }
+  ],
+  "snaps": [
+    {
+      "name": "モンロー",
+      "lat": 38.6297,
+      "lng": -112.1207,
+      "era": "いま",
+      "text": "7月24日は州の祝日パイオニアデー。田舎町の目抜き通りを、山車のあとから馬の列が延々と進み、歩道の子どもは飽きずに眺めている。",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Pioneer_Day_Parade%2C_Monroe%2C_Utah_%289365988601%29.jpg/500px-Pioneer_Day_Parade%2C_Monroe%2C_Utah_%289365988601%29.jpg",
+      "credit": "Ken Lund, CC BY-SA 2.0"
+    },
+    {
+      "name": "モアブ",
+      "lat": 38.5733,
+      "lng": -109.5498,
+      "era": "いま",
+      "text": "冬の朝のメインストリート。店はまだ開かず、通りの突き当たりでは赤い岩壁が先に目を覚ましている。",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Moab%2C_Utah%2C_main_street%2C_January_2019.jpg/500px-Moab%2C_Utah%2C_main_street%2C_January_2019.jpg",
+      "credit": "Steven Baltakatei Sandoval, CC BY-SA 4.0"
+    },
+    {
+      "name": "ソルトレークシティ・ダウンタウン",
+      "lat": 40.7645,
+      "lng": -111.889,
+      "era": "いま",
+      "text": "ギャリバンプラザを曲がるライトレール。開拓時代に牛の荷車のために取った道幅40メートルは、線路を敷いてもまだ余っている。",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Green_line_Trax_at_Gallivan_Plaza.jpg/500px-Green_line_Trax_at_Gallivan_Plaza.jpg",
+      "credit": "Garrett, CC BY 2.0"
+    },
+    {
+      "name": "アルタ",
+      "lat": 40.5872,
+      "lng": -111.6365,
+      "era": "いま",
+      "text": "峡谷の奥のスキー教室。年に13メートル降る雪は、まず子どもの練習斜面で踏み固められる。",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Alta_ski_lessons_-_Feb_21%2C_2011.jpg/500px-Alta_ski_lessons_-_Feb_21%2C_2011.jpg",
+      "credit": "Scott Catron, CC BY-SA 2.0"
+    },
+    {
+      "name": "南ユタの砂漠",
+      "lat": 37.152,
+      "lng": -109.868,
+      "era": "1972年",
+      "text": "幌付きトラックの荷台で、砂嵐が過ぎるのを待つ農場の働き手たち。乾いた土地では、風も暮らしの相手である。",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/FARM_WORKERS_TAKING_SHELTER_DURING_A_DUST_STORM_IN_SOUTHERN_UTAH._%28FROM_THE_SITES_EXHIBITION._FOR_OTHER_IMAGES_IN..._-_NARA_-_553819.jpg/500px-FARM_WORKERS_TAKING_SHELTER_DURING_A_DUST_STORM_IN_SOUTHERN_UTAH._%28FROM_THE_SITES_EXHIBITION._FOR_OTHER_IMAGES_IN..._-_NARA_-_553819.jpg",
+      "credit": "Terry Eiler(EPA・ドキュメリカ), パブリックドメイン"
+    }
+  ]
+}
