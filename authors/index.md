@@ -10,7 +10,7 @@
 | 沢井 環 | authors/sawai-tamaki.md | 火山と地形の自然地理 | 執筆中(アメリカ50州: ワイオミング・アラスカ・ユタ) |
 | 三輪 遼 | authors/miwa-ryo.md | 機械と工場の産業地理 | 執筆中(アメリカ50州: ミシガン・ペンシルベニア・オハイオ/臥遊風土記: 津軽) |
 | 日下 梓 | authors/kusaka-azusa.md | 移民と住まいの都市地理 | 執筆中(アメリカ50州: ニューヨーク・マサチューセッツ・イリノイ・カリフォルニア) |
-| 戸川 奏 | authors/togawa-kanade.md | 音楽産業と電波のメディア文化地理 | 執筆中(アメリカ50州: テネシー・ミシシッピ) |
+| 戸川 奏 | authors/togawa-kanade.md | 音楽産業と電波のメディア文化地理 | 執筆中(アメリカ50州: テネシー・ミシシッピ・ケンタッキー) |
 
 ## 章の割り振り(アメリカ50州)
 
@@ -38,6 +38,7 @@
 | オハイオ | text/usa/oh.md | 三輪 遼(authors/miwa-ryo.md) |
 | ユタ | text/usa/ut.md | 沢井 環(authors/sawai-tamaki.md) |
 | ノースカロライナ | text/usa/nc.md | 千々石 洋(authors/chichiwa-hiroshi.md) |
+| ケンタッキー | text/usa/ky.md | 戸川 奏(authors/togawa-kanade.md) |
 
 ## 章の割り振り(臥遊風土記)
 
