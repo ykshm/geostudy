@@ -7,7 +7,7 @@
 | 牧野 周 | authors/makino-shu.md | エネルギーと土地利用の経済地理 | 執筆中(アメリカ50州: テキサス・ワシントン・ジョージア・アリゾナ/臥遊風土記: 多摩) |
 | 葛西 律 | authors/kasai-ritsu.md | 観光と盛り場の社会地理 | 執筆中(アメリカ50州: ネバダ・ルイジアナ・フロリダ) |
 | 千々石 洋 | authors/chichiwa-hiroshi.md | 作物と栽培の農業地理 | 執筆中(アメリカ50州: ハワイ・アイオワ・ノースカロライナ) |
-| 沢井 環 | authors/sawai-tamaki.md | 火山と地形の自然地理 | 執筆中(アメリカ50州: ワイオミング・アラスカ・ユタ) |
+| 沢井 環 | authors/sawai-tamaki.md | 火山と地形の自然地理 | 執筆中(アメリカ50州: ワイオミング・アラスカ・ユタ・コロラド) |
 | 三輪 遼 | authors/miwa-ryo.md | 機械と工場の産業地理 | 執筆中(アメリカ50州: ミシガン・ペンシルベニア・オハイオ/臥遊風土記: 津軽) |
 | 日下 梓 | authors/kusaka-azusa.md | 移民と住まいの都市地理 | 執筆中(アメリカ50州: ニューヨーク・マサチューセッツ・イリノイ・カリフォルニア) |
 | 戸川 奏 | authors/togawa-kanade.md | 音楽産業と電波のメディア文化地理 | 執筆中(アメリカ50州: テネシー・ミシシッピ・ケンタッキー) |
@@ -39,6 +39,7 @@
 | ユタ | text/usa/ut.md | 沢井 環(authors/sawai-tamaki.md) |
 | ノースカロライナ | text/usa/nc.md | 千々石 洋(authors/chichiwa-hiroshi.md) |
 | ケンタッキー | text/usa/ky.md | 戸川 奏(authors/togawa-kanade.md) |
+| コロラド | text/usa/co.md | 沢井 環(authors/sawai-tamaki.md) |
 
 ## 章の割り振り(臥遊風土記)
 
