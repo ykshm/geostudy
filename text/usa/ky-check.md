@@ -84,6 +84,11 @@
 - 「なぜ競馬場でこの歌?」→注1。「フォスターはケンタッキーの人?」→§1。「darkiesの件は今も原詞で歌われる?」→§1+注3。「ブルーグラスってあの芝生の?」→§2+注6(草の説明)+§3(命名)。「なぜ馬とバーボンが同じ州?」→§2(石灰岩)。「バーボンはケンタッキーでしか造れない?」→注7(定義上は国内どこでも)。「ブルーグラスはなぜ『新しい音楽』?」→§3。「エルヴィスは怒られなかった?」→§3。「なぜ炭鉱の歌が有名に?」→§4(組合・ラジオ・ヒット)。「スクリップって何?」→§4。「パラダイスの町は今?」→§4(消滅・発電所も閉鎖)。「なぜみんな北へ出た?」→§5。「ハッピーバースデーに使用料?」→§6。「なぜ州境が対岸?」→§6+注24。「フォート・ノックスの金は見られる?」→注28。「KFCの『カーネル』は軍人?」→§7。
 - 図版: 位置の図+プロフィール表(series.mdの備品)を冒頭に配置。図2ダービー(§1)、図3熟成庫(§2)、図4モンロー生家(§3)、図5坑夫(§4)、図6バッチャー・ホロウ(§5)。
 
-## 図版の記録(2026-09-03、Wikimedia Commons、ライセンスはextmetadataで確認)
+## 図版の記録(2026-09-03、Wikimedia Commons、ライセンスはextmetadataで確認、全点目視検査済み)
 
-(収集完了後に記載)
+- img/ky-locator.png — File:Kentucky in United States.svg(TUBS、CC BY-SA 3.0)の1280px PNG。目視: ケンタッキーのみ赤、鏃形、オハイオ川の蛇行が北縁——キャプション通り。※Commonsのサムネイルは現在、規定幅(250/330/500/960/1280/1920…)以外を429/400で拒否する。1024px指定は不可になっていた(過去章の手順から変更あり)。
+- img/ky-derby.jpg — File:University of Louisville marching band, Churchill Downs Twin Spires.jpg(Flickr利用者rnhurt、CC BY 2.0、2006年)の原寸(1024px)。目視: 双尖塔・満員のスタンド・内馬場に白制帽のバンド、屋根の看板に「FIRST DERBY 1875 / 132nd DERBY 2006」——キャプションはこれに合わせて確定。
+- img/ky-rickhouse.jpg — File:Lincoln Heritage Scenic Highway - Bourbon Barrels in a Local Warehouse - NARA - 7720083.jpg(米連邦道路庁の景観道路記録、米国立公文書館所蔵、パブリックドメイン、Exif 2007-07)の1280px縮小。目視: 板張り通路・右に樽の棚・左に窓——一致。
+- img/ky-monroe-home.jpg — File:Bill Monroe Farm NRHP 03000648 Ohio County, KY.jpg(Jon Roanhaus、CC BY-SA 4.0、2017年撮影)の1280px縮小。目視: 白い下見板・緑の縁取り・長いポーチとブランコ椅子——一致。生家ではなく「育った家」(1920年ごろ再建)である点をキャプションに反映。
+- img/ky-miner.jpg — File:A miner. P V & K Coal Company, Clover Mine, Lejunior, Harlan County, Kentucky. - NARA - 541294.jpg(ラッセル・リー撮影、1946年9月、米国立公文書館、パブリックドメイン)の960px縮小。目視: カーバイドランプ付きヘルメット・パイプ・弁当缶・背後に入坑札の掛け板——当初案の「炭塵で真っ黒の顔」とは異なる写真だったため、キャプションを実物に合わせて書き直した。
+- img/ky-butcher-hollow.jpg — File:Loretta Lynn house.jpg(デニス・アダムズ撮影、米連邦道路庁、パブリックドメイン)の1280px縮小。目視: 斜面の板張りの家・ポーチへの階段・屋根付き井戸・砂利道と見学者——一致。
