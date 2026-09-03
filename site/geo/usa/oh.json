@@ -1,0 +1,186 @@
+{
+  "_comment": "オハイオ章の地図データ。build.py がこのファイルと site/maps/template.html から maps/usa-oh.html を生成し、章ページに地名リンク・地図パネル・章末おまけを付ける(すべてウェブ版限定。正本のMarkdownには手を入れない)。書き方は site/MAPS.md 参照。",
+  "map": "maps/usa-oh.html",
+  "title": "オハイオ — 章の地名地図",
+  "places": [
+    {
+      "i": 0,
+      "name": "ニューアーク",
+      "note": "3",
+      "lat": 40.0529,
+      "lng": -82.4442,
+      "text": "月の出の18.6年周期に軸を合わせた二千年前の八角形土塁。上で115年ゴルフ場が営業していた",
+      "rich": "夏の八角形土塁。芝に覆われた壁が肩の高さで折れ曲がり、囲いの内側にも芝地が続く",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Octagon_Earthwork2016.jpg/500px-Octagon_Earthwork2016.jpg",
+      "credit": "A21sauce, CC BY-SA 4.0"
+    },
+    {
+      "i": 1,
+      "name": "アクロン",
+      "sec": "2",
+      "lat": 41.0814,
+      "lng": -81.519,
+      "text": "運河の峠に生まれ、タイヤのビッグフォーが一つの町に揃った「ゴムの都」",
+      "rich": "運河沿いの緑道から見たダウンタウン。ゴムの都の中心は、いま遊歩道と広場である",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Downtown_skyline_panorama_as_seen_from_Ohio_%26_Erie_Canalway%2C_Akron%2C_Ohio_-_20200530.jpg/500px-Downtown_skyline_panorama_as_seen_from_Ohio_%26_Erie_Canalway%2C_Akron%2C_Ohio_-_20200530.jpg",
+      "credit": "Andre Carrotflower, CC BY-SA 4.0"
+    },
+    {
+      "i": 2,
+      "name": "トレド",
+      "sec": "3",
+      "lat": 41.6528,
+      "lng": -83.5379,
+      "text": "大湿地の排水口の港町。ガラス四社が育ち、ジープを85年組み続ける",
+      "rich": "マウミー川の対岸から見たダウンタウン。湿地の排水口だった川の、幅の広さが分かる",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Toledo%2C_Ohio_Skyline%2C_July_2022.jpg/500px-Toledo%2C_Ohio_Skyline%2C_July_2022.jpg",
+      "credit": "MrJacon000, CC BY-SA 4.0"
+    },
+    {
+      "i": 3,
+      "name": "デイトン",
+      "sec": "4",
+      "lat": 39.7589,
+      "lng": -84.1916,
+      "text": "レジスター、セルモーター、飛行機。人口あたりの特許で全米の先頭に立った発明の作業台",
+      "rich": "夕暮れの市街。教会の尖塔とビル群の下に、低い商業建築の屋根が続く",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Dayton_Skyline_-_Sunset_September_2022.jpg/500px-Dayton_Skyline_-_Sunset_September_2022.jpg",
+      "credit": "Blervis, CC BY 4.0"
+    },
+    {
+      "i": 4,
+      "name": "ハフマン・プレーリー",
+      "sec": "4",
+      "lat": 39.8039,
+      "lng": -84.062,
+      "text": "ライト兄弟が千回近い離着陸で飛行機を実用品にした牛の放牧地。いまも原っぱのまま",
+      "rich": "草原に復元された木造の格納庫。1905年、ここが世界で唯一の飛行場だった",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Huffman_Prairie.jpg/500px-Huffman_Prairie.jpg",
+      "credit": "Ismael Laos, CC BY-SA 4.0"
+    },
+    {
+      "i": 5,
+      "name": "シンシナティ",
+      "sec": "5",
+      "lat": 39.1031,
+      "lng": -84.512,
+      "text": "豚の解体ラインと石鹸の坂の町。ブランド経営とソープオペラの出生地",
+      "rich": "ローブリング橋の青い主塔とケーブル越しに、対岸のダウンタウン。この橋がブルックリン橋の試作だった",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Cincinnati_Skyline_from_Roebling_Bridge%2C_Covington%2C_KY.jpg/500px-Cincinnati_Skyline_from_Roebling_Bridge%2C_Covington%2C_KY.jpg",
+      "credit": "w_lemay, CC BY-SA 2.0"
+    },
+    {
+      "i": 6,
+      "name": "エヴァンデール",
+      "sec": "5",
+      "lat": 39.2461,
+      "lng": -84.4225,
+      "text": "B-29のエンジン工場を引き継いだGEの本丸。旅客機の「翼の下の筒」の最終組立がここ",
+      "rich": "この工場が最終組立の中心を担うCFM56。旅客機の窓から見た翼の下の姿(章の図5と同じ写真)",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/CFM56_below_the_wing_of_a_Lufthansa_A320.jpg/500px-CFM56_below_the_wing_of_a_Lufthansa_A320.jpg",
+      "credit": "Olivier Cleynen, CC BY 4.0"
+    },
+    {
+      "i": 7,
+      "name": "クリーブランド",
+      "sec": "6",
+      "lat": 41.4993,
+      "lng": -81.6944,
+      "text": "鉄鉱石と石炭の落ち合う湖港。カヤホガ川の30分の小火がEPAを生んだ",
+      "rich": "石炭の山と跳ね橋の間を蛇行して湖へ下るカヤホガ川。奥にダウンタウンの塔が建つ",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Cuyahoga_river_and_downtown_cleveland.jpg/500px-Cuyahoga_river_and_downtown_cleveland.jpg",
+      "credit": "GandZ, CC BY-SA 3.0"
+    },
+    {
+      "i": 8,
+      "name": "ヤングスタウン",
+      "sec": "6",
+      "lat": 41.0998,
+      "lng": -80.6495,
+      "text": "1977年9月19日「ブラックマンデー」の鉄の谷。人口17万の町は6万人を切った",
+      "rich": "セントラル・スクエアから西を見たフェデラル通り。銀行の塔と空き店舗が同じ並びにある",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Youngstown%2C_Ohio_Central_Square_West_Federal_Street.jpg/500px-Youngstown%2C_Ohio_Central_Square_West_Federal_Street.jpg",
+      "credit": "Jack Pearce, CC BY-SA 2.0"
+    },
+    {
+      "i": 9,
+      "name": "ロードスタウン",
+      "sec": "6",
+      "lat": 41.159,
+      "lng": -80.832,
+      "text": "GMの組立工場が閉じ、道路の向かいに電池工場が立った村。戻ってきたのは中身の仕事",
+      "rich": "元GM組立工場の正面。広大な従業員駐車場に、いま車はまばらである",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Lordstown_Assembly_front%2C_June_2024.jpg/500px-Lordstown_Assembly_front%2C_June_2024.jpg",
+      "credit": "Mr. Matté, CC BY-SA 4.0"
+    },
+    {
+      "i": 10,
+      "name": "コロンバス",
+      "sec": "7",
+      "lat": 39.9612,
+      "lng": -82.9988,
+      "text": "州の真ん中に机上で作られた州都。全米の縮図として試される「テストマーケットの首都」",
+      "rich": "サイオト川と鉄道橋越しのダウンタウン。左の白い塔は送電会社AEPの本社(章の図7と同じ写真)",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/View_of_Downtown_Columbus_Ohio_OH_from_North_Bank_Park_Pavillion_on_Scioto_River.jpg/500px-View_of_Downtown_Columbus_Ohio_OH_from_North_Bank_Park_Pavillion_on_Scioto_River.jpg",
+      "credit": "Rfgagel, パブリックドメイン"
+    },
+    {
+      "i": 11,
+      "name": "ニューオールバニー",
+      "sec": "7",
+      "lat": 40.0812,
+      "lng": -82.8088,
+      "text": "畑の方眼にデータセンター群とインテルの工場が積み上がる。最初のウェハーは2030〜31年の予定",
+      "rich": "煉瓦造りに白い鐘塔の市庁舎。整えられた計画都市の玄関の、畑の側にデータセンターが増えていく",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/New_Albany_City_Hall_1.jpg/500px-New_Albany_City_Hall_1.jpg",
+      "credit": "Sixflashphoto, CC BY-SA 4.0"
+    }
+  ],
+  "snaps": [
+    {
+      "name": "ウェストサイド・マーケット",
+      "lat": 41.4846,
+      "lng": -81.703,
+      "era": "いま",
+      "text": "煉瓦のアーチ天井の下で、ジャイロ屋とジュース屋の看板が向かい合う。1912年開場の市場ホールは、いまも朝が早い。",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/West_Side_Market_-_Cleveland_-_12.jpg/500px-West_Side_Market_-_Cleveland_-_12.jpg",
+      "credit": "APK, CC BY 4.0"
+    },
+    {
+      "name": "シンシナティの昼食",
+      "lat": 39.1043,
+      "lng": -84.514,
+      "era": "いま",
+      "text": "チリドッグが3本、細切りチーズの山にすっかり埋まって出てくる。この町の昼食の定型である。",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Skyline_Chili_Coneys.jpg/500px-Skyline_Chili_Coneys.jpg",
+      "credit": "Navin75, CC BY-SA 2.0"
+    },
+    {
+      "name": "サークルビルの収穫祭",
+      "lat": 39.6007,
+      "lng": -82.946,
+      "era": "いま",
+      "text": "収穫祭の通りに、王冠をのせた優勝カボチャが並ぶ。札の数字は600キロを超えている。",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Circleville_Pumpkin_Show_02.jpg/500px-Circleville_Pumpkin_Show_02.jpg",
+      "credit": "Ɱ, CC BY-SA 4.0"
+    },
+    {
+      "name": "製鉄所のそばの通り",
+      "lat": 41.457,
+      "lng": -81.652,
+      "era": "1973年",
+      "text": "一時停止の標識の向こう、住宅の屋根越しに製鉄所の煙が赤茶色に立ちのぼる。洗濯物を出せない日の色である。",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/SMOKE_FROM_REPUBLIC_STEEL_BLANKETS_THE_NEIGHBORHOOD_-_NARA_-_550187.jpg/500px-SMOKE_FROM_REPUBLIC_STEEL_BLANKETS_THE_NEIGHBORHOOD_-_NARA_-_550187.jpg",
+      "credit": "Frank John Aleksandrowicz(EPA・ドキュメリカ), パブリックドメイン"
+    },
+    {
+      "name": "ワージントンの路上",
+      "lat": 40.0931,
+      "lng": -83.018,
+      "era": "1938年",
+      "text": "車内からクランク棒を取り出すところ。セルモーターの発明から四半世紀、まだ腕で始動する車も町を走っていた。",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Getting_crank_out_of_car_to_get_the_motor_started%2C_Worthington%2C_Ohio%2C_1938_crop.jpg/500px-Getting_crank_out_of_car_to_get_the_motor_started%2C_Worthington%2C_Ohio%2C_1938_crop.jpg",
+      "credit": "Ben Shahn(FSA), パブリックドメイン"
+    }
+  ]
+}
