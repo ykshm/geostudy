@@ -1,0 +1,186 @@
+{
+  "_comment": "コロラド章の地図データ。build.py がこのファイルと site/maps/template.html から maps/usa-co.html を生成し、章ページに地名リンク・地図パネル・章末おまけを付ける(すべてウェブ版限定。正本のMarkdownには手を入れない)。書き方は site/MAPS.md 参照。",
+  "map": "maps/usa-co.html",
+  "title": "コロラド — 章の地名地図",
+  "places": [
+    {
+      "i": 0,
+      "name": "アリカリー川",
+      "note": "1",
+      "lat": 40.0022,
+      "lng": -102.0524,
+      "text": "州でいちばん低い場所(1,011メートル)。それでも18州の最高地点より高い",
+      "rich": "ユマ郡を行くアリカリー川。平原の草の間を、水は糸ほどの細さで流れる",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Arikaree_River.JPG/500px-Arikaree_River.JPG",
+      "credit": "Jeffrey Beall, CC BY 4.0"
+    },
+    {
+      "i": 1,
+      "name": "ガーデン・オブ・ザ・ゴッズ",
+      "sec": "1",
+      "lat": 38.8784,
+      "lng": -104.8698,
+      "text": "初代ロッキーの瓦礫が、二代目の山麓に立てかけられた赤い岩",
+      "rich": "章の図2と同じ場所。傾いた赤い岩の奥にパイクスピーク",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Garden_of_the_Gods%2C_with_Pikes_Peak_in_the_background.JPG/500px-Garden_of_the_Gods%2C_with_Pikes_Peak_in_the_background.JPG",
+      "credit": "CaroleHenson, CC BY-SA 4.0"
+    },
+    {
+      "i": 2,
+      "name": "ロイヤルゴージ",
+      "sec": "1",
+      "lat": 38.4602,
+      "lng": -105.3247,
+      "text": "アーカンザー川が花崗岩の山塊を真下に切り抜いた、深さ380メートルの裂け目",
+      "rich": "1930年代の絵はがき。1929年に架かった吊橋を、車が一台だけ渡っていく",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Vista_of_the_suspension_bridge_spanning_the_Royal_Gorge%2C_1053_ft._above_the_Arkansas_River%2C_Canon_City%2C_Colorado_%287725171914%29.jpg/500px-Vista_of_the_suspension_bridge_spanning_the_Royal_Gorge%2C_1053_ft._above_the_Arkansas_River%2C_Canon_City%2C_Colorado_%287725171914%29.jpg",
+      "credit": "ボストン公共図書館所蔵, パブリックドメイン"
+    },
+    {
+      "i": 3,
+      "name": "ラガリータ・カルデラ",
+      "sec": "2",
+      "lat": 37.75,
+      "lng": -106.93,
+      "text": "5,000立方キロを噴いた陥没の釜。大きすぎて、中からはただの山なみに見える",
+      "rich": "カルデラ一帯の高原。この眺めのどこにも「火山の形」は無い",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/LaGaritaWilderness.jpg/500px-LaGaritaWilderness.jpg",
+      "credit": "Fred Bauder, CC BY-SA 3.0"
+    },
+    {
+      "i": 4,
+      "name": "ブラックキャニオン",
+      "sec": "3",
+      "lat": 38.5754,
+      "lng": -107.7416,
+      "text": "ガニソン川が硬い基盤岩を切り抜いた、深さ830メートルの裂け目",
+      "rich": "章の図4と同じ、チャズムビューからの眺め。右がペインテッドウォール",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Painted_Wall%2C_Black_Canyon_Of_The_Gunnison.jpg/500px-Painted_Wall%2C_Black_Canyon_Of_The_Gunnison.jpg",
+      "credit": "米国立公園局/Lisa Lynch, パブリックドメイン"
+    },
+    {
+      "i": 5,
+      "name": "グレートサンドデューンズ",
+      "sec": "3",
+      "lat": 37.7916,
+      "lng": -105.5943,
+      "text": "風と川が砂を循環させて保つ、北米でいちばん高い砂丘の群れ",
+      "rich": "章の図5と同じ、夜明けの砂丘とサングレ・デ・クリスト山脈",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Star_Dune_and_Crestone_Peaks_%2851985120756%29.jpg/500px-Star_Dune_and_Crestone_Peaks_%2851985120756%29.jpg",
+      "credit": "米国立公園局, パブリックドメイン"
+    },
+    {
+      "i": 6,
+      "name": "メサベルデ",
+      "sec": "4",
+      "lat": 37.168,
+      "lng": -108.473,
+      "text": "砂岩の庇の下の石積みの町。24年の干魃ののち、住民は去った",
+      "rich": "章の図6と同じクリフパレス。約150室、13世紀の建築",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Mesa_Verde_National_Park_Cliff_Palace_2006_09_12.jpg/500px-Mesa_Verde_National_Park_Cliff_Palace_2006_09_12.jpg",
+      "credit": "Andreas F. Borchert, CC BY-SA 4.0"
+    },
+    {
+      "i": 7,
+      "name": "クローリー郡",
+      "sec": "4",
+      "lat": 38.2183,
+      "lng": -103.7561,
+      "text": "水利権を都市へ売り、灌漑地の9割を失った「買って干す」の先例",
+      "rich": "郡庁所在地オードウェイの、昼下がりの目抜き通り",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Ordway%2C_Colorado.JPG/500px-Ordway%2C_Colorado.JPG",
+      "credit": "Jeffrey Beall, CC BY 4.0"
+    },
+    {
+      "i": 8,
+      "name": "リードビル",
+      "sec": "5",
+      "lat": 39.2508,
+      "lng": -106.2925,
+      "text": "標高3,094メートル、全米でいちばん高い市。銀が2年で人口3万の街を作った",
+      "rich": "ハリソン通りに残るテイバー・オペラハウス(1879年築)",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Leadville%2C_Harrison_Ave%2C_Opera_House.jpg/500px-Leadville%2C_Harrison_Ave%2C_Opera_House.jpg",
+      "credit": "Pimlico27, CC BY-SA 4.0"
+    },
+    {
+      "i": 9,
+      "name": "サンドクリーク",
+      "sec": "5",
+      "lat": 38.5375,
+      "lng": -102.51,
+      "text": "1864年、義勇兵が230人以上を殺した虐殺の現場。いまは国定史跡",
+      "rich": "現場の丈の低い草の平原。目印になるものが、ほとんど何も無い",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Short_Grass_plains_of_Sand_Creek_Massacre_Site.jpg/500px-Short_Grass_plains_of_Sand_Creek_Massacre_Site.jpg",
+      "credit": "Chris Light, CC BY-SA 4.0"
+    },
+    {
+      "i": 10,
+      "name": "デンバー",
+      "sec": "5",
+      "lat": 39.7392,
+      "lng": -104.9903,
+      "text": "金鉱への補給基地から育った、標高ちょうど1マイルの州都",
+      "rich": "夕暮れの逆光の中、市街の高層ビルの向こうに山脈の壁が重なる",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Mount_Blue_Sky_with_Denver_Skyline%2C_Colorado_%28US%29.jpg/500px-Mount_Blue_Sky_with_Denver_Skyline%2C_Colorado_%28US%29.jpg",
+      "credit": "Justusco, CC BY-SA 4.0"
+    },
+    {
+      "i": 11,
+      "name": "ボールダー",
+      "sec": "6",
+      "lat": 40.015,
+      "lng": -105.2705,
+      "text": "国の時刻を作る研究所の町。山麓に連邦の研究機関が集まる",
+      "rich": "町を見下ろす傾いた赤い板、フラットアイアンズ。1節の赤い岩の仲間である",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Flatirons_Winter_Sunrise_edit_2.jpg/500px-Flatirons_Winter_Sunrise_edit_2.jpg",
+      "credit": "Jesse Varner, CC BY-SA 2.5"
+    }
+  ],
+  "snaps": [
+    {
+      "name": "アイゼンハワートンネル",
+      "lat": 39.6779,
+      "lng": -105.9027,
+      "era": "いま",
+      "text": "スノーモービルを牽いた車の列が、坑口の信号で止まる。標高3,400メートルの、山あそび帰りの週末の道である。",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Traffic_stopped_at_a_red_light_at_Johnson_Tunnel_2019-03-27.jpg/500px-Traffic_stopped_at_a_red_light_at_Johnson_Tunnel_2019-03-27.jpg",
+      "credit": "Xnatedawgx, CC BY-SA 4.0"
+    },
+    {
+      "name": "パリセード",
+      "lat": 39.11,
+      "lng": -108.3509,
+      "era": "いま",
+      "text": "売り物の桃の色に塗り上げた果物スタンドが、収穫の朝を待つ。西斜面の谷では、山の雪解け水が桃とブドウを育てている。",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Fruit_Stand%2C_Palisade%2C_CO_9-24-13a_%2810653660613%29.jpg/500px-Fruit_Stand%2C_Palisade%2C_CO_9-24-13a_%2810653660613%29.jpg",
+      "credit": "inkknife_2000, CC BY-SA 2.0"
+    },
+    {
+      "name": "デンバー・コルファックス通り",
+      "lat": 39.7402,
+      "lng": -104.9838,
+      "era": "1972年",
+      "text": "西向きのコルファックス通り。ガソリンスタンドの看板の連なりの先、通りの突き当たりに、そのまま雪の山脈が立っている。左手は議事堂の金のドーム。",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Colfax_Avenue_West%2C_Denver_-_NARA_-_544793.jpg/500px-Colfax_Avenue_West%2C_Denver_-_NARA_-_544793.jpg",
+      "credit": "Bruce McAllister/EPA(ドキュメリカ), パブリックドメイン"
+    },
+    {
+      "name": "メダノ川",
+      "lat": 37.7375,
+      "lng": -105.5133,
+      "era": "いま",
+      "text": "雪解けの初夏の数週間だけ、砂丘の前に幅の広い浅い川が現れる。海のない州の、これが海水浴である。",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Medano_Creek_at_the_Great_Sand_Dunes_National_Park_and_Preserve_in_Colorado_%2848257161496%29.jpg/500px-Medano_Creek_at_the_Great_Sand_Dunes_National_Park_and_Preserve_in_Colorado_%2848257161496%29.jpg",
+      "credit": "PEO ACWA, CC BY 2.0"
+    },
+    {
+      "name": "リードビル・ハリソン通り",
+      "lat": 39.2472,
+      "lng": -106.292,
+      "era": "いま",
+      "text": "金曜の午後のハリソン通り。銀の時代の建物の一階に、いまの店の看板が並び、ベンチの先客が通りを眺めている。",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Leadville%2C_Harrison_Ave%2C_southeast_part_%28friday_afternoon%29.jpg/500px-Leadville%2C_Harrison_Ave%2C_southeast_part_%28friday_afternoon%29.jpg",
+      "credit": "Pimlico27, CC BY-SA 4.0"
+    }
+  ]
+}
