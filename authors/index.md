@@ -47,3 +47,13 @@
 |---|---|---|
 | 津軽 | text/japan/tsugaru.md | 三輪 遼(authors/miwa-ryo.md) |
 | 多摩 | text/japan/tama.md | 牧野 周(authors/makino-shu.md) |
+
+## 章の割り振り(中国33省区)
+
+| 章 | ファイル | 著者 |
+|---|---|---|
+
+## 章の割り振り(ロシア83連邦主体)
+
+| 章 | ファイル | 著者 |
+|---|---|---|
