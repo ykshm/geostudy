@@ -24,6 +24,7 @@ OUT = ROOT / "_site"
 SERIES = {
     "usa": "第1シリーズ: アメリカ50州",
     "japan": "第2シリーズ: 臥遊風土記",
+    "china": "第3シリーズ: 中国33省区",
 }
 
 MD = markdown.Markdown(extensions=["tables"])
