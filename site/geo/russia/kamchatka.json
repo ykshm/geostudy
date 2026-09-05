@@ -1,0 +1,164 @@
+{
+  "_comment": "カムチャツカ地方章の地図データ。build.py がこのファイルと site/maps/template.html から maps/russia-kamchatka.html を生成し、章ページに地名リンク・地図パネル・章末おまけを付ける(すべてウェブ版限定。正本のMarkdownには手を入れない)。書き方は site/MAPS.md 参照。",
+  "map": "maps/russia-kamchatka.html",
+  "title": "カムチャツカ地方 — 章の地名地図",
+  "places": [
+    {
+      "i": 0,
+      "name": "クリル・カムチャツカ海溝",
+      "sec": "1",
+      "lat": 52.0,
+      "lng": 160.8,
+      "text": "太平洋の板が折れ込む深さ9,600メートルの溝。章の全ての火の元",
+      "rich": "NASAの衛星が測った2025年の地震の地面の動き。半島の南部が、海溝の側へ最大2メートル踏み出した",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Mapping_Kamchatka_Earthquake_Displacement_%28154776_-_kamchatka_aria_20250802_lrg%29.jpg/500px-Mapping_Kamchatka_Earthquake_Displacement_%28154776_-_kamchatka_aria_20250802_lrg%29.jpg",
+      "credit": "NASA地球観測所, パブリックドメイン"
+    },
+    {
+      "i": 1,
+      "name": "クリュチェフスカヤ山",
+      "sec": "1",
+      "lat": 56.0575,
+      "lng": 160.6383,
+      "text": "ユーラシアの活火山の最高峰(4,754メートル)。生まれて7千年の若い円錐",
+      "rich": "章の図2と同じ一枚。朝焼けに染まる円錐",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Klju%C4%8Devskaja_za_v%C3%BDchodu_slunce.jpg/500px-Klju%C4%8Devskaja_za_v%C3%BDchodu_slunce.jpg",
+      "credit": "Tamten, パブリックドメイン"
+    },
+    {
+      "i": 2,
+      "name": "セベロクリリスク",
+      "sec": "2",
+      "lat": 50.6698,
+      "lng": 156.1251,
+      "text": "1952年と2025年、二度津波に入られた千島列島北端の町(行政上はサハリン州)",
+      "rich": "パラムシル島の町のいま。1952年の津波のあと、町は高台に作り直された",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Severo-Kurilsk.jpg/500px-Severo-Kurilsk.jpg",
+      "credit": "Eugene Kaspersky, CC BY-SA 4.0"
+    },
+    {
+      "i": 3,
+      "name": "ベズイミアニ",
+      "sec": "3",
+      "lat": 55.972,
+      "lng": 160.595,
+      "text": "1956年、横向きの爆風で教科書を書き換えた「名無し」の山",
+      "rich": "雲の海から頭を出したクリュチェフスカヤ群の衛星写真。噴気の尾を引いているのがベズイミアニ",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Bezymianny%2C_Kamen%2C_and_Kluychevskaya_Sopka_volcanoes_in_Kamchatka%2C_Russia.jpg/500px-Bezymianny%2C_Kamen%2C_and_Kluychevskaya_Sopka_volcanoes_in_Kamchatka%2C_Russia.jpg",
+      "credit": "SentinelHub(Copernicus Sentinelデータ), CC BY 2.0"
+    },
+    {
+      "i": 4,
+      "name": "トルバチク火山",
+      "sec": "3",
+      "lat": 55.832,
+      "lng": 160.326,
+      "text": "1975年、3日前の予告どおりの場所で地面が裂けた",
+      "rich": "章の図3と同じ一枚。1975〜76年の噴火が積んだ砕屑の丘と虹",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/%D0%A0%D0%B0%D0%B4%D1%83%D0%B3%D0%B0_%D0%BD%D0%B0%D0%B4_%D0%B2%D1%83%D0%BB%D0%BA%D0%B0%D0%BD%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%BC%D0%B8_%D0%BA%D0%BE%D0%BD%D1%83%D1%81%D0%B0%D0%BC%D0%B8.jpg/500px-%D0%A0%D0%B0%D0%B4%D1%83%D0%B3%D0%B0_%D0%BD%D0%B0%D0%B4_%D0%B2%D1%83%D0%BB%D0%BA%D0%B0%D0%BD%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%BC%D0%B8_%D0%BA%D0%BE%D0%BD%D1%83%D1%81%D0%B0%D0%BC%D0%B8.jpg",
+      "credit": "Ted.ns, CC BY-SA 4.0"
+    },
+    {
+      "i": 5,
+      "name": "間欠泉の谷",
+      "note": "13",
+      "lat": 54.43,
+      "lng": 160.14,
+      "text": "1941年まで誰も知らなかった、地球で二番目の間欠泉の密集地",
+      "rich": "章の図4と同じ一枚。緑の谷から立つ蒸気",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Valley_of_Geysers_%28Kamchatka%2C_2020%29-1.jpg/500px-Valley_of_Geysers_%28Kamchatka%2C_2020%29-1.jpg",
+      "credit": "Rubin16, CC BY-SA 4.0"
+    },
+    {
+      "i": 6,
+      "name": "ムトノフスキー火山",
+      "sec": "4",
+      "lat": 52.453,
+      "lng": 158.195,
+      "text": "中腹の蒸気の井戸が、半島の電気のおよそ3割を賄う",
+      "rich": "火口の噴気。この山の蒸気が発電所のタービンを回す",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/%D0%A4%D1%83%D0%BC%D0%B0%D1%80%D0%BE%D0%BB%D1%8B_%D0%B2%D1%83%D0%BB%D0%BA%D0%B0%D0%BD%D0%B0_%D0%9C%D1%83%D1%82%D0%BD%D0%BE%D0%B2%D1%81%D0%BA%D0%B8%D0%B9.jpg/500px-%D0%A4%D1%83%D0%BC%D0%B0%D1%80%D0%BE%D0%BB%D1%8B_%D0%B2%D1%83%D0%BB%D0%BA%D0%B0%D0%BD%D0%B0_%D0%9C%D1%83%D1%82%D0%BD%D0%BE%D0%B2%D1%81%D0%BA%D0%B8%D0%B9.jpg",
+      "credit": "Nimuel23, CC BY-SA 4.0"
+    },
+    {
+      "i": 7,
+      "name": "クリル湖",
+      "sec": "5",
+      "lat": 51.45,
+      "lng": 157.12,
+      "text": "8,400年前の噴火の窪みが、ユーラシア最大のベニザケの産卵場になった",
+      "rich": "章の図5と同じ一枚。浅瀬のヒグマとサケ",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Salmon_and_Bear_%287765066002%29.jpg/500px-Salmon_and_Bear_%287765066002%29.jpg",
+      "credit": "Harald Deischinger, CC BY 2.0"
+    },
+    {
+      "i": 8,
+      "name": "アバチャ湾",
+      "sec": "6",
+      "lat": 52.92,
+      "lng": 158.55,
+      "text": "奥行き20キロ、口はわずか3キロ。世界有数の広さの天然の停泊地",
+      "rich": "湾の口に立つ「三兄弟」の岩。船はこの門をくぐって錨地に入る",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Tri_Brata%2815340620491%29.jpg/500px-Tri_Brata%2815340620491%29.jpg",
+      "credit": "kuhnmi, CC BY 2.0"
+    },
+    {
+      "i": 9,
+      "name": "ペトロパブロフスク・カムチャツキー",
+      "sec": "6",
+      "lat": 53.0167,
+      "lng": 158.65,
+      "text": "船2隻の名を貰った中心都市。「うちの火山」を背負って湾に張り付く",
+      "rich": "章の図6と同じ一枚。市街と3つの火山",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Kamchatka_Petropavlovsk-Kamchatsky_and_its_Volcanoes_%2824212090170%29.jpg/500px-Kamchatka_Petropavlovsk-Kamchatsky_and_its_Volcanoes_%2824212090170%29.jpg",
+      "credit": "kuhnmi, CC BY 2.0"
+    }
+  ],
+  "snaps": [
+    {
+      "name": "ハラクティルスキー海岸",
+      "lat": 52.98,
+      "lng": 158.87,
+      "era": "いま",
+      "text": "上から見ると、火山の砂の海は墨色である。波打ち際に、サーフスクールの青い板が散らばる",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Surfing_on_the_Halaktyr_beach_of_Kamchatka_Peninsula.jpg/500px-Surfing_on_the_Halaktyr_beach_of_Kamchatka_Peninsula.jpg",
+      "credit": "tanysolovey, CC BY-SA 2.0"
+    },
+    {
+      "name": "クリュチのサケ梁",
+      "lat": 56.32,
+      "lng": 160.85,
+      "era": "1904年",
+      "text": "クリュチ村の川を、岸から岸まで木の梁が塞ぐ。遡るサケはここで堰かれた。狩猟旅行で来た貴族デミドフの一行の一枚",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/DEMIDOV%281904%29_p272_SALMON_CAUGHT_IN_TRAP_AT_KLUCHI_%2814595813020%29.jpg/500px-DEMIDOV%281904%29_p272_SALMON_CAUGHT_IN_TRAP_AT_KLUCHI_%2814595813020%29.jpg",
+      "credit": "E. P. デミドフ『A Shooting Trip to Kamchatka』(1904), パブリックドメイン"
+    },
+    {
+      "name": "ハラクティルカ飛行場",
+      "lat": 53.05,
+      "lng": 158.72,
+      "era": "いま",
+      "text": "滑走路の脇で客待ちのヘリコプター。道路の無い半島では、これが村々への路線バスである",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Russia%2C_Kamcatka%2C_Petropavlovsk-Kamchatskiy_-_Halaktyrka_airport_%28Petropavlovsk-Kamchatsky%29_WMID5366347.jpg/500px-Russia%2C_Kamcatka%2C_Petropavlovsk-Kamchatskiy_-_Halaktyrka_airport_%28Petropavlovsk-Kamchatsky%29_WMID5366347.jpg",
+      "credit": "jahromez, CC BY-SA 3.0"
+    },
+    {
+      "name": "ミシェンナヤの丘から",
+      "lat": 53.035,
+      "lng": 158.63,
+      "era": "いま",
+      "text": "街でいちばん高い丘から。団地の連なりの向こうに「うちの火山」が座る。この街並みが2025年の夏、M8.8を設計の範囲内で受け止めた",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Petropavlovsk-Kamchatsky%2C_2025.jpg/500px-Petropavlovsk-Kamchatsky%2C_2025.jpg",
+      "credit": "Nikita Zhuravlev, CC BY-SA 4.0"
+    },
+    {
+      "name": "パラトゥンカ",
+      "lat": 52.9633,
+      "lng": 158.2533,
+      "era": "いま",
+      "text": "温泉の村パラトゥンカの裏通り。夏草と砂利道と木の家。市民が週末に浸かりに来る湯の湯気は、ここからは見えない",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Kamchatka_2010_683.jpg/500px-Kamchatka_2010_683.jpg",
+      "credit": "Einar Fredriksen, CC BY-SA 2.0"
+    }
+  ]
+}
