@@ -25,6 +25,7 @@ SERIES = {
     "usa": "第1シリーズ: アメリカ50州",
     "japan": "第2シリーズ: 臥遊風土記",
     "china": "第3シリーズ: 中国33省区",
+    "russia": "第4シリーズ: ロシア83連邦主体",
 }
 
 MD = markdown.Markdown(extensions=["tables"])
