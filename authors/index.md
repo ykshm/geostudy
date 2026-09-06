@@ -11,6 +11,7 @@
 | 三輪 遼 | authors/miwa-ryo.md | 機械と工場の産業地理 | 執筆中(アメリカ50州: ミシガン・ペンシルベニア・オハイオ/臥遊風土記: 津軽) |
 | 日下 梓 | authors/kusaka-azusa.md | 移民と住まいの都市地理 | 執筆中(アメリカ50州: ニューヨーク・マサチューセッツ・イリノイ・カリフォルニア) |
 | 戸川 奏 | authors/togawa-kanade.md | 音楽産業と電波のメディア文化地理 | 執筆中(アメリカ50州: テネシー・ミシシッピ・ケンタッキー) |
+| 香月 湊 | authors/katsuki-minato.md | 軍事基地と安全保障の政治地理 | 執筆中(アメリカ50州: バージニア) |
 
 ## 章の割り振り(アメリカ50州)
 
@@ -40,6 +41,7 @@
 | ノースカロライナ | text/usa/nc.md | 千々石 洋(authors/chichiwa-hiroshi.md) |
 | ケンタッキー | text/usa/ky.md | 戸川 奏(authors/togawa-kanade.md) |
 | コロラド | text/usa/co.md | 沢井 環(authors/sawai-tamaki.md) |
+| バージニア | text/usa/va.md | 香月 湊(authors/katsuki-minato.md) |
 
 ## 章の割り振り(臥遊風土記)
 
