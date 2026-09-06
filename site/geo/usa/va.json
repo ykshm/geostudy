@@ -77,8 +77,8 @@
    "lng": -78.7958,
    "text": "1865年4月、リーが降伏文書に署名した州西部の集落",
    "rich": "FILL",
-   "img": "FILL",
-   "credit": "FILL"
+   "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/McLean_House_at_Appomattox%2C_VA_IMG_4136.JPG/500px-McLean_House_at_Appomattox%2C_VA_IMG_4136.JPG",
+   "credit": "Billy Hathorn, CC BY-SA 3.0"
   },
   {
    "i": 7,
@@ -110,8 +110,8 @@
    "lng": -77.1461,
    "text": "通称ラングレー。パークウェイに出口標識の出ている、森の中のCIA本部",
    "rich": "FILL",
-   "img": "FILL",
-   "credit": "FILL"
+   "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Aerial_view_of_the_Central_Intelligence_Agency_headquarters%2C_Langley%2C_Virginia_-_Corrected_and_Cropped.jpg/500px-Aerial_view_of_the_Central_Intelligence_Agency_headquarters%2C_Langley%2C_Virginia_-_Corrected_and_Cropped.jpg",
+   "credit": "Carol M. Highsmith(米議会図書館), パブリックドメイン"
   },
   {
    "i": 10,
@@ -132,9 +132,46 @@
    "lng": -77.5216,
    "text": "南北戦争最初の大会戦の古戦場。データセンター計画との攻防の現場",
    "rich": "FILL",
-   "img": "FILL",
-   "credit": "FILL"
+   "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/View_of_the_%22Henry_House%22_and_surroundings_on_Henry%27s_House_Hill_at_Manassas_National_Battlefield_Park_outside_Manassas%2C_Virginia_61838u.tif/lossy-page1-500px-View_of_the_%22Henry_House%22_and_surroundings_on_Henry%27s_House_Hill_at_Manassas_National_Battlefield_Park_outside_Manassas%2C_Virginia_61838u.tif.jpg",
+   "credit": "Carol M. Highsmith(米議会図書館), パブリックドメイン"
   }
  ],
- "snaps": []
+ "snaps": [
+  {
+   "name": "ノーフォーク第14埠頭",
+   "lat": 36.9629,
+   "lng": -76.3346,
+   "era": "いま",
+   "text": "半年の展開が終わる朝。空母の巨体が岸壁に寄ってくるのを、埠頭いっぱいの家族が手旗と横断幕で待つ。",
+   "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/US_Navy_080604-N-5345W-077_Friends_and_family_members_watch_as_the_aircraft_carrier_USS_Harry_S._Truman_%28CVN_75%29_approaches_the_pier_at_Naval_Station_Norfolk_during_a_homecoming_celebration.jpg/500px-US_Navy_080604-N-5345W-077_Friends_and_family_members_watch_as_the_aircraft_carrier_USS_Harry_S._Truman_%28CVN_75%29_approaches_the_pier_at_Naval_Station_Norfolk_during_a_homecoming_celebration.jpg",
+   "credit": "米海軍, パブリックドメイン"
+  },
+  {
+   "name": "イーデン・センター",
+   "lat": 38.8697,
+   "lng": -77.153,
+   "era": "いま",
+   "text": "旧正月(テト)の飾りが出た店内の通路。東海岸最大のベトナム人街の正月は、首都の膝元で始まる。",
+   "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Holiday_displays_for_Tet%2C_Eden_Center_%2887590%29.jpg/500px-Holiday_displays_for_Tet%2C_Eden_Center_%2887590%29.jpg",
+   "credit": "Ser Amantio di Nicolao, CC BY-SA 4.0"
+  },
+  {
+   "name": "リッチランズの炭鉱",
+   "lat": 37.0932,
+   "lng": -81.8104,
+   "era": "1974年",
+   "text": "州の南西の端、章が歩かなかった山の中。一番方の坑夫たちがエレベーターで昇ってくる。",
+   "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/FIRST_SHIFT_OF_MINERS_AT_THE_VIRGINIA-POCAHONTAS_COAL_COMPANY_MINE_%5E4_NEAR_RICHLANDS%2C_VIRGINIA%2C_LEAVING_THE_ELEVATOR...._-_NARA_-_556393_tweaked.jpg/500px-FIRST_SHIFT_OF_MINERS_AT_THE_VIRGINIA-POCAHONTAS_COAL_COMPANY_MINE_%5E4_NEAR_RICHLANDS%2C_VIRGINIA%2C_LEAVING_THE_ELEVATOR...._-_NARA_-_556393_tweaked.jpg",
+   "credit": "Jack Corn/EPA(ドキュメリカ), パブリックドメイン"
+  },
+  {
+   "name": "スカイライン・ドライブ",
+   "lat": 38.5926,
+   "lng": -78.3502,
+   "era": "1940年ごろ",
+   "text": "展望台の縁に腰かけて、シェナンドー渓谷を描く人。できたばかりの観光道路の、静かな午後。",
+   "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/A_woman_painting_a_view_of_the_Shenandoah_Valley_from_the_Skyline_Drive%2C_near_an_entrance_to_the_Appalachian_Trail%2C_Virginia_LCCN2017877421.jpg/500px-A_woman_painting_a_view_of_the_Shenandoah_Valley_from_the_Skyline_Drive%2C_near_an_entrance_to_the_Appalachian_Trail%2C_Virginia_LCCN2017877421.jpg",
+   "credit": "Jack Delano/FSA(米議会図書館), パブリックドメイン"
+  }
+ ]
 }
