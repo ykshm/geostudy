@@ -11,19 +11,19 @@
    "lng": -76.7794,
    "text": "1607年、上陸ひと月で柵を巡らせた最初の砦。州の建築史の始まり",
    "rich": "FILL",
-   "img": "FILL",
-   "credit": "FILL"
+   "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/James_Fort_Site%2C_Historic_Jamestowne%2C_Colonial_National_Historical_Park%2C_Jamestown%2C_Virginia_%2814445783923%29.jpg/500px-James_Fort_Site%2C_Historic_Jamestowne%2C_Colonial_National_Historical_Park%2C_Jamestown%2C_Virginia_%2814445783923%29.jpg",
+   "credit": "Ken Lund, CC BY-SA 2.0"
   },
   {
    "i": 1,
    "name": "ポイント・コンフォート",
    "sec": "1",
    "lat": 37.0037,
-   "lng": -76.3080,
+   "lng": -76.308,
    "text": "1619年8月、アフリカ人「20人余り」が売られた湾口の岬。いまのハンプトン",
    "rich": "FILL",
-   "img": "FILL",
-   "credit": "FILL"
+   "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Aerial_view%2C_Old_Point_Comfort_and_Fort_Monroe%2C_Va._%288598923688%29.jpg/500px-Aerial_view%2C_Old_Point_Comfort_and_Fort_Monroe%2C_Va._%288598923688%29.jpg",
+   "credit": "ボストン公共図書館所蔵, CC BY 2.0"
   },
   {
    "i": 2,
@@ -33,8 +33,8 @@
    "lng": -77.4338,
    "text": "ジェームズ川の滝線、外洋船の遡航の終点に立つ州都。南北戦争では南部連合の首都",
    "rich": "FILL",
-   "img": "FILL",
-   "credit": "FILL"
+   "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Falls_of_the_James%2C_Downtown_Richmond%2C_Virginia%2C_2008.JPG/500px-Falls_of_the_James%2C_Downtown_Richmond%2C_Virginia%2C_2008.JPG",
+   "credit": "Morgan Riley, CC BY 3.0"
   },
   {
    "i": 3,
@@ -44,19 +44,19 @@
    "lng": -76.5044,
    "text": "1781年10月、コーンウォリスが降伏した独立戦争の事実上の決着の地",
    "rich": "FILL",
-   "img": "FILL",
-   "credit": "FILL"
+   "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Yorktown_Victory_Monument%2C_Colonial_National_Historic_Site%2C_Yorktown%2C_Virginia_%2814239327850%29.jpg/500px-Yorktown_Victory_Monument%2C_Colonial_National_Historic_Site%2C_Yorktown%2C_Virginia_%2814239327850%29.jpg",
+   "credit": "Ken Lund, CC BY-SA 2.0"
   },
   {
    "i": 4,
    "name": "シェナンドー渓谷",
    "sec": "2",
-   "lat": 38.5500,
-   "lng": -78.7700,
+   "lat": 38.55,
+   "lng": -78.77,
    "text": "南軍の穀倉にして、ワシントンの背後へ抜ける天然の廊下。1864年に焼き払われた",
    "rich": "FILL",
-   "img": "FILL",
-   "credit": "FILL"
+   "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/2016-06-26_18_06_52_View_southeast_across_the_North_Fork_Shenandoah_River_Valley_towards_Massanutten_Mountain_from_Virginia_State_Route_42_%28Forestville_Road%29_north_of_Timberville_in_northern_Rockingham_County%2C_Virginia.jpg/500px-2016-06-26_18_06_52_View_southeast_across_the_North_Fork_Shenandoah_River_Valley_towards_Massanutten_Mountain_from_Virginia_State_Route_42_%28Forestville_Road%29_north_of_Timberville_in_northern_Rockingham_County%2C_Virginia.jpg",
+   "credit": "Famartin, CC BY-SA 4.0"
   },
   {
    "i": 5,
@@ -66,8 +66,8 @@
    "lng": -77.0733,
    "text": "リーの屋敷の丘。接収されて国立墓地になり、いまはおよそ40万の墓",
    "rich": "FILL",
-   "img": "FILL",
-   "credit": "FILL"
+   "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Arlington_House%2C_the_Robert_E._Lee_Memorial_is_a_national_park_unit_inside_Arlington_National_Cemetery._%28ff39d9f9-9a88-1491-8ddf-2435c6b36807%29.jpg/500px-Arlington_House%2C_the_Robert_E._Lee_Memorial_is_a_national_park_unit_inside_Arlington_National_Cemetery._%28ff39d9f9-9a88-1491-8ddf-2435c6b36807%29.jpg",
+   "credit": "米国立公園局, パブリックドメイン"
   },
   {
    "i": 6,
@@ -85,22 +85,22 @@
    "name": "ノーフォーク",
    "sec": "3",
    "lat": 36.9648,
-   "lng": -76.3280,
+   "lng": -76.328,
    "text": "埠頭14本・艦艇75隻。世界最大の海軍基地の町",
    "rich": "FILL",
-   "img": "FILL",
-   "credit": "FILL"
+   "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/US_Navy_110707-N-XZ912-104_An_aerial_view_of_Norfolk_Naval_Station%2C_the_largest_naval_base_in_the_world.jpg/500px-US_Navy_110707-N-XZ912-104_An_aerial_view_of_Norfolk_Naval_Station%2C_the_largest_naval_base_in_the_world.jpg",
+   "credit": "米海軍, パブリックドメイン"
   },
   {
    "i": 8,
    "name": "ニューポート・ニューズ",
    "sec": "3",
-   "lat": 36.9800,
-   "lng": -76.4380,
+   "lat": 36.98,
+   "lng": -76.438,
    "text": "国でただひとつ、原子力空母を設計・建造できる造船所の町",
    "rich": "FILL",
-   "img": "FILL",
-   "credit": "FILL"
+   "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/A_port_view_of_the_aft_section_of_the_nuclear-powered_aircraft_carrier_GEORGE_WASHINGTON_%28CVN-73%29_at_the_fitting_out_pier_at_the_Newport_News_Shipbuilding_and_Dry_Dock_Corporation_o_-_DPLA_-_b44f68865786390868605549a206b326.jpeg/500px-A_port_view_of_the_aft_section_of_the_nuclear-powered_aircraft_carrier_GEORGE_WASHINGTON_%28CVN-73%29_at_the_fitting_out_pier_at_the_Newport_News_Shipbuilding_and_Dry_Dock_Corporation_o_-_DPLA_-_b44f68865786390868605549a206b326.jpeg",
+   "credit": "米国防総省, パブリックドメイン"
   },
   {
    "i": 9,
@@ -117,12 +117,12 @@
    "i": 10,
    "name": "アッシュバーン",
    "sec": "5",
-   "lat": 39.0300,
-   "lng": -77.4700,
+   "lat": 39.03,
+   "lng": -77.47,
    "text": "データセンター・アレー。世界のクラウドが入った、窓のない倉庫の群れ",
    "rich": "FILL",
-   "img": "FILL",
-   "credit": "FILL"
+   "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Data_centers_in_Ashburn.jpg/500px-Data_centers_in_Ashburn.jpg",
+   "credit": "Theodore Christopher, CC0=パブリックドメイン提供"
   },
   {
    "i": 11,
