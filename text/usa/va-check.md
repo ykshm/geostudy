@@ -62,8 +62,8 @@ Commons APIのextmetadataで各点のライセンスを確認し、User-Agent「
 - img/va-norfolk.jpg = Commons「US Navy 110707-N-XZ912-104 An aerial view of Norfolk Naval Station, the largest naval base in the world.jpg」の1280px(米海軍写真・撮影Christopher B. Stoltz、パブリックドメイン)。基地突端の空撮で、駐車場・並んだ空母2隻・奥へ続く埠頭列を確認し、説明文を実景に合わせて書いた。
 - img/va-pentagon.jpg = Commons「Aerial view of the Pentagon, Arlington, VA (38285035892).jpg」の1280px(mariordo59作、CC BY-SA 2.0)。五重の輪・中庭・立体交差・右手のアーリントン墓地の墓標列を確認。当初の「ポトマック川と市街が写る」の説明は実景に無いため書き直した。説明段落末尾に作者名とライセンスを記載(削除禁止)。
 - img/va-datacenter.jpg = Commons「Data centers in Ashburn.jpg」の1280px(Theodore Christopher作、CC0)。機窓からのアッシュバーン周辺の空撮で、箱形の建物群・変電所・遠景の山なみを確認し、説明文を実景に合わせて書いた。CC0のため権利表示は任意だが撮影者名を記載。
-- img/va-jamestown.jpg(取得中)= 候補: Commons「James Fort Site, Historic Jamestowne, Colonial National Historical Park, Jamestown, Virginia (14445783923).jpg」(Ken Lund作、CC BY-SA 2.0)。取得・目視確認の後に確定する。
-- img/va-arlington.jpg(取得中)= 候補: Commons「Graves along the east border of the formal flower garden - Arlington House - Arlington National Cemetery - 2012-05-19.jpg」(Tim Evanson作、CC BY-SA 2.0)。取得・目視確認の後に確定する。
+- img/va-jamestown.jpg = Commons「James Fort Site, Historic Jamestowne, Colonial National Historical Park, Jamestown, Virginia (14445783923).jpg」の1280px(Ken Lund作、CC BY-SA 2.0)。復元された木柵・記念碑・大砲・ジェームズ川を確認。当初の「茅葺きの小屋」の説明は実景に無いため書き直した。説明段落末尾に作者名とライセンスを記載(削除禁止)。
+- img/va-arlington.jpg = Commons「Graves along the east border of the formal flower garden - Arlington House - Arlington National Cemetery - 2012-05-19.jpg」の原寸1250px(Tim Evanson作、CC BY-SA 2.0。原画像が1250px幅のため原寸を取得)。花園の縁の鎖柵と士官墓の列を確認。元記載も「花園の東縁に沿う士官の墓の列」で、本文2節(バラ園のきわからの埋葬)と整合。当初の「丘の上の邸宅」の説明は実景(邸宅は写らない)に合わせて書き直した。説明段落末尾に作者名とライセンスを記載(削除禁止)。
 
 ## 文体の照合(2026-09-06)
 
