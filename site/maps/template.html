@@ -23,9 +23,11 @@
     見どころを裏方の別の目で足す層。geo/*.json の extras 配列で管理。
     臥遊風土記では標準、他シリーズでは任意)
   ・写真タップで拡大(親ページがあれば全画面、単体表示なら地図内で)
+  ・Leaflet本体は site/assets/vendor/leaflet/ に同梱(セルフホスト)。
+    以前はunpkg CDNから読んでいたが、CDN障害・遮断で地図が全滅するためやめた。
 -->
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<link rel="stylesheet" href="../assets/vendor/leaflet/leaflet.css">
+<script src="../assets/vendor/leaflet/leaflet.js"></script>
 <style>
   html, body { margin: 0; padding: 0; height: 100%; }
   body { display: flex; flex-direction: column;
