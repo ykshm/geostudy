@@ -24,7 +24,7 @@
 - 本文の地名の📍リンク化(`<a class="geo" data-i="N">`)。geo/*.json の指定した節・注での初出1回だけ。タップでパネルが開き該当地点へ飛ぶ
 - 章末の「おまけ: 地図で歩き直す」節(章別地図を `?rich` パラメータ付きiframeで埋め込み。写真付き)。richモードには📷の「暮らしのスナップ」ピン(観光地でない生活の場面)も出て、写真はタップで全画面拡大できる
 
-章別地図の実体は、テンプレート(`site/maps/template.html`)+章別データ(`site/geo/<シリーズ>/<slug>.json`)から build.py が生成する `_site/maps/<シリーズ>-<slug>.html` である。見た目や動きの改修はテンプレートを直せば全章に効く。データの書式が壊れているとビルドが失敗する(lintを兼ねる)。地図は Leaflet(unpkg CDN)+ CARTO/Esri/OpenStreetMapのタイルを使い、APIキーは不要。写真はWikimedia Commonsへの直リンクで、クレジット表示はCCライセンスの要件なので削除しないこと。
+章別地図の実体は、テンプレート(`site/maps/template.html`)+章別データ(`site/geo/<シリーズ>/<slug>.json`)から build.py が生成する `_site/maps/<シリーズ>-<slug>.html` である。見た目や動きの改修はテンプレートを直せば全章に効く。データの書式が壊れているとビルドが失敗する(lintを兼ねる)。地図は Leaflet(`site/assets/vendor/leaflet/` に同梱。CDN障害で地図が全滅した教訓からセルフホスト)+ CARTO/Esri/OpenStreetMapのタイルを使い、APIキーは不要。写真はWikimedia Commonsへの直リンクで、クレジット表示はCCライセンスの要件なので削除しないこと。
 
 **章の地図を新しく作る手順は `site/MAPS.md`**(地名・写真の選定基準、ライセンス検証、確認チェックリスト)。検証記録は `site/geo/<シリーズ>/<slug>-check.md` に残す。
 
