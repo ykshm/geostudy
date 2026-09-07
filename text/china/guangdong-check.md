@@ -70,8 +70,16 @@
 
 ## 図版の出所
 
-(収集時に記入)
+- img/guangdong-locator.png = File:Guangdong in China (+all claims hatched).svg(TUBS, CC BY-SA 3.0)の1024px PNG
+- img/guangdong-delta.jpg = File:2014 NASA Earth Observatory image of Pearl River Delta.jpg(NASA Earth Observatory, パブリックドメイン)の1280px
+- img/guangdong-thirteen-factories.jpg = File:Foreign factories, Canton.jpg(画家は林呱〔Lam Qua〕に帰属, 1825〜35年ごろ, パブリックドメイン)の1024px
+- img/guangdong-diaolou.jpg = File:Kaiping Diaolou in Zili Village - 20181028-1.jpg(DragonSamYU, CC BY-SA 4.0)の1280px
+- img/guangdong-shenzhen.jpg = File:Deng Xiaoping billboard 04.JPG(Brücke-Osteuropa, 作者によるパブリックドメイン供与)の1280px
+- img/guangdong-huaqiangbei.jpg = File:华强电子世界 2.jpg(Mx. Granger, CC0)の1024px
+- img/guangdong-bridge.jpg = File:Hong Kong–Zhuhai–Macau Bridge 02.jpg(Pauloleong2002, CC BY-SA 4.0)の1280px
 
-## 図版の取得記録
+## 図版の取得記録(2026-09-07)
 
-(収集時に記入)
+- 7点すべてWikimedia Commonsから取得。ライセンスはimageinfo APIのextmetadata(LicenseShortName/Artist)で確認し、上記の通り。User-Agentは「geostudy-image-collection/1.0 (+https://github.com/ykshm/geostudy)」。
+- レート制限は今回も強く、検索とメタデータ取得の各段で429が頻発した。35〜70秒空けての再試行と、リクエスト間22〜30秒の待ちで全点取得。取得幅は標準幅1280px(写真)・1024px(位置図・原画像が小さい絵画・縦位置の写真)。
+- 全点を目視で確認し、キャプションを実写に合わせて書き直した(下記の通り)。
