@@ -1,0 +1,175 @@
+{
+  "_comment": "タタールスタン章の地図データ。build.py がこのファイルと site/maps/template.html から maps/russia-tatarstan.html を生成し、章ページに地名リンク・地図パネル・章末おまけを付ける(すべてウェブ版限定。正本のMarkdownには手を入れない)。書き方は site/MAPS.md 参照。",
+  "map": "maps/russia-tatarstan.html",
+  "title": "タタールスタン — 章の地名地図",
+  "places": [
+    {
+      "i": 0,
+      "name": "ボルガル",
+      "sec": "1",
+      "lat": 54.985,
+      "lng": 49.0503,
+      "text": "922年に国ごとイスラムに入った交易国家の都。いまはロシアのムスリムの巡礼地",
+      "rich": "章の図2と同じ一枚。再建の大ミナレットと、18世紀に遺跡の中に建った聖堂が並ぶ",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Bolgar.JPG/500px-Bolgar.JPG",
+      "credit": "Alaexis, CC BY-SA 3.0"
+    },
+    {
+      "i": 1,
+      "name": "カザン",
+      "sec": "1",
+      "lat": 55.7985,
+      "lng": 49.1064,
+      "text": "ハン国の都から共和国の首府へ。人口133万、ロシア第5の都市",
+      "rich": "夜のクレムリン。白い城壁の上に、青い星屑のドームの聖堂とクル・シャリフの尖塔が並んで灯る",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/%D0%9F%D0%B0%D0%BD%D0%BE%D1%80%D0%B0%D0%BC%D0%B0_%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%81%D0%BA%D0%BE%D0%B3%D0%BE_%D0%9A%D1%80%D0%B5%D0%BC%D0%BB%D1%8F%2C_%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C%2C_%D0%A2%D0%B0%D1%82%D0%B0%D1%80%D1%81%D1%82%D0%B0%D0%BD.jpg/500px-%D0%9F%D0%B0%D0%BD%D0%BE%D1%80%D0%B0%D0%BC%D0%B0_%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%81%D0%BA%D0%BE%D0%B3%D0%BE_%D0%9A%D1%80%D0%B5%D0%BC%D0%BB%D1%8F%2C_%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C%2C_%D0%A2%D0%B0%D1%82%D0%B0%D1%80%D1%81%D1%82%D0%B0%D0%BD.jpg",
+      "credit": "Juliaf1, CC BY-SA 4.0"
+    },
+    {
+      "i": 2,
+      "name": "クイビシェフ貯水湖",
+      "sec": "1",
+      "lat": 55.2,
+      "lng": 49.3,
+      "text": "ヴォルガとカマの合流点はこの水の下。琵琶湖10倍の、ヨーロッパ最大の人造湖",
+      "rich": "夕暮れの湖面。対岸の丘は霞み、右端にダムの送電設備がのぞく",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Kuybyshev_Reservoir_%281%29.jpg/500px-Kuybyshev_Reservoir_%281%29.jpg",
+      "credit": "Derbrauni, CC BY 4.0"
+    },
+    {
+      "i": 3,
+      "name": "ウグリチ",
+      "sec": "2",
+      "lat": 57.5263,
+      "lng": 38.332,
+      "text": "1550年の冬、要塞の部材はこの町の近郊の森で刻まれ、筏で1,000キロを下った",
+      "rich": "ウグリチのクレムリンの主聖堂。要塞の材木は、このあたりの御料林から出た",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/%D0%A1%D0%BF%D0%B0%D1%81%D0%BE-%D0%9F%D1%80%D0%B5%D0%BE%D0%B1%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D1%81%D0%BA%D0%B8%D0%B9_%D1%81%D0%BE%D0%B1%D0%BE%D1%80_%D0%B3%D0%BE%D1%80%D0%BE%D0%B4_%D0%A3%D0%B3%D0%BB%D0%B8%D1%87.jpg/500px-%D0%A1%D0%BF%D0%B0%D1%81%D0%BE-%D0%9F%D1%80%D0%B5%D0%BE%D0%B1%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D1%81%D0%BA%D0%B8%D0%B9_%D1%81%D0%BE%D0%B1%D0%BE%D1%80_%D0%B3%D0%BE%D1%80%D0%BE%D0%B4_%D0%A3%D0%B3%D0%BB%D0%B8%D1%87.jpg",
+      "credit": "Blooming soul, CC BY-SA 4.0"
+    },
+    {
+      "i": 4,
+      "name": "スヴィヤシスク",
+      "sec": "2",
+      "lat": 55.7712,
+      "lng": 48.6622,
+      "text": "1551年、四週間で組み上がったプレハブの要塞。いまは貯水湖に浮かぶ観光の島",
+      "rich": "章の図3と同じ一枚。就寝修道院の白い塀と、島の集落の屋根",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/%D0%A1%D0%B2%D0%B8%D1%8F%D0%B6%D1%81%D0%BA_%D0%A3%D1%81%D0%BF%D0%B5%D0%BD%D1%81%D0%BA%D0%BE-%D0%91%D0%BE%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D0%B8%D1%87%D0%BD%D1%8B%D0%B9_%D0%BC%D1%83%D0%B6%D1%81%D0%BA%D0%BE%D0%B9_%D0%BC%D0%BE%D0%BD%D0%B0%D1%81%D1%82%D1%8B%D1%80%D1%8C_%D0%BA%D0%BE%D0%BF%D1%82%D0%B5%D1%80.jpg/500px-%D0%A1%D0%B2%D0%B8%D1%8F%D0%B6%D1%81%D0%BA_%D0%A3%D1%81%D0%BF%D0%B5%D0%BD%D1%81%D0%BA%D0%BE-%D0%91%D0%BE%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D0%B8%D1%87%D0%BD%D1%8B%D0%B9_%D0%BC%D1%83%D0%B6%D1%81%D0%BA%D0%BE%D0%B9_%D0%BC%D0%BE%D0%BD%D0%B0%D1%81%D1%82%D1%8B%D1%80%D1%8C_%D0%BA%D0%BE%D0%BF%D1%82%D0%B5%D1%80.jpg",
+      "credit": "Шелковников Евгений Анатольевич, CC BY-SA 4.0"
+    },
+    {
+      "i": 5,
+      "name": "アリメチエフスク",
+      "sec": "3",
+      "lat": 54.9014,
+      "lng": 52.2971,
+      "text": "油田のただ中に建てられた「石油の首都」。タタネフチ本社と自転車道の街",
+      "rich": "章の図4と同じ一枚。TATNEFTの黒い本社ビルと、五階建て住宅の街並み",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/%D0%90%D0%BB%D1%8C%D0%BC%D0%B5%D1%82%D1%8C%D0%B5%D0%B2%D1%81%D0%BA._%D0%90%D0%B4%D0%BC%D0%B8%D0%BD%D0%B8%D1%81%D1%82%D1%80%D0%B0%D1%82%D0%B8%D0%B2%D0%BD%D1%8B%D0%B5_%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D1%8F_%D0%BA%D0%BE%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D0%B8_%C2%AB%D0%A2%D0%B0%D1%82%D0%BD%D0%B5%D1%84%D1%82%D1%8C%C2%BB_%D0%BD%D0%B0_%D1%84%D0%BE%D0%BD%D0%B5_%D0%BF%D0%B0%D0%BD%D0%BE%D1%80%D0%B0%D0%BC%D1%8B_%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D0%B0.jpg/500px-%D0%90%D0%BB%D1%8C%D0%BC%D0%B5%D1%82%D1%8C%D0%B5%D0%B2%D1%81%D0%BA._%D0%90%D0%B4%D0%BC%D0%B8%D0%BD%D0%B8%D1%81%D1%82%D1%80%D0%B0%D1%82%D0%B8%D0%B2%D0%BD%D1%8B%D0%B5_%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D1%8F_%D0%BA%D0%BE%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D0%B8_%C2%AB%D0%A2%D0%B0%D1%82%D0%BD%D0%B5%D1%84%D1%82%D1%8C%C2%BB_%D0%BD%D0%B0_%D1%84%D0%BE%D0%BD%D0%B5_%D0%BF%D0%B0%D0%BD%D0%BE%D1%80%D0%B0%D0%BC%D1%8B_%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D0%B0.jpg",
+      "credit": "Марат Сафаров, CC BY-SA 4.0"
+    },
+    {
+      "i": 6,
+      "name": "ニジネカムスク",
+      "sec": "3",
+      "lat": 55.6367,
+      "lng": 51.8245,
+      "text": "高硫黄の油を自前で捌く石油化学の街。合成ゴムとタイヤと製油所",
+      "rich": "カマ川から見た岸辺。噴水と川辺の遊歩道の向こうが、人口24万の工業都市である",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Nizhnekamsk._Kama_River_P6263326_2575.jpg/500px-Nizhnekamsk._Kama_River_P6263326_2575.jpg",
+      "credit": "Alexxx1979, CC BY-SA 4.0"
+    },
+    {
+      "i": 7,
+      "name": "ナベレジヌイェ・チェルヌイ",
+      "sec": "4",
+      "lat": 55.7436,
+      "lng": 52.3958,
+      "text": "カマズと同い年の街。番号付きの街区に54万人が住む",
+      "rich": "夕暮れのカマ川ごしの街並み。岸の斜面に、タタール語の地名「ЧАЛЛЫ(チャルル)」の白い文字が立つ",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Kama_River._Naberezhnye_Chelny_P6211354_2575.jpg/500px-Kama_River._Naberezhnye_Chelny_P6211354_2575.jpg",
+      "credit": "Alexxx1979, CC BY-SA 4.0"
+    },
+    {
+      "i": 8,
+      "name": "チストポリ",
+      "sec": "5",
+      "lat": 55.3645,
+      "lng": 50.6413,
+      "text": "疎開列車が時計工場を降ろした川湊。ヴォストークはいまもここで動いている",
+      "rich": "カマ川から見た町。木立の上に、旧商家町の聖堂が頭を出す",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/20220625_Chistopol_06.jpg/500px-20220625_Chistopol_06.jpg",
+      "credit": "Sergey A. Demidov, CC BY 4.0"
+    },
+    {
+      "i": 9,
+      "name": "イノポリス",
+      "sec": "7",
+      "lat": 55.752,
+      "lng": 48.7444,
+      "text": "2015年開市のIT都市。住民4千人、ロシアでいちばん新しい市",
+      "rich": "芝生の丘の上の大学キャンパス。この歩道を配達ロボットが走る",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Innopolis_02.jpg/500px-Innopolis_02.jpg",
+      "credit": "MBH, CC BY-SA 4.0"
+    },
+    {
+      "i": 10,
+      "name": "エラブガ",
+      "sec": "7",
+      "lat": 55.7565,
+      "lng": 52.0619,
+      "text": "シーシキンの生地の旧商家町。郊外のアラブガ特区に、いまはドローン工場がある",
+      "rich": "聖堂の鐘楼から見た町はずれ。トイマ川が蛇行して、奥のカマ川へ注ぐ",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/%D0%92%D0%B8%D0%B4_%D1%81_%D0%BA%D0%BE%D0%BB%D0%BE%D0%BA%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8_%D0%A1%D0%BF%D0%B0%D1%81%D1%81%D0%BA%D0%BE%D0%B3%D0%BE_%D1%81%D0%BE%D0%B1%D0%BE%D1%80%D0%B0._%D0%95%D0%BB%D0%B0%D0%B1%D1%83%D0%B3%D0%B0%2C_%D0%A2%D0%B0%D1%82%D0%B0%D1%80%D1%81%D1%82%D0%B0%D0%BD.jpg/500px-%D0%92%D0%B8%D0%B4_%D1%81_%D0%BA%D0%BE%D0%BB%D0%BE%D0%BA%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8_%D0%A1%D0%BF%D0%B0%D1%81%D1%81%D0%BA%D0%BE%D0%B3%D0%BE_%D1%81%D0%BE%D0%B1%D0%BE%D1%80%D0%B0._%D0%95%D0%BB%D0%B0%D0%B1%D1%83%D0%B3%D0%B0%2C_%D0%A2%D0%B0%D1%82%D0%B0%D1%80%D1%81%D1%82%D0%B0%D0%BD.jpg",
+      "credit": "Moneycantbuy, CC BY-SA 4.0"
+    }
+  ],
+  "snaps": [
+    {
+      "name": "カバン湖の絵はがき",
+      "lat": 55.779,
+      "lng": 49.118,
+      "era": "1920年代",
+      "text": "湖ごしに旧タタール人街。木の家の岸の向こうに、アパナエフスカヤ・モスクのミナレットと煙突が並ぶ。ソ連初期の絵はがきの一枚",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/%D0%92%D0%B8%D0%B4_%D0%BD%D0%B0_%D0%BE%D0%B7%D0%B5%D1%80%D0%BE_%D0%9A%D0%B0%D0%B1%D0%B0%D0%BD_%D0%B8_%D0%A1%D1%82%D0%B0%D1%80%D1%83%D1%8E_%D1%82%D0%B0%D1%82%D0%B0%D1%80%D1%81%D0%BA%D1%83%D1%8E_%D1%81%D0%BB%D0%BE%D0%B1%D0%BE%D0%B4%D1%83_%28%D0%B3._%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C%29.jpg/500px-%D0%92%D0%B8%D0%B4_%D0%BD%D0%B0_%D0%BE%D0%B7%D0%B5%D1%80%D0%BE_%D0%9A%D0%B0%D0%B1%D0%B0%D0%BD_%D0%B8_%D0%A1%D1%82%D0%B0%D1%80%D1%83%D1%8E_%D1%82%D0%B0%D1%82%D0%B0%D1%80%D1%81%D0%BA%D1%83%D1%8E_%D1%81%D0%BB%D0%BE%D0%B1%D0%BE%D0%B4%D1%83_%28%D0%B3._%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C%29.jpg",
+      "credit": "作者不詳の絵はがき, パブリックドメイン"
+    },
+    {
+      "name": "トゥカイ広場駅",
+      "lat": 55.7873,
+      "lng": 49.124,
+      "era": "いま",
+      "text": "昼下がりの地下鉄のホーム。大理石の壁に、尖ったアーチの枠のモザイク画がずっと続く。地下鉄は建都1000年の2005年に開業した",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Kazan_Metro_%28April_2025%29_-_0_7.jpg/500px-Kazan_Metro_%28April_2025%29_-_0_7.jpg",
+      "credit": "Vyacheslav Bukharov, CC BY-SA 4.0"
+    },
+    {
+      "name": "カマズの工場の床",
+      "lat": 55.706,
+      "lng": 52.32,
+      "era": "2005年",
+      "text": "視察の一行が来た日の工場。青い作業着の若い工員が、自分の機械の脇に立って話を聞いている",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Trip_to_Naberezhnye_Chelny_and_Nizhnekamsk_%282005-11-23%29_02.jpg/500px-Trip_to_Naberezhnye_Chelny_and_Nizhnekamsk_%282005-11-23%29_02.jpg",
+      "credit": "ミハイル・コズロフスキー, CC BY 4.0"
+    },
+    {
+      "name": "ナベレジヌイェ・チェルヌイ駅",
+      "lat": 55.6885,
+      "lng": 52.3196,
+      "era": "いま",
+      "text": "旅客ホームの向かいの線路を、石油のタンク車の列がふさいでいる。この共和国の駅らしい眺めである",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/%D0%9F%D0%BB%D0%B0%D1%82%D1%84%D0%BE%D1%80%D0%BC%D0%B0_1_%D0%BF%D1%83%D1%82%D0%B8_%D1%81%D1%82._%D0%9D%D0%B0%D0%B1%D0%B5%D1%80%D0%B5%D0%B6%D0%BD%D1%8B%D0%B5_%D0%A7%D0%B5%D0%BB%D0%BD%D1%8B.jpg/500px-%D0%9F%D0%BB%D0%B0%D1%82%D1%84%D0%BE%D1%80%D0%BC%D0%B0_1_%D0%BF%D1%83%D1%82%D0%B8_%D1%81%D1%82._%D0%9D%D0%B0%D0%B1%D0%B5%D1%80%D0%B5%D0%B6%D0%BD%D1%8B%D0%B5_%D0%A7%D0%B5%D0%BB%D0%BD%D1%8B.jpg",
+      "credit": "Ильяс Нурутдинов, CC BY-SA 4.0"
+    },
+    {
+      "name": "チストポリの屋根の上",
+      "lat": 55.3646,
+      "lng": 50.635,
+      "era": "いま",
+      "text": "五階建ての屋上から。木の家と菜園と物置の町が、地平線まで続く。この町のどこかで、今日もアンフィビアが組まれている",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/%D0%A7%D0%B8%D1%81%D1%82%D0%BE%D0%BF%D0%BE%D0%BB%D1%8C_%28%D1%81_%D0%B2%D1%8B%D1%81%D0%BE%D1%82%D1%8B_%D0%BF%D1%8F%D1%82%D0%B8%D1%8D%D1%82%D0%B0%D0%B6%D0%BA%D0%B8%29.JPG/500px-%D0%A7%D0%B8%D1%81%D1%82%D0%BE%D0%BF%D0%BE%D0%BB%D1%8C_%28%D1%81_%D0%B2%D1%8B%D1%81%D0%BE%D1%82%D1%8B_%D0%BF%D1%8F%D1%82%D0%B8%D1%8D%D1%82%D0%B0%D0%B6%D0%BA%D0%B8%29.JPG",
+      "credit": "Грызунов Андрей Евгеньевич, CC BY-SA 3.0"
+    }
+  ]
+}
