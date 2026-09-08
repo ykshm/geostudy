@@ -72,4 +72,16 @@
 
 ## 図版の出所
 
-(取得後に記入)
+- img/mari-el-locator.png = File:Mari El in Russia.svg(TUBS, CC BY-SA 3.0)の1280px PNG
+- img/mari-el-forest.jpg = File:Озеро Яльчик 2.jpg(Nikita Vetrennyi, CC BY-SA 4.0)の1280px
+- img/mari-el-dress.jpg = File:Марийский национальный костюм невесты.jpg(Ele-chudinovsk, CC BY-SA 4.0)の800px
+- img/mari-el-bruges.jpg = File:Йошкар-Ола. Набережная Брюгге.jpg(ShchipkovaElena, CC BY-SA 4.0)の1280px
+- img/mari-el-tower.jpg = File:Annunciation Tower, Yoshkar-Ola - 2025-07-05 01.jpg(Дмитрий Сазанов, CC BY 4.0)の1280px
+- img/mari-el-kozmodemyansk.jpg = File:Козьмодемьянск, Марий Эл.jpg(Azmanova Natalia, CC BY-SA 4.0)の1280px
+
+## 図版の取得記録(2026-09-08)
+
+- 6点すべてWikimedia Commonsから取得。ライセンスと作者はimageinfo APIのextmetadata(LicenseShortName/Artist)で確認し、上記の通り。User-Agentは「geostudy-image-collection/1.0 (+https://github.com/ykshm/geostudy)」。
+- レート制限は今回も強く、検索・取得とも429が頻発した。45〜95秒空けての再試行と、リクエスト間20〜40秒の待ちで全点取得。並行リクエストは制限を悪化させたため、直列に改めた。
+- 全点を目視で確認し、キャプションを実写に合わせて書いた。ブルージュ河岸の写真にはスパスカヤ塔の写し(時計塔)が同じ画面に写っていることを確認し、本文の位置関係の記述(「並びの先には」)を実写に合わせた。時計塔の写真は生神女福音大聖堂が右奥に写る構図。花嫁衣装は博物館の展示札(Марийский национальный костюм невесты)を読み取って採用。コズモデミヤンスクは透かし彫りの窓枠とヴォルガの水面を確認。
+- 見送った図: 聖なる林の祈りの写真と「ヨシキン・コート」像・「12使徒の時計」の写真は、Commonsに再配布可能な権利のものが見つからなかった(ロシアには彫刻・記念碑のパノラマの自由が無く、像の写真は削除対象になるため無いのが通例。祈りの報道写真は通信社の権利物)。祈りの場面は前書きの文章描写のみとし、像と時計は本文の記述に留めた。当初案の「時計の像の写真」は時計塔(建築物)の写真に差し替えた。予備に取得した File:Резьба Козьмодемьянск.jpg は構図が部分的なため不採用・破棄。
