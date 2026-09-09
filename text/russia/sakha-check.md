@@ -74,8 +74,18 @@
 
 ## 図版の出所
 
-(画像取得後に記入)
+- img/sakha-locator.png = File:Sakha in Russia.svg(TUBS, CC BY-SA 3.0)の1280px PNG
+- img/sakha-pole-of-cold.jpg = File:Oymyakon - 190228 DSC 5640.jpg(Ilya Varlamov, CC BY-SA 4.0)の1024px
+- img/sakha-horse.jpg = File:A Yakutian horse (9762345674).jpg(Maarten Takens, CC BY-SA 2.0)の1280px
+- img/sakha-mir-mine.jpg = File:Mirny in Yakutia.jpg(Staselnik, CC BY-SA 3.0)の1280px
+- img/sakha-ice-road.jpg = File:Lena River Ice Road.jpg(Natxo Rodriguez, CC BY-SA 2.0)の原寸1280px
+- img/sakha-yakutsk-blocks.jpg = File:Жилой массив возле озера Талое.jpg(A. L. (loading), CC BY-SA 4.0)の原寸1280px
+- img/sakha-lena-pillars.jpg = File:Lena Pillars 20050716 13.JPG(ZankaM, CC BY-SA 3.0)の1280px
 
 ## 図版の取得記録(2026-09-09)
 
-(画像取得後に記入)
+- 7点すべてWikimedia Commonsから取得。ライセンスと作者はimageinfo APIのextmetadata(LicenseShortName/Artist)で確認し、上記の通り。User-Agentは「geostudy-image-collection/1.0 (+https://github.com/ykshm/geostudy)」。
+- レート制限は今回も強く、検索・取得とも429が頻発した。45〜95秒空けての再試行と、リクエスト間18〜30秒の待ちで全点取得。前章の教訓に従い、リクエストは全て直列にした。
+- 探し方の記録: 全文検索はロシア語クエリがほぼ空振りし(ファイル説明が英語主体のため)、英語クエリとカテゴリ直指定(categorymembers)の併用が有効だった。ヴァルラモフの2019年2月のオイミャコン取材(Category:Photographs by Ilya Varlamov/Oymyakon、CC BY-SA 4.0)と、Category:Ice roads in Russia、Category:Apartment buildings in Yakutsk が当たり。
+- 全点を目視で確認し、キャプションを実写に合わせて書いた。ヤクート馬は「群れ」の当初案を単騎(鞍付き・囲い)の実写に合わせて書き直し。ミール鉱山は縁からのパノラマ(対岸の縁に団地の列、底に水たまり)を確認。寒極の記念柱は「トムトル 寒極」の文字と背後の家並みを確認(煙突の煙は別カットのため記述しない)。氷道は撮影地点をヤクーツク渡河と特定できないため、キャプションは「こうした氷道が」の一般形にした。
+- 見送った図: ヤクーツクの氷霧の街の写真と「杭の上の建物」の足元が明瞭な写真は、再配布可能な権利のもので場面の読めるものが見つからなかった。氷霧と杭は本文の記述に留め、図2は寒極記念柱(2節の主題に直結)、図6はマンモス壁画の団地(6節のマンモス・人口増の主題に直結)に差し替えた。ヤクーツク中心部の夏景(Китайская стена など)は季節が本文の場面と合わず不採用・破棄。プレビュー取得した11点のうち不採用4点は破棄。
