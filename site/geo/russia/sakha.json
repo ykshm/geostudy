@@ -1,0 +1,152 @@
+{
+ "map": "maps/russia-sakha.html",
+ "title": "サハ — 章の地名地図",
+ "places": [
+  {
+   "i": 0,
+   "name": "ヤクーツク",
+   "sec": "1",
+   "lat": 62.0272,
+   "lng": 129.7319,
+   "text": "レナ川岸の首都。連続永久凍土の上の都市として世界最大で、共和国人口の3分の1がここに集まる",
+   "rich": "章の図6と同じ一枚。タロエ湖のほとりの新しい団地、壁には土器のマンモス",
+   "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/%D0%96%D0%B8%D0%BB%D0%BE%D0%B9_%D0%BC%D0%B0%D1%81%D1%81%D0%B8%D0%B2_%D0%B2%D0%BE%D0%B7%D0%BB%D0%B5_%D0%BE%D0%B7%D0%B5%D1%80%D0%B0_%D0%A2%D0%B0%D0%BB%D0%BE%D0%B5.jpg/500px-%D0%96%D0%B8%D0%BB%D0%BE%D0%B9_%D0%BC%D0%B0%D1%81%D1%81%D0%B8%D0%B2_%D0%B2%D0%BE%D0%B7%D0%BB%D0%B5_%D0%BE%D0%B7%D0%B5%D1%80%D0%B0_%D0%A2%D0%B0%D0%BB%D0%BE%D0%B5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "credit": "A. L. (loading), CC BY-SA 4.0"
+  },
+  {
+   "i": 1,
+   "name": "ニジニ・ベスチャフ",
+   "sec": "5",
+   "lat": 61.9667,
+   "lng": 129.9167,
+   "text": "対岸30キロで止まった鉄道の終着駅。ヤクーツクへは夏は船、冬は氷道で渡る",
+   "rich": "中心の通り(2015年)。鉄道の旅客列車は、この4年後に着いた",
+   "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Nizhny_Bestyakh_centre.jpg/500px-Nizhny_Bestyakh_centre.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "credit": "Betta27, CC BY-SA 4.0"
+  },
+  {
+   "i": 2,
+   "name": "ヴェルホヤンスク",
+   "sec": "2",
+   "lat": 67.5447,
+   "lng": 133.385,
+   "text": "氷点下67.8度(1892年)と38.0度(2020年)。最低と最高の両記録を持つ寒極の町",
+   "rich": "3月の盆地。晴れて風のない窪みの底に、冷気が湖のように溜まる",
+   "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Talkessel_von_Werchojansk.JPG/500px-Talkessel_von_Werchojansk.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "credit": "パブリックドメイン"
+  },
+  {
+   "i": 3,
+   "name": "オイミャコン",
+   "sec": "2",
+   "lat": 63.4608,
+   "lng": 142.7858,
+   "text": "もう一つの寒極。氷点下52度から学校が休みになる盆地の村",
+   "rich": "章の図2と同じ一枚。トムトルの寒極記念柱",
+   "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Oymyakon_-_190228_DSC_5640.jpg/500px-Oymyakon_-_190228_DSC_5640.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "credit": "Ilya Varlamov, CC BY-SA 4.0"
+  },
+  {
+   "i": 4,
+   "name": "バイカル湖",
+   "sec": "3",
+   "lat": 53.2,
+   "lng": 107.35,
+   "text": "サハ人の故地。13〜15世紀ごろ、ここから馬と牛を連れてレナ川を北へ下った",
+   "rich": "オリホン島のシャーマン岩。サハ人の祖先は、この湖の岸から北へ発った",
+   "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Baikal%2C_Cape_Burhan%2C_Olkhon_Island%2C_Lake_Baikal%2C_Russia.jpg/500px-Baikal%2C_Cape_Burhan%2C_Olkhon_Island%2C_Lake_Baikal%2C_Russia.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "credit": "Vyacheslav Argenberg, CC BY 4.0"
+  },
+  {
+   "i": 5,
+   "name": "ミールヌイ",
+   "sec": "4",
+   "lat": 62.5361,
+   "lng": 113.9614,
+   "text": "1955年発見のダイヤモンド火道の脇に建った共和国第二の都市。町の縁に深さ525メートルの穴",
+   "rich": "章の図4と同じ一枚。穴の縁まで団地が来ている",
+   "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Mirny_in_Yakutia.jpg/500px-Mirny_in_Yakutia.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "credit": "Staselnik, CC BY-SA 3.0"
+  },
+  {
+   "i": 6,
+   "name": "ウスチクート",
+   "sec": "5",
+   "lat": 56.7928,
+   "lng": 105.7756,
+   "text": "北方輸送の積み替え口。鉄道はここで終わり、貨物はレナ川の船に載る",
+   "rich": "レナ川と町と橋を上から。鉄道はここまで、この先は川の仕事",
+   "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Ust_Kut_Lena_View.jpg/500px-Ust_Kut_Lena_View.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "credit": "Bkdrf, CC BY 4.0"
+  },
+  {
+   "i": 7,
+   "name": "マガダン",
+   "sec": "5",
+   "lat": 59.5612,
+   "lng": 150.8301,
+   "text": "コリマ街道2,031キロの終点。囚人労働で造られた道は、いまも唯一の陸路である",
+   "rich": "町の入口の標柱には「1939年創設」。ダリストロイの時代の年号である",
+   "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Laika_ac_Magadan_%286457749985%29.jpg/500px-Laika_ac_Magadan_%286457749985%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "credit": "Laika ac, CC BY-SA 2.0"
+  },
+  {
+   "i": 8,
+   "name": "レナ石柱群",
+   "sec": "7",
+   "lat": 61.1462,
+   "lng": 127.5847,
+   "text": "カンブリア紀の海底が柱に刻まれた世界自然遺産。ヤクーツクから船で上流へ200キロほど",
+   "rich": "章の図7と同じ一枚。川から見上げる柱の列",
+   "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Lena_Pillars_20050716_13.JPG/500px-Lena_Pillars_20050716_13.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "credit": "ZankaM, CC BY-SA 3.0"
+  }
+ ],
+ "snaps": [
+  {
+   "name": "滑走路のサッカー場",
+   "lat": 67.551,
+   "lng": 133.395,
+   "era": "2009年",
+   "text": "ヴェルホヤンスクの空港は閉じて、滑走路はサッカー場になった。3月、ゴールのネットに雪が積もったまま、シーズンを待っている",
+   "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Flughafen_Werchojansk_I.JPG/500px-Flughafen_Werchojansk_I.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "credit": "パブリックドメイン"
+  },
+  {
+   "name": "氷点下の買い物帰り",
+   "lat": 63.463,
+   "lng": 142.78,
+   "era": "2019年2月",
+   "text": "2月の昼のオイミャコン。買い物袋を提げた二人の後ろで、「学校あり」の標識も丸太の塀も、同じ霜をかぶっている",
+   "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Oymyakon_-_190228_DSC_5680.jpg/500px-Oymyakon_-_190228_DSC_5680.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "credit": "Ilya Varlamov, CC BY-SA 4.0"
+  },
+  {
+   "name": "1891年の出発",
+   "lat": 62.0339,
+   "lng": 129.7331,
+   "era": "1891年",
+   "text": "英国の看護師ケイト・マースデンが、ハンセン病者の村を目指してヤクーツクを発つところ。乗っているのは白いヤクート馬である",
+   "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Kate_Marsden_leaving_Yakutsk.jpg/500px-Kate_Marsden_leaving_Yakutsk.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "credit": "パブリックドメイン"
+  },
+  {
+   "name": "川湊の夏",
+   "lat": 56.785,
+   "lng": 105.74,
+   "era": "いま",
+   "text": "オセトロヴォの岸。タグボート「アヤン」と砂利を山積みにしたバージ。航行期は年120〜160日、その間に一年分を下流へ送る",
+   "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/%D0%90%D1%8F%D0%BD_%D0%9E%D1%81%D0%B5%D1%82%D1%80%D0%BE%D0%B2%D0%BE_%2835053011550%29.jpg/500px-%D0%90%D1%8F%D0%BD_%D0%9E%D1%81%D0%B5%D1%82%D1%80%D0%BE%D0%B2%D0%BE_%2835053011550%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "credit": "Artem Svetlov, CC BY 2.0"
+  },
+  {
+   "name": "夏至の新年",
+   "lat": 61.7331,
+   "lng": 130.2811,
+   "era": "2015年",
+   "text": "6月のマイヤ村のウスィアフ。白い装束の踊り手が両腕を空へ上げ、囲む見物人は夏の服である。夏至の新年は、この姿勢で始まる",
+   "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Yhyakh_celebration_in_Mayya_%28Yakutia%29.jpg/500px-Yhyakh_celebration_in_Mayya_%28Yakutia%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "credit": "Betta27, CC BY-SA 4.0"
+  }
+ ]
+}
