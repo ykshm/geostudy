@@ -13,7 +13,7 @@
 | 戸川 奏 | authors/togawa-kanade.md | 音楽産業と電波のメディア文化地理 | 執筆中(アメリカ50州: テネシー・ミシシッピ・ケンタッキー/ロシア83連邦主体: トゥヴァ) |
 | 香月 湊 | authors/katsuki-minato.md | 軍事基地と安全保障の政治地理 | 執筆中(アメリカ50州: バージニア) |
 | 風間 汀 | authors/kazama-migiwa.md | 言語と信仰の文化地理 | 執筆中(ロシア83連邦主体: マリ・エル) |
-| 駒井 遥 | authors/komai-haruka.md | 立地と補助金の経済地理 | 執筆中(ロシア83連邦主体: サハ) |
+| 駒井 遥 | authors/komai-haruka.md | 立地と補助金の経済地理 | 執筆中(ロシア83連邦主体: サハ・クルガン州) |
 
 ## 章の割り振り(アメリカ50州)
 
@@ -69,3 +69,4 @@
 | マリ・エル | text/russia/mari-el.md | 風間 汀(authors/kazama-migiwa.md) |
 | サハ | text/russia/sakha.md | 駒井 遥(authors/komai-haruka.md) |
 | トゥヴァ | text/russia/tuva.md | 戸川 奏(authors/togawa-kanade.md) |
+| クルガン州 | text/russia/kurgan.md | 駒井 遥(authors/komai-haruka.md) |
