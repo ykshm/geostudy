@@ -1,0 +1,83 @@
+{
+ "map": "maps/russia-sibir-ice-water.html",
+ "title": "幕間 川から水を切り出す — 章の地名地図",
+ "places": [
+  {
+   "i": 0,
+   "name": "ヤクーツク",
+   "sec": "1",
+   "lat": 62.0272,
+   "lng": 129.7319,
+   "text": "水道の無い木造住宅地区を抱える首府。給水車の業者が20社と、氷の商いが並び立つ",
+   "rich": "2月の目抜き通り。霜の電線、排気の湯気、エンジンを止めない車",
+   "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/On_the_streets_of_Yakutsk_-_Flickr_-_Maarten_Takens.jpg/500px-On_the_streets_of_Yakutsk_-_Flickr_-_Maarten_Takens.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "credit": "Maarten Takens, CC BY-SA 2.0"
+  },
+  {
+   "i": 1,
+   "name": "ポクロフスク",
+   "sec": "1",
+   "lat": 61.4833,
+   "lng": 129.1541,
+   "text": "ヤクーツクの南70キロの町。章の図2の氷上横断路はこの近くのレナ川にかかる",
+   "rich": "章の図2と同じ一枚。12月末、対岸の霞む氷原を貨物車が渡る",
+   "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/%D0%97%D0%B8%D0%BC%D0%BD%D0%B8%D0%BA%2C_%D0%9B%D0%B5%D0%B4%D0%BE%D0%B2%D0%B0%D1%8F_%D0%BF%D0%B5%D1%80%D0%B5%D0%BF%D1%80%D0%B0%D0%B2%D0%B0_%D1%87%D0%B5%D1%80%D0%B5%D0%B7_%D1%80%D0%B5%D0%BA%D1%83_%D0%9B%D0%B5%D0%BD%D0%B0%2C_%D0%9F%D0%BE%D0%BA%D1%80%D0%BE%D0%B2%D1%81%D0%BA_29.12.2025_%282%29.jpg/500px-%D0%97%D0%B8%D0%BC%D0%BD%D0%B8%D0%BA%2C_%D0%9B%D0%B5%D0%B4%D0%BE%D0%B2%D0%B0%D1%8F_%D0%BF%D0%B5%D1%80%D0%B5%D0%BF%D1%80%D0%B0%D0%B2%D0%B0_%D1%87%D0%B5%D1%80%D0%B5%D0%B7_%D1%80%D0%B5%D0%BA%D1%83_%D0%9B%D0%B5%D0%BD%D0%B0%2C_%D0%9F%D0%BE%D0%BA%D1%80%D0%BE%D0%B2%D1%81%D0%BA_29.12.2025_%282%29.jpg",
+   "credit": "SmallSonMarex, パブリックドメイン(CC0)"
+  },
+  {
+   "i": 2,
+   "name": "レナ川",
+   "sec": "1",
+   "lat": 61.75,
+   "lng": 129.55,
+   "text": "村々の飲み水の産地。11月、この川の氷が20センチに育つと収穫が始まる",
+   "rich": "夏の姿。編組する流路と砂洲。冬はこの幅がまるごと、道と水源になる",
+   "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Lena_River_%28near_Yakutsk%2C_Siberia%2C_Russia%29_1_%2821473479995%29.jpg/500px-Lena_River_%28near_Yakutsk%2C_Siberia%2C_Russia%29_1_%2821473479995%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "credit": "James St. John, CC BY 2.0"
+  },
+  {
+   "i": 3,
+   "name": "ドーソン",
+   "sec": "2",
+   "side": "ca",
+   "lat": 64.06,
+   "lng": 220.57,
+   "text": "カナダ・ユーコンの金鉱の町。1902年、市場向けの氷がクロンダイク川で切られていた",
+   "rich": "章の図3と同じ一枚。鋸と氷ばさみの人夫たち、そして犬",
+   "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Harman_%26_Welbon%27s_employees_cutting_ice_for_Dawson_market_%28J6227%29.jpg/500px-Harman_%26_Welbon%27s_employees_cutting_ice_for_Dawson_market_%28J6227%29.jpg",
+   "credit": "Larss & Duclos(1902), The Raven's Librarian提供, CC BY-SA 4.0"
+  },
+  {
+   "i": 4,
+   "name": "トロント",
+   "sec": "3",
+   "side": "ca",
+   "lat": 43.65,
+   "lng": 280.62,
+   "text": "冷蔵庫以前、ここでも川の氷が切られ、馬橇で街へ運ばれていた",
+   "rich": "章の図4と同じ一枚。氷を満載した橇と二頭立ての馬",
+   "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Cutting_Ice_on_the_river.jpg/500px-Cutting_Ice_on_the_river.jpg",
+   "credit": "撮影者不詳, パブリックドメイン"
+  }
+ ],
+ "snaps": [
+  {
+   "name": "鞍を待つ冬毛の馬",
+   "lat": 63.4629,
+   "lng": 142.787,
+   "era": "2013年2月",
+   "text": "丸太の囲いに雪、馬は冬毛でまるまると着ぶくれて、鞍を置かれて出番待ちである。ヤクーチアの馬は冬も屋外で暮らす",
+   "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/A_Yakutian_horse_%289762345674%29.jpg/500px-A_Yakutian_horse_%289762345674%29.jpg",
+   "credit": "Maarten Takens, CC BY-SA 2.0"
+  },
+  {
+   "name": "氷を積む橇",
+   "lat": 46.81,
+   "lng": 259.22,
+   "era": "1900年ごろ",
+   "text": "アメリカ・ミズーリ川。二頭曳きの橇に男たちが氷の塊を積み込み、右手には切り揃えた氷の山。夏に売る氷の、冬の仕込みである",
+   "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Mule_team_cutting_ice_on_the_Missouri_River._-_DPLA_-_d037e6cf0336761d8f6e98ddd2b10df5.jpg/500px-Mule_team_cutting_ice_on_the_Missouri_River._-_DPLA_-_d037e6cf0336761d8f6e98ddd2b10df5.jpg",
+   "credit": "DPLA所蔵, パブリックドメイン"
+  }
+ ]
+}
