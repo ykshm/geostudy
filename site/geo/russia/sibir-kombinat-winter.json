@@ -1,0 +1,119 @@
+{
+ "map": "maps/russia-sibir-kombinat-winter.html",
+ "title": "幕間 コンビナートの街の冬 — 章の地名地図",
+ "places": [
+  {
+   "i": 0,
+   "name": "ノリリスク",
+   "note": "1",
+   "lat": 69.3435,
+   "lng": 88.2027,
+   "text": "舞台の街。人口17万5千、道路も鉄道も本土に通じない、世界最北の10万都市",
+   "rich": "章の図2と同じ一枚。コンビナート本社と屋上の気温表示",
+   "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Norilsk_Nickel.jpg/500px-Norilsk_Nickel.jpg",
+   "credit": "Ninaras, CC BY 4.0"
+  },
+  {
+   "i": 1,
+   "name": "カイェルカン",
+   "sec": "1",
+   "lat": 69.3505,
+   "lng": 87.7649,
+   "text": "市街の西20キロの住宅地区。黒い吹雪の日、ここへ帰るバスは隊列を組む",
+   "rich": "学校通り。色違いのパネル住棟のあいだの道を、人がぽつぽつ歩いている",
+   "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Kayerkan_-_%D0%A8%D0%BA%D0%BE%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F_%D1%83%D0%BB._WMID11801.jpg/500px-Kayerkan_-_%D0%A8%D0%BA%D0%BE%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F_%D1%83%D0%BB._WMID11801.jpg",
+   "credit": "Sever123, CC BY-SA 3.0"
+  },
+  {
+   "i": 2,
+   "name": "レーニン大通り",
+   "sec": "2",
+   "lat": 69.3456,
+   "lng": 88.2078,
+   "text": "レニングラードの建築家が引いた目抜き通り。切れ目ない街区が風の壁を成す",
+   "rich": "章の図3と同じ一枚。黄と赤の壁の連なり",
+   "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Norilsk_2019.jpg/500px-Norilsk_2019.jpg",
+   "credit": "Пихтарь Виктор Дмитриевич, CC BY-SA 4.0"
+  },
+  {
+   "i": 3,
+   "name": "タルナフ",
+   "sec": "3",
+   "lat": 69.494,
+   "lng": 88.3908,
+   "text": "北東10数キロの鉱山地区。コンビナートの鉱石はここの地下から出る",
+   "rich": "章の図4と同じ一枚。団地の中庭の遊び場",
+   "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Norilsk_Talnah.jpg/500px-Norilsk_Talnah.jpg",
+   "credit": "Игоревич, CC BY-SA 3.0"
+  },
+  {
+   "i": 4,
+   "name": "ドゥジンカ",
+   "sec": "5",
+   "lat": 69.4061,
+   "lng": 86.1751,
+   "text": "90キロ西のエニセイ河港。6月から9月末までの航行の窓に、街の一年分が着く",
+   "rich": "章の図6と同じ一枚。高架の配管が並走する港町の街路",
+   "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Dudinka05.jpg/500px-Dudinka05.jpg",
+   "credit": "Ninaras, CC BY 4.0"
+  },
+  {
+   "i": 5,
+   "name": "ラマ湖",
+   "sec": "5",
+   "lat": 69.497,
+   "lng": 89.8881,
+   "text": "東120キロ、プトラナ台地の縁の湖。道路はなく、夏の週末に船で5時間",
+   "rich": "章の図7と同じ一枚。台地とカラマツ林と湖面",
+   "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Lama_Lake%2C_Putorana_01.jpg/500px-Lama_Lake%2C_Putorana_01.jpg",
+   "credit": "hunter74, CC BY-SA 3.0"
+  }
+ ],
+ "snaps": [
+  {
+   "name": "真夏の大通り",
+   "lat": 69.344,
+   "lng": 88.209,
+   "era": "2016年6月",
+   "text": "極昼の6月、日差しの大通り。夏服の人が歩き、子ども用品店の看板が出ている。屋上の気温表示が30度を指す季節である",
+   "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Norilsk_03.jpg/500px-Norilsk_03.jpg",
+   "credit": "Ninaras, CC BY 4.0"
+  },
+  {
+   "name": "九月の停留所",
+   "lat": 69.3456,
+   "lng": 88.2078,
+   "era": "2022年9月",
+   "text": "雨のレーニン大通り。ガラスの待合室のまわりにコートの人が立つ。ひと月もすれば、この停留所の暖房が仕事を始める",
+   "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Norilsk_Lenina_Prospect_01.jpg/500px-Norilsk_Lenina_Prospect_01.jpg",
+   "credit": "Игоревич, CC BY-SA 3.0"
+  },
+  {
+   "name": "紫のドアの玄関",
+   "lat": 69.345,
+   "lng": 88.22,
+   "era": "2022年9月",
+   "text": "どこの地区にもある型の玄関。コンクリの高い基礎に階段が付き、ドアと手すりだけ紫に塗ってある。遠くの斜面にはもう初雪が見える",
+   "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Typical_house_in_Norilsk_01.jpg/500px-Typical_house_in_Norilsk_01.jpg",
+   "credit": "Игоревич, CC BY-SA 3.0"
+  },
+  {
+   "name": "曲がる道の色",
+   "lat": 69.3405,
+   "lng": 88.2196,
+   "era": "2022年9月",
+   "text": "キーロワ通り。青とオレンジに塗り分けたパネルの住棟が、濡れた道の縁に並ぶ。極夜の灰色に備えて、色は建物が持つ",
+   "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Norilsk_Kirova_St.jpg/500px-Norilsk_Kirova_St.jpg",
+   "credit": "Игоревич, CC BY-SA 3.0"
+  },
+  {
+   "name": "1940年代の幼稚園",
+   "lat": 69.35,
+   "lng": 88.13,
+   "era": "1940年代",
+   "text": "石の柱飾りと花模様の浮き彫りに囲まれて、扉の上に「デツキー・サード(幼稚園)」の彫り文字。収容所の街の最初の幼稚園に、石工はこれだけの手をかけた",
+   "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Kindergarten_in_Norilsk%2C_entrance%2C_1940s.jpg/500px-Kindergarten_in_Norilsk%2C_entrance%2C_1940s.jpg",
+   "credit": "撮影者不詳, パブリックドメイン"
+  }
+ ]
+}
