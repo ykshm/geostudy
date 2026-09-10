@@ -1,0 +1,143 @@
+{
+ "map": "maps/russia-kurgan.html",
+ "title": "クルガン州 — 章の地名地図",
+ "places": [
+  {
+   "i": 0,
+   "name": "エカテリンブルク",
+   "sec": "1",
+   "lat": 56.8389,
+   "lng": 60.6057,
+   "text": "ウラルの首府、人口150万。道路で370キロ、進学と就職の行き先の筆頭格",
+   "rich": "ヴィソツキーの展望台から、夕暮れの市街と池。ザウラリエの若者が目指す灯りである",
+   "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/%D0%92%D0%B8%D0%B4_%D0%BD%D0%B0_%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3_%D1%81_%D0%BF%D0%B0%D0%BD%D0%BE%D1%80%D0%B0%D0%BC%D0%BD%D0%BE%D0%B9_%D0%BF%D0%BB%D0%BE%D1%89%D0%B0%D0%B4%D0%BA%D0%B8_%D0%BD%D0%B5%D0%B1%D0%BE%D1%81%D0%BA%D1%80%D1%91%D0%B1%D0%B0_%C2%AB%D0%92%D1%8B%D1%81%D0%BE%D1%86%D0%BA%D0%B8%D0%B9%C2%BB.jpg/500px-%D0%92%D0%B8%D0%B4_%D0%BD%D0%B0_%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3_%D1%81_%D0%BF%D0%B0%D0%BD%D0%BE%D1%80%D0%B0%D0%BC%D0%BD%D0%BE%D0%B9_%D0%BF%D0%BB%D0%BE%D1%89%D0%B0%D0%B4%D0%BA%D0%B8_%D0%BD%D0%B5%D0%B1%D0%BE%D1%81%D0%BA%D1%80%D1%91%D0%B1%D0%B0_%C2%AB%D0%92%D1%8B%D1%81%D0%BE%D1%86%D0%BA%D0%B8%D0%B9%C2%BB.jpg",
+   "credit": "The Cosmonaut, CC BY-SA 2.5"
+  },
+  {
+   "i": 1,
+   "name": "チェリャビンスク",
+   "sec": "1",
+   "lat": 55.1604,
+   "lng": 61.4008,
+   "text": "ウラルの工業都市。1893年、クルガンへの線路はここから延びてきた",
+   "rich": "歩行者天国キーロフカを上から。雪の屋根の下は帝政期からの商店街である",
+   "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/%D0%9A%D0%B8%D1%80%D0%BE%D0%B2%D0%BA%D0%B0._%D0%92%D0%B8%D0%B4_%D1%81_18_%D1%8D%D1%82%D0%B0%D0%B6%D0%B0_%D0%A7%D0%B5%D0%BB%D1%8F%D0%B1%D0%B8%D0%BD%D1%81%D0%BA-%D1%81%D0%B8%D1%82%D0%B8_-_panoramio.jpg/500px-%D0%9A%D0%B8%D1%80%D0%BE%D0%B2%D0%BA%D0%B0._%D0%92%D0%B8%D0%B4_%D1%81_18_%D1%8D%D1%82%D0%B0%D0%B6%D0%B0_%D0%A7%D0%B5%D0%BB%D1%8F%D0%B1%D0%B8%D0%BD%D1%81%D0%BA-%D1%81%D0%B8%D1%82%D0%B8_-_panoramio.jpg",
+   "credit": "Андрей Хабаров, CC BY 3.0"
+  },
+  {
+   "i": 2,
+   "name": "チュメニ",
+   "sec": "1",
+   "lat": 57.153,
+   "lng": 65.5343,
+   "text": "200キロ先の隣の州都。石油とガスの事務方の都で、いちばん近い引力",
+   "rich": "石段を何層にも組んだトゥラ川の遊歩道。対岸には教会と新しいタワーが並ぶ",
+   "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Views_of_Tyumen_%28May_2026%29_-_0_2.jpg/500px-Views_of_Tyumen_%28May_2026%29_-_0_2.jpg",
+   "credit": "Vyacheslav Bukharov, CC BY-SA 4.0"
+  },
+  {
+   "i": 3,
+   "name": "ペトロパブロフスク",
+   "sec": "1",
+   "side": "kz",
+   "lat": 54.8753,
+   "lng": 69.1628,
+   "text": "シベリア鉄道の東行きが通り抜けるカザフスタン北部の町。帝政の線路は国境を知らずに引かれた",
+   "rich": "駅舎の看板は「ペトロパヴル 駅」とカザフ語。ロシアの列車は国内のようにここを通過する",
+   "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/%D0%96%D0%B5%D0%BB%D0%B5%D0%B7%D0%BD%D0%BE%D0%B4%D0%BE%D1%80%D0%BE%D0%B6%D0%BD%D1%8B%D0%B9_%D0%B2%D0%BE%D0%BA%D0%B7%D0%B0%D0%BB_%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D0%B0_%D0%9F%D0%B5%D1%82%D1%80%D0%BE%D0%BF%D0%B0%D0%B2%D0%BB%D0%BE%D0%B2%D1%81%D0%BA%2C_2015_%D0%B3%D0%BE%D0%B4.jpg/500px-%D0%96%D0%B5%D0%BB%D0%B5%D0%B7%D0%BD%D0%BE%D0%B4%D0%BE%D1%80%D0%BE%D0%B6%D0%BD%D1%8B%D0%B9_%D0%B2%D0%BE%D0%BA%D0%B7%D0%B0%D0%BB_%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D0%B0_%D0%9F%D0%B5%D1%82%D1%80%D0%BE%D0%BF%D0%B0%D0%B2%D0%BB%D0%BE%D0%B2%D1%81%D0%BA%2C_2015_%D0%B3%D0%BE%D0%B4.jpg",
+   "credit": "Меридианец, CC BY-SA 4.0"
+  },
+  {
+   "i": 4,
+   "name": "メドヴェジエ湖",
+   "note": "2",
+   "lat": 55.2,
+   "lng": 68.0167,
+   "text": "死海なみの塩の湖。最深1.2メートル、夏はアルテミアで水が色づく",
+   "rich": "衛星から見た二つの「熊」。緑の水を白い塩の縁が囲み、その外は畑と白樺林の斑である",
+   "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Medvezhye_Lake_%28Kurgan_Oblast%29_2019-10-08_Sentinel-2_L2A_True_color.jpg/500px-Medvezhye_Lake_%28Kurgan_Oblast%29_2019-10-08_Sentinel-2_L2A_True_color.jpg",
+   "credit": "European Space Agency(Sentinel-2), 要帰属表示"
+  },
+  {
+   "i": 5,
+   "name": "クルガン",
+   "sec": "3",
+   "lat": 55.4408,
+   "lng": 65.3411,
+   "text": "トボル川岸の州都、人口約30万。バターの都から機械の町へ、いまは三交代の軍需の町",
+   "rich": "2005年の空撮。木造の戸建ての海に、5階建ての団地の列が島のように浮かぶ",
+   "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/%D0%9F%D0%B0%D0%BD%D0%BE%D1%80%D0%B0%D0%BC%D0%B0_%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D0%B0_%D0%9A%D1%83%D1%80%D0%B3%D0%B0%D0%BD%D0%B0_%D1%81_%D1%81%D0%B0%D0%BC%D0%BE%D0%BB%D0%B5%D1%82%D0%B0_2005_%D0%B3%D0%BE%D0%B4_01.JPG/500px-%D0%9F%D0%B0%D0%BD%D0%BE%D1%80%D0%B0%D0%BC%D0%B0_%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D0%B0_%D0%9A%D1%83%D1%80%D0%B3%D0%B0%D0%BD%D0%B0_%D1%81_%D1%81%D0%B0%D0%BC%D0%BE%D0%BB%D0%B5%D1%82%D0%B0_2005_%D0%B3%D0%BE%D0%B4_01.JPG",
+   "credit": "Andrey Dumchev, CC BY-SA 3.0"
+  },
+  {
+   "i": 6,
+   "name": "ヴィンダヴァ",
+   "sec": "3",
+   "side": "lv",
+   "lat": 57.3894,
+   "lng": 21.5606,
+   "text": "バター列車の終点だったバルト海の不凍港。現ラトビアのヴェンツピルス",
+   "rich": "いまも現役の貨物港である。コンテナ船が防波堤の内側へ入っていく",
+   "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Ventspils_harbour_-_panoramio.jpg/500px-Ventspils_harbour_-_panoramio.jpg",
+   "credit": "Laima Gūtmane, CC BY-SA 3.0"
+  },
+  {
+   "i": 7,
+   "name": "シャドリンスク",
+   "sec": "4",
+   "lat": 56.0872,
+   "lng": 63.6295,
+   "text": "州第二の町、人口6.7万。古い商業町で、1941年にモスクワの自動車工場の疎開先になった",
+   "rich": "夜の商館列。「トルゴーヴイ・リャト(商いの列)」の看板に、バター時代の町の顔が残る",
+   "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/%D0%A0%D1%8F%D0%B4%D1%8B_%D1%82%D0%BE%D1%80%D0%B3%D0%BE%D0%B2%D1%8B%D0%B5_%D1%83%D0%BB%D0%B8%D1%86%D0%B0_%D0%9A%D0%BE%D0%BC%D1%81%D0%BE%D0%BC%D0%BE%D0%BB%D1%8C%D1%81%D0%BA%D0%B0%D1%8F%2C_9%2C_%D0%A8%D0%B0%D0%B4%D1%80%D0%B8%D0%BD%D1%81%D0%BA%2C_%D0%9A%D1%83%D1%80%D0%B3%D0%B0%D0%BD%D1%81%D0%BA%D0%B0%D1%8F_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C_01.jpg/500px-%D0%A0%D1%8F%D0%B4%D1%8B_%D1%82%D0%BE%D1%80%D0%B3%D0%BE%D0%B2%D1%8B%D0%B5_%D1%83%D0%BB%D0%B8%D1%86%D0%B0_%D0%9A%D0%BE%D0%BC%D1%81%D0%BE%D0%BC%D0%BE%D0%BB%D1%8C%D1%81%D0%BA%D0%B0%D1%8F%2C_9%2C_%D0%A8%D0%B0%D0%B4%D1%80%D0%B8%D0%BD%D1%81%D0%BA%2C_%D0%9A%D1%83%D1%80%D0%B3%D0%B0%D0%BD%D1%81%D0%BA%D0%B0%D1%8F_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C_01.jpg",
+   "credit": "Pitstop-05, CC BY-SA 4.0"
+  }
+ ],
+ "snaps": [
+  {
+   "name": "1898年の全景",
+   "lat": 55.4426,
+   "lng": 65.338,
+   "era": "1898年",
+   "text": "鉄道が来て5年目の町の全景。低い木造の家並みの中で、市の広場と教会の塔だけが高い。バターの金は、これからこの町に降る",
+   "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/%D0%9E%D0%B1%D1%89%D0%B8%D0%B9_%D0%B2%D0%B8%D0%B4_%D0%9A%D1%83%D1%80%D0%B3%D0%B0%D0%BD%D0%B0%2C_1898.jpg/500px-%D0%9E%D0%B1%D1%89%D0%B8%D0%B9_%D0%B2%D0%B8%D0%B4_%D0%9A%D1%83%D1%80%D0%B3%D0%B0%D0%BD%D0%B0%2C_1898.jpg",
+   "credit": "パブリックドメイン"
+  },
+  {
+   "name": "毛皮商の記念写真",
+   "lat": 55.44,
+   "lng": 65.332,
+   "era": "1900年",
+   "text": "市場の毛皮商たち。中央に立つのが商人フランケル、床いっぱいに広げてあるのが商品である。輸出の町には、外国の商人が住み込んでいた",
+   "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Pelzh%C3%A4ndler_Hugo_Fr%C3%A4nkel_auf_dem_Markt_in_Kurgan_%28Sibir%29%2C_1900.jpg/500px-Pelzh%C3%A4ndler_Hugo_Fr%C3%A4nkel_auf_dem_Markt_in_Kurgan_%28Sibir%29%2C_1900.jpg",
+   "credit": "パブリックドメイン"
+  },
+  {
+   "name": "駅前広場",
+   "lat": 55.4292,
+   "lng": 65.3346,
+   "era": "2009年",
+   "text": "駅前のトロリーバスと満車の駐車場。黄色い時刻表の掲示の向こうは、どこの州都にもある夏の昼である",
+   "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/%D0%9A%D1%83%D1%80%D0%B3%D0%B0%D0%BD._%D0%9F%D1%80%D0%B8%D0%B2%D0%BE%D0%BA%D0%B7%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F_%D0%BF%D0%BB%D0%BE%D1%89%D0%B0%D0%B4%D1%8C_%282%29.JPG/500px-%D0%9A%D1%83%D1%80%D0%B3%D0%B0%D0%BD._%D0%9F%D1%80%D0%B8%D0%B2%D0%BE%D0%BA%D0%B7%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F_%D0%BF%D0%BB%D0%BE%D1%89%D0%B0%D0%B4%D1%8C_%282%29.JPG",
+   "credit": "LxAndrew, CC BY-SA 4.0"
+  },
+  {
+   "name": "ゴリコフ元帥通り",
+   "lat": 55.4715,
+   "lng": 65.276,
+   "era": "いま",
+   "text": "ザオジョールヌイ地区の目抜き通り。パネルの団地、芝の分離帯、白いバン。州都の暮らしの平均値のような通りである",
+   "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Marshal_Golikov_avenue_Kurgan.jpg/500px-Marshal_Golikov_avenue_Kurgan.jpg",
+   "credit": "Alexander V. Solomin, CC BY-SA 3.0"
+  },
+  {
+   "name": "塩の湖の浅瀬",
+   "lat": 55.19,
+   "lng": 68.03,
+   "era": "いま",
+   "text": "どこまで歩いても膝の深さ。最深1.2メートルの湖では、泳ぐというより浸かる。夏の水は塩で重い",
+   "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/%D0%9E%D0%B7%D0%B5%D1%80%D0%BE_%D0%9C%D0%B5%D0%B4%D0%B2%D0%B5%D0%B6%D1%8C%D0%B5_-_panoramio.jpg/500px-%D0%9E%D0%B7%D0%B5%D1%80%D0%BE_%D0%9C%D0%B5%D0%B4%D0%B2%D0%B5%D0%B6%D1%8C%D0%B5_-_panoramio.jpg",
+   "credit": "Андрей Субботин, CC BY 3.0"
+  }
+ ]
+}
