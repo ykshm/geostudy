@@ -14,7 +14,7 @@
 | 香月 湊 | authors/katsuki-minato.md | 軍事基地と安全保障の政治地理 | 執筆中(アメリカ50州: バージニア) |
 | 風間 汀 | authors/kazama-migiwa.md | 言語と信仰の文化地理 | 執筆中(ロシア83連邦主体: マリ・エル) |
 | 駒井 遥 | authors/komai-haruka.md | 立地と補助金の経済地理 | 執筆中(ロシア83連邦主体: サハ・クルガン州) |
-| 梶谷 縫 | authors/kajitani-nui.md | 北方の生業と物質文化の民俗学 | 執筆中(ロシア83連邦主体・幕間: 氷点下40度の団地の一日・コンビナートの街の冬) |
+| 梶谷 縫 | authors/kajitani-nui.md | 北方の生業と物質文化の民俗学 | 執筆中(ロシア83連邦主体・幕間: 氷点下40度の団地の一日・コンビナートの街の冬・川から水を切り出す) |
 
 ## 章の割り振り(アメリカ50州)
 
@@ -73,3 +73,4 @@
 | クルガン州 | text/russia/kurgan.md | 駒井 遥(authors/komai-haruka.md) |
 | 幕間: 氷点下40度の団地の一日 | text/russia/sibir-city-winter.md | 梶谷 縫(authors/kajitani-nui.md) |
 | 幕間: コンビナートの街の冬 | text/russia/sibir-kombinat-winter.md | 梶谷 縫(authors/kajitani-nui.md) |
+| 幕間: 川から水を切り出す | text/russia/sibir-ice-water.md | 梶谷 縫(authors/kajitani-nui.md) |
