@@ -10,7 +10,7 @@
    "lat": 37.7793,
    "lng": -122.4193,
    "text": "1984年、ペナが短波でトゥヴァの声を拾った街。9年後、アジア美術館でオンダールと出会う",
-   "rich": "ツインピークスから見下ろす市街。この街のどこかのアパートに、1984年のある晩、トゥヴァの電波が降りた",
+   "rich": "ツインピークスから見下ろす夕暮れの市街。この街のどこかのアパートに、1984年のある晩、トゥヴァの電波が降りた",
    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/San_Francisco_from_Twin_Peaks_September_2013_panorama_5.jpg/500px-San_Francisco_from_Twin_Peaks_September_2013_panorama_5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "credit": "King of Hearts, CC BY-SA 3.0"
   },
@@ -20,7 +20,10 @@
    "sec": "1",
    "lat": 52.3,
    "lng": 93.9,
-   "text": "盆地を北から塞ぐ壁。外へ出る2本の道はこの山を峠で越え、鉄道はまだ越えられずにいる"
+   "text": "盆地を北から塞ぐ壁。外へ出る2本の道はこの山を峠で越え、鉄道はまだ越えられずにいる",
+   "rich": "エルガキの「眠れるサヤン」の稜線。キジルへの道は、この山群を峠で越える",
+   "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Lake_Raduzhnoye_and_Sleeping_Sayan%2C_Ergaki_Range%2C_Sayan_Mountains%2C_Russia.jpg/500px-Lake_Raduzhnoye_and_Sleeping_Sayan%2C_Ergaki_Range%2C_Sayan_Mountains%2C_Russia.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "credit": "Vyacheslav Argenberg, CC BY 4.0"
   },
   {
    "i": 2,
@@ -29,7 +32,7 @@
    "lat": 50.7,
    "lng": 94.0,
    "text": "南の壁。この尾根の向こうはモンゴルである",
-   "rich": "南のオヴュール地区の峠。尾根を越えればモンゴルである",
+   "rich": "オヴュール地区の峠から。乾いた山襞の彼方に盆地が霞む",
    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/%D0%A1%D1%87%D0%B0%D1%81%D1%82%D1%8C%D0%B5_%D0%BD%D0%B5_%D0%B7%D0%B0_%D0%B3%D0%BE%D1%80%D0%B0%D0%BC%D0%B8%2C_%D1%81%D1%87%D0%B0%D1%81%D1%82%D1%8C%D0%B5_%D0%B2_%D0%B3%D0%BE%D1%80%D0%B0%D1%85%21.jpg/500px-%D0%A1%D1%87%D0%B0%D1%81%D1%82%D1%8C%D0%B5_%D0%BD%D0%B5_%D0%B7%D0%B0_%D0%B3%D0%BE%D1%80%D0%B0%D0%BC%D0%B8%2C_%D1%81%D1%87%D0%B0%D1%81%D1%82%D1%8C%D0%B5_%D0%B2_%D0%B3%D0%BE%D1%80%D0%B0%D1%85%21.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "credit": "Zamunu45, CC BY-SA 4.0"
   },
@@ -95,7 +98,10 @@
    "sec": "6",
    "lat": 51.5236,
    "lng": 94.3436,
-   "text": "線路待ちの原料炭の炭田。切手の機関車は90年経ってもまだ来ない"
+   "text": "線路待ちの原料炭の炭田。切手の機関車は90年経ってもまだ来ない",
+   "rich": "2013年時点の計画路線図。エレゲストからクラギノへの線は、いまも地図の上にだけある",
+   "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Bahnstrecke_Elegest%E2%80%93Kyzyl%E2%80%93Kuragino.png/500px-Bahnstrecke_Elegest%E2%80%93Kyzyl%E2%80%93Kuragino.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "credit": "Pechristener / Uwe Dedering, CC BY-SA 2.0"
   },
   {
    "i": 9,
@@ -104,10 +110,56 @@
    "lat": 52.1417,
    "lng": 93.9161,
    "text": "「王家の谷」の入口の町。アルジャンの王墓群は近くの草原に並ぶ",
-   "rich": "「王家の谷」の積石塚。この草原の下から5,700点の金が出た",
+   "rich": "「王家の谷」の立石と石積み。金は、こうした塚の下から出た",
    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/%D0%94%D0%BE%D0%BB%D0%B8%D0%BD%D0%B0_%D0%A6%D0%B0%D1%80%D0%B5%D0%B9.jpg/500px-%D0%94%D0%BE%D0%BB%D0%B8%D0%BD%D0%B0_%D0%A6%D0%B0%D1%80%D0%B5%D0%B9.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "credit": "Zamunu45, CC BY-SA 4.0"
   }
  ],
- "snaps": []
+ "snaps": [
+  {
+   "name": "ユルタと二つの旗",
+   "lat": 51.635,
+   "lng": 94.41,
+   "era": "2004年",
+   "text": "ナーディムの会場のユルタに、ロシアとトゥヴァの旗が並んで立つ。荷を運んできたトラックが草原の奥に停まっている",
+   "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Tuva%2C_Russia_31.jpg/500px-Tuva%2C_Russia_31.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "credit": "stepa, CC BY 2.0"
+  },
+  {
+   "name": "フレシュを待つ観客席",
+   "lat": 51.63,
+   "lng": 94.425,
+   "era": "2004年",
+   "text": "ナーディムのスタジアム。芝の前列は座り込みの特等席で、みな同じ方向を見ている。この視線の先で力士が組む",
+   "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Tuva%2C_Russia_36.jpg/500px-Tuva%2C_Russia_36.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "credit": "stepa, CC BY 2.0"
+  },
+  {
+   "name": "龍の噴水",
+   "lat": 51.7226,
+   "lng": 94.4419,
+   "era": "2016年",
+   "text": "アジアの中心の碑の隣の龍の噴水に、晴れ着の男の子がよじ登る。後ろはエニセイ川と、街のすぐ外の禿山である",
+   "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/%D0%A3_%D1%84%D0%BE%D0%BD%D1%82%D0%B0%D0%BD%D0%B0_%D0%B2_%D0%A6%D0%B5%D0%BD%D1%82%D1%80%D0%B5_%D0%90%D0%B7%D0%B8%D0%B8.jpg/500px-%D0%A3_%D1%84%D0%BE%D0%BD%D1%82%D0%B0%D0%BD%D0%B0_%D0%B2_%D0%A6%D0%B5%D0%BD%D1%82%D1%80%D0%B5_%D0%90%D0%B7%D0%B8%D0%B8.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "credit": "Agilight, CC BY-SA 4.0"
+  },
+  {
+   "name": "タンヌ・オラの野営",
+   "lat": 50.75,
+   "lng": 93.0,
+   "era": "1984年",
+   "text": "調査隊のテントで、若い研究者が鍋から直に飲んでいる。テントの奥にはラジカセ。山の上でも、音は連れて歩くものだった",
+   "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Tuva_1984_Andrey_Puzachenko.jpg/500px-Tuva_1984_Andrey_Puzachenko.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "credit": "Ivtorov, CC BY-SA 4.0"
+  },
+  {
+   "name": "舞台の上のフレシュ",
+   "lat": 51.7186,
+   "lng": 94.4453,
+   "era": "2016年",
+   "text": "青い照明の舞台で力士が組み合い、袖には楽士と衣装の役者が控える。フレシュは競技であると同時に、劇場の演目でもある",
+   "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/%D0%91%D0%BE%D1%80%D1%8C%D0%B1%D0%B0_%D0%A5%D1%83%D1%80%D0%B5%D1%88.jpg/500px-%D0%91%D0%BE%D1%80%D1%8C%D0%B1%D0%B0_%D0%A5%D1%83%D1%80%D0%B5%D1%88.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "credit": "Zamunu45, CC BY-SA 4.0"
+  }
+ ]
 }
