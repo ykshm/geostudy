@@ -1,0 +1,119 @@
+{
+ "map": "maps/russia-sibir-city-winter.html",
+ "title": "幕間 氷点下40度の団地の一日 — 章の地名地図",
+ "places": [
+  {
+   "i": 0,
+   "name": "ヤクーツク",
+   "note": "1",
+   "lat": 62.0272,
+   "lng": 129.7319,
+   "text": "この一日の舞台。人口36万、連続永久凍土の上の都市として世界最大で、真冬の平年気温がいちばん低い大都市",
+   "rich": "章の図2と同じ一枚。2月の目抜き通り、霜の電線と排気の湯気",
+   "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/On_the_streets_of_Yakutsk_-_Flickr_-_Maarten_Takens.jpg/500px-On_the_streets_of_Yakutsk_-_Flickr_-_Maarten_Takens.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "credit": "Maarten Takens, CC BY-SA 2.0"
+  },
+  {
+   "i": 1,
+   "name": "クレスチャンスキー市場",
+   "sec": "3",
+   "lat": 62.0371,
+   "lng": 129.7235,
+   "text": "露天の列が冬の主役の常設市場。外気がそのまま業務用冷凍庫で、凍った魚が立てて売られる",
+   "rich": "章の図3と同じ一枚。ここで買われた氷下漁の魚は、台所でこう削がれる",
+   "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Stroganina_whittling.jpg/500px-Stroganina_whittling.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "credit": "Cholbon, CC BY-SA 4.0"
+  },
+  {
+   "i": 2,
+   "name": "203番マイクロ地区",
+   "sec": "4",
+   "lat": 62.0308,
+   "lng": 129.758,
+   "text": "市の東縁で造成が進む新しい団地地区。章の図4の、地上配管が道路ぎわを走る写真の場所",
+   "rich": "章の図4と同じ一枚。クレーンと新築の住棟、手前を走る配管の束",
+   "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Russia%2C_Saha%2C_Jakutskaj%2C_Yakutsk_-_203-%D0%B9_%D0%BC%D0%B8%D0%BA%D1%80%D0%BE%D1%80%D0%B0%D0%B9%D0%BE%D0%BD_%28%D0%AF%D0%BA%D1%83%D1%82%D1%81%D0%BA%29_WMID4617167.jpg/500px-Russia%2C_Saha%2C_Jakutskaj%2C_Yakutsk_-_203-%D0%B9_%D0%BC%D0%B8%D0%BA%D1%80%D0%BE%D1%80%D0%B0%D0%B9%D0%BE%D0%BD_%28%D0%AF%D0%BA%D1%83%D1%82%D1%81%D0%BA%29_WMID4617167.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "credit": "divik23, CC BY-SA 3.0"
+  },
+  {
+   "i": 3,
+   "name": "オルジョニキーゼ広場",
+   "sec": "5",
+   "lat": 62.0335,
+   "lng": 129.743,
+   "text": "中心部の広場。11月末、新年に向けてレナ川の氷から彫刻が彫り出される",
+   "rich": "章の図6と同じ一枚。氷点下37度の彫刻作業",
+   "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/%D0%9F%D0%BB%D0%BE%D1%89%D0%B0%D0%B4%D1%8C_%D0%9E%D1%80%D0%B4%D0%B6%D0%BE%D0%BD%D0%B8%D0%BA%D0%B8%D0%B4%D0%B7%D0%B5%2C_%D0%B2%D1%8B%D1%80%D0%B5%D0%B7%D0%BA%D0%B0_%D0%BB%D0%B5%D0%B4%D1%8F%D0%BD%D1%8B%D1%85_%D1%84%D0%B8%D0%B3%D1%83%D1%80%2C_%D1%82%D0%B5%D0%BC%D0%BF%D0%B5%D1%80%D0%B0%D1%82%D1%83%D1%80%D0%B0_-37_%D0%B3%D1%80%D0%B0%D0%B4%D1%83%D1%81%D0%BE%D0%B2%2C_%D0%AF%D0%BA%D1%83%D1%82%D1%81%D0%BA_24.11.2025.jpg/500px-%D0%9F%D0%BB%D0%BE%D1%89%D0%B0%D0%B4%D1%8C_%D0%9E%D1%80%D0%B4%D0%B6%D0%BE%D0%BD%D0%B8%D0%BA%D0%B8%D0%B4%D0%B7%D0%B5%2C_%D0%B2%D1%8B%D1%80%D0%B5%D0%B7%D0%BA%D0%B0_%D0%BB%D0%B5%D0%B4%D1%8F%D0%BD%D1%8B%D1%85_%D1%84%D0%B8%D0%B3%D1%83%D1%80%2C_%D1%82%D0%B5%D0%BC%D0%BF%D0%B5%D1%80%D0%B0%D1%82%D1%83%D1%80%D0%B0_-37_%D0%B3%D1%80%D0%B0%D0%B4%D1%83%D1%81%D0%BE%D0%B2%2C_%D0%AF%D0%BA%D1%83%D1%82%D1%81%D0%BA_24.11.2025.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "credit": "SmallSonMarex, パブリックドメイン(CC0)"
+  },
+  {
+   "i": 4,
+   "name": "レナ川",
+   "sec": "5",
+   "lat": 62.03,
+   "lng": 129.83,
+   "text": "市の東を流れる大河。冬は氷の道になり、広場の彫刻の材料もこの川の氷である",
+   "rich": "夏の上空から。編組する流路と砂洲。対岸まで数キロあるこの水が、冬はまるごと凍る",
+   "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Lena_River_%28near_Yakutsk%2C_Siberia%2C_Russia%29_1_%2821473479995%29.jpg/500px-Lena_River_%28near_Yakutsk%2C_Siberia%2C_Russia%29_1_%2821473479995%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "credit": "James St. John, CC BY 2.0"
+  },
+  {
+   "i": 5,
+   "name": "サイサル湖",
+   "note": "15",
+   "lat": 62.0162,
+   "lng": 129.6916,
+   "text": "市街の南西の湖。凍った湖面に氷の遊園地が組まれ、開園は凍てつきの緩む2月14日",
+   "rich": "5月の湖面。氷の遊園地の季節が終わると、岸辺は釣りと散歩の場所になる",
+   "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/%D0%9E%D0%B7%D0%B5%D1%80%D0%BE_%D0%A1%D0%B0%D0%B9%D1%81%D0%B0%D1%80%D1%8B_%D1%81_%D0%B2%D0%BE%D1%81%D1%82%D0%BE%D0%BA%D0%B0.jpg/500px-%D0%9E%D0%B7%D0%B5%D1%80%D0%BE_%D0%A1%D0%B0%D0%B9%D1%81%D0%B0%D1%80%D1%8B_%D1%81_%D0%B2%D0%BE%D1%81%D1%82%D0%BE%D0%BA%D0%B0.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "credit": "Empressdalek, CC BY-SA 4.0"
+  }
+ ],
+ "snaps": [
+  {
+   "name": "真冬の交差点",
+   "lat": 62.001,
+   "lng": 129.72,
+   "era": "2020年冬",
+   "text": "南の郊外へ出る道すがら。バスも屋根も同じ白をかぶり、凍った流れの向こうの断崖まで光が均一に回る",
+   "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/%D0%92%D0%B8%D0%B4%D1%8B_%D0%AF%D0%BA%D1%83%D1%82%D1%81%D0%BA%D0%B0.jpg/500px-%D0%92%D0%B8%D0%B4%D1%8B_%D0%AF%D0%BA%D1%83%D1%82%D1%81%D0%BA%D0%B0.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "credit": "Якупова Инна, CC BY-SA 4.0"
+  },
+  {
+   "name": "板の歩道の昼寝",
+   "lat": 62.0049,
+   "lng": 129.7132,
+   "era": "2011年4月",
+   "text": "雪解けのザロク地区。泥の上に板の歩道が渡り、木の覆いの配管が塀に沿って走る。犬は道でいちばん乾いた場所を知っている",
+   "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/%D0%AF%D0%BA%D1%83%D1%82%D1%81%D0%BA._%D0%97%D0%B0%D0%BB%D0%BE%D0%B3_%281%29.JPG/500px-%D0%AF%D0%BA%D1%83%D1%82%D1%81%D0%BA._%D0%97%D0%B0%D0%BB%D0%BE%D0%B3_%281%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "credit": "LxAndrew, CC BY-SA 3.0"
+  },
+  {
+   "name": "木の家の海と新しい壁",
+   "lat": 62.0025,
+   "lng": 129.6974,
+   "era": "2025年10月",
+   "text": "菜園つきの木の家が地平まで続き、その向こうに新しい団地がひと塊。左のボイラーの煙突は、10月末でもう冬の勤務に入っている",
+   "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/%D0%AF%D0%BA%D1%83%D1%82%D1%81%D0%BA%2C_%D0%B2%D0%B8%D0%B4_%D0%BD%D0%B0_%D0%96%D0%B8%D0%BB%D0%BE%D0%B9_%D0%BA%D0%BE%D0%BC%D0%BF%D0%BB%D0%B5%D0%BA%D1%81_%22%D0%9F%D1%80%D0%BE%D0%BC%D0%B5%D1%82%D0%B5%D0%B9%22%2C_%D0%90%D0%B2%D1%82%D0%BE%D0%B4%D0%BE%D1%80%D0%BE%D0%B6%D0%BD%D1%8B%D0%B9_%D0%BE%D0%BA%D1%80%D1%83%D0%B3._25.10.2025.jpg/500px-%D0%AF%D0%BA%D1%83%D1%82%D1%81%D0%BA%2C_%D0%B2%D0%B8%D0%B4_%D0%BD%D0%B0_%D0%96%D0%B8%D0%BB%D0%BE%D0%B9_%D0%BA%D0%BE%D0%BC%D0%BF%D0%BB%D0%B5%D0%BA%D1%81_%22%D0%9F%D1%80%D0%BE%D0%BC%D0%B5%D1%82%D0%B5%D0%B9%22%2C_%D0%90%D0%B2%D1%82%D0%BE%D0%B4%D0%BE%D1%80%D0%BE%D0%B6%D0%BD%D1%8B%D0%B9_%D0%BE%D0%BA%D1%80%D1%83%D0%B3._25.10.2025.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "credit": "SmallSonMarex, パブリックドメイン(CC0)"
+  },
+  {
+   "name": "堤防の内側",
+   "lat": 62.0225,
+   "lng": 129.744,
+   "era": "2026年5月",
+   "text": "雪のない季節の堤防の道。春の増水に備える壁の内側で、クレーンが新しい棟を積んでいる",
+   "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/%D0%92%D0%B8%D0%B4_%D0%BD%D0%B0_%D1%83%D0%BB%D0%B8%D1%86%D1%83_%D0%A7%D0%B5%D1%80%D0%BD%D1%8B%D1%88%D0%B5%D0%B2%D1%81%D0%BA%D0%BE%D0%B3%D0%BE_%D0%B8_%D0%9C%D0%BE%D1%81%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D1%83%D1%8E_%D0%BD%D0%B0%D0%B1%D0%B5%D1%80%D0%B5%D0%B6%D0%BD%D1%83%D1%8E%2C_%D0%AF%D0%BA%D1%83%D1%82%D1%81%D0%BA_24.05.2026.jpg/500px-%D0%92%D0%B8%D0%B4_%D0%BD%D0%B0_%D1%83%D0%BB%D0%B8%D1%86%D1%83_%D0%A7%D0%B5%D1%80%D0%BD%D1%8B%D1%88%D0%B5%D0%B2%D1%81%D0%BA%D0%BE%D0%B3%D0%BE_%D0%B8_%D0%9C%D0%BE%D1%81%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D1%83%D1%8E_%D0%BD%D0%B0%D0%B1%D0%B5%D1%80%D0%B5%D0%B6%D0%BD%D1%83%D1%8E%2C_%D0%AF%D0%BA%D1%83%D1%82%D1%81%D0%BA_24.05.2026.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "credit": "SmallSonMarex, パブリックドメイン(CC0)"
+  },
+  {
+   "name": "九月九日の夕方",
+   "lat": 62.0287,
+   "lng": 129.7286,
+   "era": "2026年9月",
+   "text": "プロスペクト・レニナ。ベビーカーを押して信号を待つ人たち。この通りが氷点下の霧に沈むまで、あとふた月ある",
+   "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/%D0%92%D0%B8%D0%B4_%D0%BD%D0%B0_%D0%BF%D1%80%D0%BE%D1%81%D0%BF%D0%B5%D0%BA%D1%82_%D0%9B%D0%B5%D0%BD%D0%B8%D0%BD%D0%B0_%D1%81_%D0%BF%D0%BB%D0%BE%D1%89%D0%B0%D0%B4%D0%B8_%D0%94%D1%80%D1%83%D0%B6%D0%B1%D1%8B_%D0%BD%D0%B0%D1%80%D0%BE%D0%B4%D0%BE%D0%B2%2C_%D0%AF%D0%BA%D1%83%D1%82%D1%81%D0%BA_09.09.2026.jpg/500px-%D0%92%D0%B8%D0%B4_%D0%BD%D0%B0_%D0%BF%D1%80%D0%BE%D1%81%D0%BF%D0%B5%D0%BA%D1%82_%D0%9B%D0%B5%D0%BD%D0%B8%D0%BD%D0%B0_%D1%81_%D0%BF%D0%BB%D0%BE%D1%89%D0%B0%D0%B4%D0%B8_%D0%94%D1%80%D1%83%D0%B6%D0%B1%D1%8B_%D0%BD%D0%B0%D1%80%D0%BE%D0%B4%D0%BE%D0%B2%2C_%D0%AF%D0%BA%D1%83%D1%82%D1%81%D0%BA_09.09.2026.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "credit": "SmallSonMarex, CC BY 4.0"
+  }
+ ]
+}
