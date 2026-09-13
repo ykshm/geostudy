@@ -1,0 +1,90 @@
+{
+ "map": "maps/russia-sibir-moving-home.html",
+ "title": "幕間 動く家 — 章の地名地図",
+ "places": [
+  {
+   "i": 0,
+   "name": "ヤマル半島",
+   "note": "2",
+   "lat": 70.0,
+   "lng": 70.0,
+   "text": "南北700キロのツンドラの半島。牧夫たちの一年の道は、この地形を縦に往復する",
+   "rich": "2021年夏の衛星写真。湖沼に覆われた半島の全景。左がカラ海、右がオビ湾",
+   "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Yamal_Peninsula%2C_Terra_MODIS_2021.jpg/500px-Yamal_Peninsula%2C_Terra_MODIS_2021.jpg",
+   "credit": "NASA Terra/MODIS, パブリックドメイン"
+  },
+  {
+   "i": 1,
+   "name": "カラ海",
+   "sec": "3",
+   "lat": 71.3,
+   "lng": 66.8,
+   "text": "夏の目的地。牧夫たちは、この海の岸の草の塩と鉱物が群れに要ると考えている",
+   "rich": "衛星から見たバイダラツカヤ湾。半島の西を限る、遠浅の冷たい海",
+   "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Yamal_Peninsula%2C_Terra_MODIS_2021_%28cropped_to_Baydaratskaya_Bay%29.jpg/500px-Yamal_Peninsula%2C_Terra_MODIS_2021_%28cropped_to_Baydaratskaya_Bay%29.jpg",
+   "credit": "NASA Terra/MODIS, パブリックドメイン"
+  },
+  {
+   "i": 2,
+   "name": "ユリベイ川",
+   "sec": "3",
+   "lat": 68.9,
+   "lng": 70.0,
+   "text": "半島を横切る川。雪解けの増水期の渡河が、南北の道の毎年の難所になる",
+   "rich": "夏のユリベイの大きな蛇行。緑のツンドラを、川だけが光って流れる",
+   "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/%D0%A0%D0%B5%D0%BA%D0%B0_%D0%AE%D1%80%D0%B8%D0%B1%D0%B5%D0%B9_%D0%BD%D0%B0_%D1%8E%D0%B3%D0%BE-%D0%B7%D0%B0%D0%BF%D0%B0%D0%B4%D0%B5_%D0%AF%D0%BC%D0%B0%D0%BB%D0%B0.jpg/500px-%D0%A0%D0%B5%D0%BA%D0%B0_%D0%AE%D1%80%D0%B8%D0%B1%D0%B5%D0%B9_%D0%BD%D0%B0_%D1%8E%D0%B3%D0%BE-%D0%B7%D0%B0%D0%BF%D0%B0%D0%B4%D0%B5_%D0%AF%D0%BC%D0%B0%D0%BB%D0%B0.jpg",
+   "credit": "Sergey.vlad.popov, CC BY-SA 4.0"
+  },
+  {
+   "i": 3,
+   "name": "ボヴァネンコヴォ",
+   "sec": "3",
+   "lat": 70.319,
+   "lng": 68.345,
+   "text": "半島中部の巨大ガス田。群れが通過する季節には、作業を止めて道を空ける",
+   "rich": "2010年8月、ガス田の空港近くの夕景。ツンドラの道の上に、雲の多い白夜の空",
+   "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/%D0%9E%D0%B1%D0%BB%D0%B0%D1%87%D0%BD%D1%8B%D0%B9_%D0%B7%D0%B0%D0%BA%D0%B0%D1%82%2C_%D0%B0%D1%8D%D1%80%D0%BE%D0%BF%D0%BE%D1%80%D1%82_%D0%91%D0%BE%D0%B2%D0%B0%D0%BD%D0%B5%D0%BD%D0%BA%D0%BE%D0%B2%D0%BE%2C_%D0%BF%D0%BE%D0%BB%D1%83%D0%BE%D1%81%D1%82%D1%80%D0%BE%D0%B2_%D0%AF%D0%BC%D0%B0%D0%BB%2C_%D0%AF%D0%BC%D0%B0%D0%BB%D0%BE-%D0%9D%D0%B5%D0%BD%D0%B5%D1%86%D0%BA%D0%B8%D0%B9_%D0%B0%D0%B2%D1%82%D0%BE%D0%BD%D0%BE%D0%BC%D0%BD%D1%8B%D0%B9_%D0%BE%D0%BA%D1%80%D1%83%D0%B3%2C_%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B9%D1%81%D0%BA%D0%B0%D1%8F_%D0%A4%D0%B5%D0%B4%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D1%8F%2C_%D0%BB%D0%B5%D1%82%D0%BE%2C_2010.jpg/500px-%D0%9E%D0%B1%D0%BB%D0%B0%D1%87%D0%BD%D1%8B%D0%B9_%D0%B7%D0%B0%D0%BA%D0%B0%D1%82%2C_%D0%B0%D1%8D%D1%80%D0%BE%D0%BF%D0%BE%D1%80%D1%82_%D0%91%D0%BE%D0%B2%D0%B0%D0%BD%D0%B5%D0%BD%D0%BA%D0%BE%D0%B2%D0%BE%2C_%D0%BF%D0%BE%D0%BB%D1%83%D0%BE%D1%81%D1%82%D1%80%D0%BE%D0%B2_%D0%AF%D0%BC%D0%B0%D0%BB%2C_%D0%AF%D0%BC%D0%B0%D0%BB%D0%BE-%D0%9D%D0%B5%D0%BD%D0%B5%D1%86%D0%BA%D0%B8%D0%B9_%D0%B0%D0%B2%D1%82%D0%BE%D0%BD%D0%BE%D0%BC%D0%BD%D1%8B%D0%B9_%D0%BE%D0%BA%D1%80%D1%83%D0%B3%2C_%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B9%D1%81%D0%BA%D0%B0%D1%8F_%D0%A4%D0%B5%D0%B4%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D1%8F%2C_%D0%BB%D0%B5%D1%82%D0%BE%2C_2010.jpg",
+   "credit": "artden6, CC BY-SA 3.0"
+  },
+  {
+   "i": 4,
+   "name": "ヤル・サレ",
+   "sec": "5",
+   "lat": 66.83,
+   "lng": 70.83,
+   "text": "半島の付け根の村。9月、ツンドラの子どもたちはここの寄宿学校に集まる",
+   "rich": "空から見た村。色とりどりの屋根の向こうに、湖だらけのツンドラが続く",
+   "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/%D0%AF%D0%BC%D0%B0%D0%BB%D1%8C%D1%81%D0%BA%D0%B8%D0%B9_%D1%80%D0%B0%D0%B9%D0%BE%D0%BD%2C_%D1%81%D0%B5%D0%BB%D0%BE_%D0%AF%D1%80-%D0%A1%D0%B0%D0%BB%D0%B5.jpg/500px-%D0%AF%D0%BC%D0%B0%D0%BB%D1%8C%D1%81%D0%BA%D0%B8%D0%B9_%D1%80%D0%B0%D0%B9%D0%BE%D0%BD%2C_%D1%81%D0%B5%D0%BB%D0%BE_%D0%AF%D1%80-%D0%A1%D0%B0%D0%BB%D0%B5.jpg",
+   "credit": "Danilklochko94, CC BY-SA 4.0"
+  }
+ ],
+ "snaps": [
+  {
+   "name": "トナカイ飼いの日",
+   "lat": 66.86,
+   "lng": 70.84,
+   "era": "2015年4月",
+   "text": "春の祭りの日のヤル・サレ。飾り帯を付けた白いトナカイの橇と、白い毛皮の晴れ着。働く日の道具立てが、この日は誇りの衣装になる",
+   "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/%D0%94%D0%B5%D0%BD%D1%8C_%D0%BE%D0%BB%D0%B5%D0%BD%D0%B5%D0%B2%D0%BE%D0%B4%D0%B0_%D0%B2_%D0%AF%D1%80-%D0%A1%D0%B0%D0%BB%D0%B5.jpg/500px-%D0%94%D0%B5%D0%BD%D1%8C_%D0%BE%D0%BB%D0%B5%D0%BD%D0%B5%D0%B2%D0%BE%D0%B4%D0%B0_%D0%B2_%D0%AF%D1%80-%D0%A1%D0%B0%D0%BB%D0%B5.jpg",
+   "credit": "Vadimirushka, CC BY-SA 4.0"
+  },
+  {
+   "name": "夜の氷の城",
+   "lat": 66.8638,
+   "lng": 70.8374,
+   "era": "2006年2月",
+   "text": "2月の夜、村に組まれた氷の城。壁の中に灯りがともり、長い外套の人がひとり、前を通り過ぎていく",
+   "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Yarsale_%C5%9Fehri_yamal_b%C3%B6lgesi_sibirya_rusya_buz_kaleler_by_ismail_soytekino%C4%9Flu_-_panoramio.jpg/500px-Yarsale_%C5%9Fehri_yamal_b%C3%B6lgesi_sibirya_rusya_buz_kaleler_by_ismail_soytekino%C4%9Flu_-_panoramio.jpg",
+   "credit": "ismail soytekinoğlu, CC BY-SA 3.0"
+  },
+  {
+   "name": "橇に腰掛ける三人",
+   "lat": 69.41,
+   "lng": 86.18,
+   "era": "2000年8月",
+   "text": "夏のタイミル、ドゥジンカ近郊。天幕の脇の木の橇に若者が三人。ネネツの暮らしの帯は、ヤマルから東のエニセイ河口まで続いている",
+   "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Nenets_people_near_Dudinka_%28Ru200008050079%29.jpg/500px-Nenets_people_near_Dudinka_%28Ru200008050079%29.jpg",
+   "credit": "Dr. A. Hugentobler, CC BY-SA 3.0"
+  }
+ ]
+}
