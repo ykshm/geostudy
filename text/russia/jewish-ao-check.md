@@ -80,6 +80,7 @@
 いずれもWikimedia Commonsから2026-09-14取得。ライセンスはファイルページ本体のHTML(ライセンス表示とカテゴリ)で確認し、全点を目視で採否確認した。APIは429が続いたため、手引きの迂回路(ファイルページHTML+Special:FilePath、90〜150秒間隔)を使った。
 
 - 図1 img/jewish-ao-locator.png ← File:Map of the Jewish Autonomous Oblast in Russia.svg(作者TUBS、CC BY-SA 3.0)。1280px PNG。目視: 極東南部・中国国境沿いの小区画が赤く塗られていることを確認。
-- 図2 img/jewish-ao-station.jpg ← File:Биробиджан, вокзал.jpg(作者Zightsev、CC BY-SA 4.0、2008年撮影)。目視: 駅前広場の噴水柱の頂に金色のメノラー、奥に「ВОКЗАЛ」の駅舎を確認。
-- 図3 img/jewish-ao-signs.jpg ← File:Examples of Yiddish usage in Birobidzhan public space.jpg(作者Andrijko Z.、CC BY-SA 4.0)。目視: 内務省・市庁舎・州立図書館・検察庁・年金基金の露語・イディッシュ語二段組の表札、レーニン通りの街路標識、七色の州旗を確認。
-- 図4 img/jewish-ao-bridge.jpg ← File:Мост в Китай 2.jpg(作者Ориенталист、CC BY 4.0)。目視: 氷の浮くアムール川を渡る単線の鉄道橋、主水路上のトラス、取付築堤を確認。
+- 図2 img/jewish-ao-ozet.jpg ← File:OZET poster.jpg(1929年、モスクワ、オゼト中央幹部会発行。画面左端にМ.Длугач(ミハイル・ドルガチ)の署名)。ファイルページのライセンス表示はPD-Russia(カテゴリで確認)。目視: 笑う農夫、鎌と槌の車輪の犂、塗りつぶした双頭の鷲、露語の標語と「8001本・15万ルーブル」、イディッシュ語の上書きを確認。第2回くじ(1929年)の当たり8,001本・総額15万ルーブルは検証記録のオゼトの項と一致する。取得はSpecial:FilePath経由(429の再試行の末)。
+- 図3 img/jewish-ao-station.jpg ← File:Биробиджан, вокзал.jpg(作者Zightsev、CC BY-SA 4.0、2008年撮影)。目視: 駅前広場の噴水柱の頂に金色のメノラー、奥に「ВОКЗАЛ」の駅舎を確認。
+- 図4 img/jewish-ao-signs.jpg ← File:Examples of Yiddish usage in Birobidzhan public space.jpg(作者Andrijko Z.、CC BY-SA 4.0)。目視: 内務省・市庁舎・州立図書館・検察庁・年金基金の露語・イディッシュ語二段組の表札、レーニン通りの街路標識、七色の州旗を確認。
+- 図5 img/jewish-ao-bridge.jpg ← File:Мост в Китай 2.jpg(作者Ориенталист、CC BY 4.0)。目視: 氷の浮くアムール川を渡る単線の鉄道橋、主水路上のトラス、取付築堤を確認。
