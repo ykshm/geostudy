@@ -14,7 +14,7 @@
 | 香月 湊 | authors/katsuki-minato.md | 軍事基地と安全保障の政治地理 | 執筆中(アメリカ50州: バージニア) |
 | 風間 汀 | authors/kazama-migiwa.md | 言語と信仰の文化地理 | 執筆中(ロシア83連邦主体: マリ・エル) |
 | 駒井 遥 | authors/komai-haruka.md | 立地と補助金の経済地理 | 執筆中(ロシア83連邦主体: サハ・クルガン州) |
-| 梶谷 縫 | authors/kajitani-nui.md | 北方の生業と物質文化の民俗学 | 執筆中(ロシア83連邦主体・幕間: 氷点下40度の団地の一日・コンビナートの街の冬・川から水を切り出す・動く家・凍った市場) |
+| 梶谷 縫 | authors/kajitani-nui.md | 北方の生業と物質文化の民俗学 | 執筆中(ロシア83連邦主体・幕間: 氷点下40度の団地の一日・コンビナートの街の冬・川から水を切り出す・動く家・凍った市場/臥遊風土記: 八丈島) |
 
 ## 章の割り振り(アメリカ50州)
 
@@ -53,6 +53,7 @@
 | 津軽 | text/japan/tsugaru.md | 三輪 遼(authors/miwa-ryo.md) |
 | 多摩 | text/japan/tama.md | 牧野 周(authors/makino-shu.md) |
 | 佐田岬 | text/japan/sadamisaki.md | 沢井 環(authors/sawai-tamaki.md) |
+| 八丈島 | text/japan/hachijo.md | 梶谷 縫(authors/kajitani-nui.md) |
 
 ## 章の割り振り(中国33省区)
 
