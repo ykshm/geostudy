@@ -1,0 +1,132 @@
+{
+ "map": "maps/russia-jewish-ao.html",
+ "title": "ユダヤ自治州 — 章の地名地図",
+ "places": [
+  {
+   "i": 0,
+   "name": "ビロビジャン",
+   "sec": "1",
+   "lat": 48.7947,
+   "lng": 132.9217,
+   "text": "州都、人口6万7千。州の半分近くがこの町に住み、駅の看板は二つの文字で書かれている",
+   "rich": "ビラ川の遊歩道。対岸の丘のテレビ塔まで、町はこの川幅のぶんだけ開けている",
+   "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/%D0%91%D0%B8%D1%80%D0%BE%D0%B1%D0%B8%D0%B4%D0%B6%D0%B0%D0%BD-%D0%BD%D0%B0%D0%B1%D0%B5%D1%80%D0%B5%D0%B6%D0%BD%D0%B0%D1%8F-%D1%80%D0%B5%D0%BA%D0%B0-%D0%91%D0%B8%D1%80%D0%B0-2024.jpg/500px-%D0%91%D0%B8%D1%80%D0%BE%D0%B1%D0%B8%D0%B4%D0%B6%D0%B0%D0%BD-%D0%BD%D0%B0%D0%B1%D0%B5%D1%80%D0%B5%D0%B6%D0%BD%D0%B0%D1%8F-%D1%80%D0%B5%D0%BA%D0%B0-%D0%91%D0%B8%D1%80%D0%B0-2024.jpg",
+   "credit": "I13Robin, CC BY 4.0"
+  },
+  {
+   "i": 1,
+   "name": "ハバロフスク",
+   "sec": "1",
+   "lat": 48.4802,
+   "lng": 135.0719,
+   "text": "東へ200キロ足らずの極東最大級の都市。州の空港も大きな買い物も、ここが最寄りである",
+   "rich": "夕暮れのアムール河岸へ降りる石段。川の広さが、もう入り江の顔をしている",
+   "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Amur_river%2C_Khabarovsk%2C_Russia_-_panoramio_-_Czochralski.jpg/500px-Amur_river%2C_Khabarovsk%2C_Russia_-_panoramio_-_Czochralski.jpg",
+   "credit": "Czochralski, CC BY 3.0"
+  },
+  {
+   "i": 2,
+   "name": "モスクワ",
+   "sec": "1",
+   "lat": 55.7558,
+   "lng": 37.6173,
+   "text": "この住所を書いた側の首都。1928年3月28日の決議はここで可決された。急行で6日の距離",
+   "rich": "石橋から見るクレムリン。8,000キロ先の湿地の地名を、ここで決めていた",
+   "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Moscow_Kremlin_from_Kamenny_bridge.jpg/500px-Moscow_Kremlin_from_Kamenny_bridge.jpg",
+   "credit": "Минеева Ю. (Julmin) / Surendil, CC BY-SA 1.0"
+  },
+  {
+   "i": 3,
+   "name": "アムールゼト",
+   "sec": "3",
+   "lat": 47.6942,
+   "lng": 131.095,
+   "text": "アムール河岸の大豆どころ。村の名には95年前の移住組織の頭字語がそのまま残る",
+   "rich": "宇宙から見たアムール。川を挟んで畑の織り目の細かさが変わる。細かい縞の側が中国である",
+   "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/ISS016-E-8242_-_View_of_China.jpg/500px-ISS016-E-8242_-_View_of_China.jpg",
+   "credit": "NASA, パブリックドメイン"
+  },
+  {
+   "i": 4,
+   "name": "ニジネレニンスコエ",
+   "sec": "6",
+   "lat": 47.7357,
+   "lng": 132.63,
+   "text": "ロシアと中国を結ぶ最初の鉄道橋の、ロシア側のたもとの村",
+   "rich": "川岸から見上げる単線の橋桁。撮影は開通前の2022年4月、貨物列車は同年11月から渡りはじめた",
+   "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/%D0%9C%D0%BE%D1%81%D1%82_%D0%B2_%D0%9A%D0%B8%D1%82%D0%B0%D0%B9_%D1%87%D0%B5%D1%80%D0%B5%D0%B7_%D0%90%D0%BC%D1%83%D1%80.jpg/500px-%D0%9C%D0%BE%D1%81%D1%82_%D0%B2_%D0%9A%D0%B8%D1%82%D0%B0%D0%B9_%D1%87%D0%B5%D1%80%D0%B5%D0%B7_%D0%90%D0%BC%D1%83%D1%80.jpg",
+   "credit": "Ориенталист, CC BY 4.0"
+  },
+  {
+   "i": 5,
+   "name": "同江",
+   "sec": "6",
+   "side": "cn",
+   "lat": 47.6499,
+   "lng": 132.5064,
+   "text": "橋の対岸、中国側の終点の町。州の大豆と鉄精鉱はここから東北の内陸へ散っていく",
+   "rich": "空から見た橋の全景。取付の築堤まで含めると7キロ余り、氾濫原をまっすぐ突っ切る",
+   "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/%D0%9C%D0%BE%D1%81%D1%82_%D0%B2_%D0%9A%D0%B8%D1%82%D0%B0%D0%B9_2.jpg/500px-%D0%9C%D0%BE%D1%81%D1%82_%D0%B2_%D0%9A%D0%B8%D1%82%D0%B0%D0%B9_2.jpg",
+   "credit": "Ориенталист, CC BY 4.0"
+  },
+  {
+   "i": 6,
+   "name": "テルアビブ",
+   "sec": "6",
+   "side": "il",
+   "lat": 32.0853,
+   "lng": 34.7818,
+   "text": "1990年代の出国の行き先。5年間で州のユダヤ人口の6割がイスラエルへ移った",
+   "rich": "地中海の浜辺。ビロビジャンからは、モスクワへ行くのとほぼ同じ8,000キロ近い距離である",
+   "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Israel_Tel_Aviv_Skyline_%2834714425090%29.jpg/500px-Israel_Tel_Aviv_Skyline_%2834714425090%29.jpg",
+   "credit": "FLASHPACKER TRAVELGUIDE, CC BY-SA 2.0"
+  }
+ ],
+ "snaps": [
+  {
+   "name": "コムゼトの委員たち",
+   "lat": 55.7522,
+   "lng": 37.6156,
+   "era": "1930年ごろ",
+   "text": "卓を囲む委員たちの記念写真。この役所の決裁が、8,000キロ先の湿地の住所を「郷土」に変えた",
+   "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/%D0%A7%D0%BB%D0%B5%D0%BD%D1%8B_%D0%9A%D0%9E%D0%9C%D0%97%D0%95%D0%A2_%D0%B7%D0%B0_%D1%81%D1%82%D0%BE%D0%BB%D0%BE%D0%BC._%D0%93%D1%80%D1%83%D0%BF%D0%BF%D0%BE%D0%B2%D0%BE%D0%B9_%D0%BF%D0%BE%D1%80%D1%82%D1%80%D0%B5%D1%82.jpg/500px-%D0%A7%D0%BB%D0%B5%D0%BD%D1%8B_%D0%9A%D0%9E%D0%9C%D0%97%D0%95%D0%A2_%D0%B7%D0%B0_%D1%81%D1%82%D0%BE%D0%BB%D0%BE%D0%BC._%D0%93%D1%80%D1%83%D0%BF%D0%BF%D0%BE%D0%B2%D0%BE%D0%B9_%D0%BF%D0%BE%D1%80%D1%82%D1%80%D0%B5%D1%82.jpg",
+   "credit": "パブリックドメイン"
+  },
+  {
+   "name": "最初の移住者の記念碑",
+   "lat": 48.7965,
+   "lng": 132.9152,
+   "era": "いま",
+   "text": "駅の近くに立つ馬車の一家の像。1928年、列車を降りた人々はここから湿地の割当地へ向かった",
+   "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/2025-09-27-brj-first-settlers-monument.jpg/500px-2025-09-27-brj-first-settlers-monument.jpg",
+   "credit": "I13Robin, CC BY 4.0"
+  },
+  {
+   "name": "角笛を吹く像",
+   "lat": 48.7893,
+   "lng": 132.9273,
+   "era": "いま",
+   "text": "シナゴーグの門前で角笛(ショファル)を吹く像。柵の飾りは燭台、奥の破風には六芒星",
+   "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/2025-09-27-brj-rabi-shofar.jpg/500px-2025-09-27-brj-rabi-shofar.jpg",
+   "credit": "I13Robin, CC BY 4.0"
+  },
+  {
+   "name": "団地前の小公園",
+   "lat": 48.7855,
+   "lng": 132.933,
+   "era": "いま",
+   "text": "国境警備兵と犬の像に花が供えてある。川向こうが外国であることを、住宅地の真ん中でも覚えている町である",
+   "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/2025-09-27-brj-skver-pogran-134941.jpg/500px-2025-09-27-brj-skver-pogran-134941.jpg",
+   "credit": "I13Robin, CC BY 4.0"
+  },
+  {
+   "name": "町はずれの踏切",
+   "lat": 48.79,
+   "lng": 132.98,
+   "era": "いま",
+   "text": "遮断機が下り、信号が赤く灯る。シベリア鉄道の本線は、いまもこの州でいちばん太い道である",
+   "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/%D0%96%D0%B5%D0%BB%D0%B5%D0%B7%D0%BD%D0%BE%D0%B4%D0%BE%D1%80%D0%BE%D0%B6%D0%BD%D1%8B%D0%B9_%D0%BF%D0%B5%D1%80%D0%B5%D0%B5%D0%B7%D0%B4_%D0%B2%D0%BE%D0%B7%D0%BB%D0%B5_%D0%91%D0%B8%D1%80%D0%BE%D0%B1%D0%B8%D0%B4%D0%B6%D0%B0%D0%BD%D0%B0.jpg/500px-%D0%96%D0%B5%D0%BB%D0%B5%D0%B7%D0%BD%D0%BE%D0%B4%D0%BE%D1%80%D0%BE%D0%B6%D0%BD%D1%8B%D0%B9_%D0%BF%D0%B5%D1%80%D0%B5%D0%B5%D0%B7%D0%B4_%D0%B2%D0%BE%D0%B7%D0%BB%D0%B5_%D0%91%D0%B8%D1%80%D0%BE%D0%B1%D0%B8%D0%B4%D0%B6%D0%B0%D0%BD%D0%B0.jpg",
+   "credit": "SmallSonMarex, CC0"
+  }
+ ]
+}
