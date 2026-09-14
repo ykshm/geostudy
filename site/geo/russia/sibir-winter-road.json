@@ -1,0 +1,116 @@
+{
+ "map": "maps/russia-sibir-winter-road.html",
+ "title": "幕間 冬道(ジームニク) — 章の地名地図",
+ "places": [
+  {
+   "i": 0,
+   "name": "ヤクーツク",
+   "sec": "1",
+   "lat": 62.0272,
+   "lng": 129.7319,
+   "text": "冬道網の起点の首府。対岸へ渡る手段も、冬は氷の上の道になる",
+   "rich": "章の図4と同じ一枚。2005年3月、市の近郊のレナの渡しの走行帯",
+   "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Lena_River_Ice_Road.jpg/500px-Lena_River_Ice_Road.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "credit": "Natxo Rodriguez, CC BY-SA 2.0"
+  },
+  {
+   "i": 1,
+   "name": "ハンドィガ",
+   "sec": "1",
+   "lat": 62.6656,
+   "lng": 135.601,
+   "text": "アルダン川の渡し「ハンドィガ—メギノ・アルダン」の袂の町。2025年12月1日、この冬の連邦道の渡しの一番手として開いた",
+   "rich": "町の中心の青い庁舎とレーニン像。秋の一枚",
+   "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/%D0%A5%D0%B0%D0%BD%D0%B4%D1%8B%D0%B3%D0%B0.jpg/500px-%D0%A5%D0%B0%D0%BD%D0%B4%D1%8B%D0%B3%D0%B0.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "credit": "Marina dragan, CC BY-SA 4.0"
+  },
+  {
+   "i": 2,
+   "name": "ポクロフスク",
+   "sec": "1",
+   "lat": 61.4844,
+   "lng": 129.148,
+   "text": "章の図2・図3の撮影地。2025年12月29日、開通したてのレナの渡しをワゴン車が一台、渡っていった",
+   "rich": "章の図3と同じ一枚。乱氷帯を割る、生まれたばかりの道形",
+   "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/%D0%97%D0%B8%D0%BC%D0%BD%D0%B8%D0%BA%2C_%D0%9B%D0%B5%D0%B4%D0%BE%D0%B2%D0%B0%D1%8F_%D0%BF%D0%B5%D1%80%D0%B5%D0%BF%D1%80%D0%B0%D0%B2%D0%B0_%D1%87%D0%B5%D1%80%D0%B5%D0%B7_%D1%80%D0%B5%D0%BA%D1%83_%D0%9B%D0%B5%D0%BD%D0%B0%2C_%D0%9F%D0%BE%D0%BA%D1%80%D0%BE%D0%B2%D1%81%D0%BA_29.12.2025.jpg/500px-%D0%97%D0%B8%D0%BC%D0%BD%D0%B8%D0%BA%2C_%D0%9B%D0%B5%D0%B4%D0%BE%D0%B2%D0%B0%D1%8F_%D0%BF%D0%B5%D1%80%D0%B5%D0%BF%D1%80%D0%B0%D0%B2%D0%B0_%D1%87%D0%B5%D1%80%D0%B5%D0%B7_%D1%80%D0%B5%D0%BA%D1%83_%D0%9B%D0%B5%D0%BD%D0%B0%2C_%D0%9F%D0%BE%D0%BA%D1%80%D0%BE%D0%B2%D1%81%D0%BA_29.12.2025.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "credit": "SmallSonMarex, パブリックドメイン(CC0)"
+  },
+  {
+   "i": 3,
+   "name": "ニジニ・ベスチャフ",
+   "sec": "2",
+   "lat": 61.9639,
+   "lng": 129.9139,
+   "text": "ヤクーツクの対岸の物流拠点で、鉄道の終点。首府とを結ぶレナの渡しは、大河ゆえに1月5日開通の予定と告示された",
+   "rich": "終着駅のホームと貨車の列。線路はここで途切れ、荷は川と道に乗り換える",
+   "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/%D0%A1%D1%82%D0%B0%D0%BD%D1%86%D0%B8%D1%8F_%D0%9D%D0%B8%D0%B6%D0%BD%D0%B8%D0%B9_%D0%91%D0%B5%D1%81%D1%82%D1%8F%D1%85_%D0%BB%D0%B5%D1%82%D0%BE%D0%BC_2015_%D0%B3%D0%BE%D0%B4%D0%B0_%2804%29.jpg/500px-%D0%A1%D1%82%D0%B0%D0%BD%D1%86%D0%B8%D1%8F_%D0%9D%D0%B8%D0%B6%D0%BD%D0%B8%D0%B9_%D0%91%D0%B5%D1%81%D1%82%D1%8F%D1%85_%D0%BB%D0%B5%D1%82%D0%BE%D0%BC_2015_%D0%B3%D0%BE%D0%B4%D0%B0_%2804%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "credit": "LxAndrew, CC BY-SA 4.0"
+  },
+  {
+   "i": 4,
+   "name": "チェルスキー",
+   "sec": "4",
+   "lat": 68.75,
+   "lng": 161.33,
+   "text": "アルクチカ線の終点、コルィマ川下流の町。ヤクーツクから冬道でおよそ8日",
+   "rich": "衛星から見た10月のコルィマ下流域。雪の平原を、まだ凍り切らない川筋が黒く縫う",
+   "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Autumn_snow_along_the_Kolyma_River%2C_Siberia_%28MODIS_2017-10-12%29.jpg/500px-Autumn_snow_along_the_Kolyma_River%2C_Siberia_%28MODIS_2017-10-12%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "credit": "NASA MODIS (Jeff Schmaltz), パブリックドメイン"
+  },
+  {
+   "i": 5,
+   "name": "アンマングィンダ",
+   "sec": "4",
+   "lat": 61.0269,
+   "lng": 149.692,
+   "text": "章の図6の撮影地。数平方キロに育つナレージ(あふれ氷)の観測地",
+   "rich": "章の図6と同じ一枚。ドリルを抱えた二人の調査員",
+   "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Anmangynda_Aufeis.jpg/500px-Anmangynda_Aufeis.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "credit": "Andrey Ostashov, CC BY 4.0"
+  },
+  {
+   "i": 6,
+   "name": "ペヴェク",
+   "sec": "4",
+   "lat": 69.7008,
+   "lng": 170.3133,
+   "text": "北極海航路の港町。クポル金鉱山への400キロの冬道の起点で、章の図5の道はここから内陸へ延びる",
+   "rich": "丘の道から見た春先の町と港のクレーン。図5の冬道の撮影者が、同じ年に撮った一枚",
+   "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Pevek_2008.jpg/500px-Pevek_2008.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "credit": "Brian Tibbets, パブリックドメイン"
+  },
+  {
+   "i": 7,
+   "name": "アナディリ",
+   "sec": "5",
+   "lat": 64.7337,
+   "lng": 177.4968,
+   "text": "章の図7の撮影地。凍ったリマンの上の氷の道が、春の末まで町と対岸の空港側を結ぶ",
+   "rich": "章の図7と同じ一枚。4月27日の海氷の道",
+   "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Ice_road_across_Anadyrsky_Liman.jpg/500px-Ice_road_across_Anadyrsky_Liman.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "credit": "AlGaman, CC BY-SA 3.0"
+  },
+  {
+   "i": 8,
+   "name": "ウスチ・クイガ",
+   "sec": "5",
+   "lat": 70.0106,
+   "lng": 135.5539,
+   "text": "ヤナ川下流の河港。ここから延びる冬道は11月半ばに開いて5月10日まで生きた、季節の最初で最後の道である",
+   "rich": "初雪のころの村と、凍り始めたヤナ川。船の季節と冬道の季節の、ちょうど継ぎ目",
+   "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/%D0%A3%D1%81%D1%82%D1%8C-%D0%9A%D1%83%D0%B9%D0%B3%D0%B0_-_panoramio.jpg/500px-%D0%A3%D1%81%D1%82%D1%8C-%D0%9A%D1%83%D0%B9%D0%B3%D0%B0_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "credit": "Bareev Boris, CC BY 3.0"
+  }
+ ],
+ "snaps": [
+  {
+   "name": "クポルへの冬道",
+   "lat": 66.7917,
+   "lng": 169.5519,
+   "era": "2008年1月",
+   "text": "章の図5と同じ一枚。ペヴェクから鉱山まで400キロ、地吹雪の日は道端の棒だけが道の在り処を教える",
+   "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Kupol_Ice_road.jpg/500px-Kupol_Ice_road.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "credit": "Brian Tibbets, パブリックドメイン"
+  }
+ ]
+}
