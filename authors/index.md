@@ -9,7 +9,7 @@
 | 千々石 洋 | authors/chichiwa-hiroshi.md | 作物と栽培の農業地理 | 執筆中(アメリカ50州: ハワイ・アイオワ・ノースカロライナ/中国33省区: 雲南) |
 | 沢井 環 | authors/sawai-tamaki.md | 火山と地形の自然地理 | 執筆中(アメリカ50州: ワイオミング・アラスカ・ユタ・コロラド/ロシア83連邦主体: カムチャツカ地方/臥遊風土記: 佐田岬) |
 | 三輪 遼 | authors/miwa-ryo.md | 機械と工場の産業地理 | 執筆中(アメリカ50州: ミシガン・ペンシルベニア・オハイオ/臥遊風土記: 津軽/中国33省区: 広東/ロシア83連邦主体: タタールスタン) |
-| 日下 梓 | authors/kusaka-azusa.md | 移民と住まいの都市地理 | 執筆中(アメリカ50州: ニューヨーク・マサチューセッツ・イリノイ・カリフォルニア) |
+| 日下 梓 | authors/kusaka-azusa.md | 移民と住まいの都市地理 | 執筆中(アメリカ50州: ニューヨーク・マサチューセッツ・イリノイ・カリフォルニア/ロシア83連邦主体: ユダヤ自治州) |
 | 戸川 奏 | authors/togawa-kanade.md | 音楽産業と電波のメディア文化地理 | 執筆中(アメリカ50州: テネシー・ミシシッピ・ケンタッキー/ロシア83連邦主体: トゥヴァ) |
 | 香月 湊 | authors/katsuki-minato.md | 軍事基地と安全保障の政治地理 | 執筆中(アメリカ50州: バージニア) |
 | 風間 汀 | authors/kazama-migiwa.md | 言語と信仰の文化地理 | 執筆中(ロシア83連邦主体: マリ・エル) |
@@ -72,6 +72,7 @@
 | サハ | text/russia/sakha.md | 駒井 遥(authors/komai-haruka.md) |
 | トゥヴァ | text/russia/tuva.md | 戸川 奏(authors/togawa-kanade.md) |
 | クルガン州 | text/russia/kurgan.md | 駒井 遥(authors/komai-haruka.md) |
+| ユダヤ自治州 | text/russia/jewish-ao.md | 日下 梓(authors/kusaka-azusa.md) |
 | 幕間: 氷点下40度の団地の一日 | text/russia/sibir-city-winter.md | 梶谷 縫(authors/kajitani-nui.md) |
 | 幕間: コンビナートの街の冬 | text/russia/sibir-kombinat-winter.md | 梶谷 縫(authors/kajitani-nui.md) |
 | 幕間: 川から水を切り出す | text/russia/sibir-ice-water.md | 梶谷 縫(authors/kajitani-nui.md) |
