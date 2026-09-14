@@ -1,0 +1,114 @@
+{
+ "map": "maps/russia-sibir-frozen-market.html",
+ "title": "幕間 凍った市場 — 章の地名地図",
+ "places": [
+  {
+   "i": 0,
+   "name": "ヤクーツク",
+   "note": "1",
+   "lat": 62.0272,
+   "lng": 129.7319,
+   "text": "この幕間の主な舞台。真冬の外気が業務用冷凍庫より低い街で、市場の売り台は冬のあいだ外に並ぶ",
+   "rich": "9月9日の市心。大聖堂とオペラ・バレエ劇場。露天の売り台が並ぶまで、あとひと月半の頃",
+   "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/%D0%92%D0%B8%D0%B4_%D0%BD%D0%B0_%D0%A1%D0%B2%D1%8F%D1%82%D0%BE-%D0%A2%D1%80%D0%BE%D0%B8%D1%86%D0%BA%D0%B8%D0%B9_%D1%81%D0%BE%D0%B1%D0%BE%D1%80_%D0%B8_%D0%AF%D0%BA%D1%83%D1%82%D1%81%D0%BA%D0%B8%D0%B9_%D1%82%D0%B5%D0%B0%D1%82%D1%80_%D0%BE%D0%BF%D0%B5%D1%80%D1%8B_%D0%B8_%D0%B1%D0%B0%D0%BB%D0%B5%D1%82%D0%B0_%D0%B8%D0%BC%D0%B5%D0%BD%D0%B8_%D0%94._%D0%9A._%D0%A1%D0%B8%D0%B2%D1%86%D0%B5%D0%B2%D0%B0%2C_%D0%AF%D0%BA%D1%83%D1%82%D1%81%D0%BA_09.09.2026.jpg/500px-thumbnail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "credit": "SmallSonMarex, CC BY 4.0"
+  },
+  {
+   "i": 1,
+   "name": "ケメロヴォ",
+   "sec": "1",
+   "lat": 55.3547,
+   "lng": 86.0838,
+   "text": "冒頭の値札の写真の街。凍った魚の露天は、この街に限らないシベリアの冬の歩道の標準装備である",
+   "rich": "章の図2と同じ一枚。段ボール箱の凍った魚と、手書きの紙の値札",
+   "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/%D0%9F%D1%80.%D0%A1%D0%BE%D0%B2%D0%B5%D1%82%D1%81%D0%BA%D0%B8%D0%B9%2C_%D1%8F%D1%80%D0%BC%D0%B0%D1%80%D0%BA%D0%B0%2C_%D0%BC%D0%BE%D1%80%D0%BE%D0%B6%D0%B5%D0%BD%D0%B0%D1%8F_%D1%80%D1%8B%D0%B1%D0%B0%2C_25.11.2011_-_panoramio.jpg/500px-%D0%9F%D1%80.%D0%A1%D0%BE%D0%B2%D0%B5%D1%82%D1%81%D0%BA%D0%B8%D0%B9%2C_%D1%8F%D1%80%D0%BC%D0%B0%D1%80%D0%BA%D0%B0%2C_%D0%BC%D0%BE%D1%80%D0%BE%D0%B6%D0%B5%D0%BD%D0%B0%D1%8F_%D1%80%D1%8B%D0%B1%D0%B0%2C_25.11.2011_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "credit": "Vadim Zhivotovsky, CC BY 3.0"
+  },
+  {
+   "i": 2,
+   "name": "サイサル市場",
+   "sec": "1",
+   "lat": 62.0371,
+   "lng": 129.7235,
+   "text": "章の主会場。通称クレスチャンスキー市場。露天の凍った商いは10月の末から4月の初めまで",
+   "rich": "章の図4と同じ一枚。この市場の魚が行き着く先の食卓",
+   "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Dish_Stroganina_.jpg/500px-Dish_Stroganina_.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "credit": "Cholbon, CC BY-SA 4.0"
+  },
+  {
+   "i": 3,
+   "name": "チョクルダフ",
+   "sec": "2",
+   "lat": 70.6183,
+   "lng": 147.8946,
+   "text": "インディギルカ川下流の町。最上の魚の産地として、市場の値札ルポに名が挙がる",
+   "rich": "衛星から。蛇行するインディギルカの岸に、町と滑走路がひとまとまりに載っている",
+   "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Chokurdakh.jpg/500px-Chokurdakh.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "credit": "NASA, パブリックドメイン"
+  },
+  {
+   "i": 4,
+   "name": "ティクシ",
+   "sec": "2",
+   "lat": 71.6366,
+   "lng": 128.8685,
+   "text": "レナ河口の北極海の港。ここから南へ1,000キロあまり、魚は凍ったまま市場へ下る",
+   "rich": "ティクシ沖、融氷期のラプテフ海。船の手すりの向こうに流氷と雪の山なみ",
+   "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Russia%2C_Yakutia%2C_Tiksi_2015_-_SS.jpg/500px-Russia%2C_Yakutia%2C_Tiksi_2015_-_SS.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "credit": "Svetlana Sibiryakova, CC BY-SA 4.0"
+  },
+  {
+   "i": 5,
+   "name": "コビャイ郡",
+   "sec": "2",
+   "lat": 63.9242,
+   "lng": 127.4739,
+   "text": "市場の鮒のブランド産地。湖の多い低地の郡で、ピンの位置は中心地のサンガル",
+   "rich": "サンガルの商店「ベリョースカ(白樺)」。6月の夜10時すぎ、白夜に近い空の下でまだこの明るさである",
+   "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/%D0%A1%D0%B0%D0%BD%D0%B3%D0%B0%D1%80%2C_%D0%AF%D0%BA%D1%83%D1%82%D0%B8%D1%8F._%D0%9C%D0%B0%D0%B3%D0%B0%D0%B7%D0%B8%D0%BD_%22%D0%91%D0%B5%D1%80%D1%91%D0%B7%D0%BA%D0%B0%22.jpg/500px-%D0%A1%D0%B0%D0%BD%D0%B3%D0%B0%D1%80%2C_%D0%AF%D0%BA%D1%83%D1%82%D0%B8%D1%8F._%D0%9C%D0%B0%D0%B3%D0%B0%D0%B7%D0%B8%D0%BD_%22%D0%91%D0%B5%D1%80%D1%91%D0%B7%D0%BA%D0%B0%22.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "credit": "A. L. (loading), CC BY-SA 4.0"
+  },
+  {
+   "i": 6,
+   "name": "タロエ湖",
+   "sec": "2",
+   "lat": 62.0306,
+   "lng": 129.7294,
+   "text": "鮒の記念碑が歩道橋のたもとに立つ、ヤクーツク市内の湖",
+   "rich": "章の図3と同じ一枚。波の台座の上の鮒",
+   "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/%D0%9F%D0%B0%D0%BC%D1%8F%D1%82%D0%BD%D0%B8%D0%BA_%D0%BA%D0%B0%D1%80%D0%B0%D1%81%D1%8E_%D0%B2_%D0%AF%D0%BA%D1%83%D1%82%D1%81%D0%BA%D0%B5.JPG/500px-%D0%9F%D0%B0%D0%BC%D1%8F%D1%82%D0%BD%D0%B8%D0%BA_%D0%BA%D0%B0%D1%80%D0%B0%D1%81%D1%8E_%D0%B2_%D0%AF%D0%BA%D1%83%D1%82%D1%81%D0%BA%D0%B5.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "credit": "LxAndrew, CC BY-SA 4.0"
+  },
+  {
+   "i": 7,
+   "name": "干し草広場",
+   "sec": "4",
+   "lat": 59.927,
+   "lng": 30.3172,
+   "text": "1886年の旅行記が凍った市場を記録したサンクトペテルブルクの広場。いまは地下鉄の乗り換え広場である",
+   "rich": "章の図5と同じ版画。凍った子牛が、立ったままの姿で運ばれていく",
+   "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/The_boy_travellers_in_the_Russian_empire-_adventures_of_two_youths_in_a_journey_in_European_and_Asiatic_Russia%2C_with_accounts_of_a_tour_across_Siberia.._%281886%29_%2814763906961%29.jpg/500px-thumbnail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "credit": "T. W. Knox著の旅行記の挿絵(1886年), パブリックドメイン"
+  }
+ ],
+ "snaps": [
+  {
+   "name": "オイミャコンの馬柵",
+   "lat": 63.4608,
+   "lng": 142.7737,
+   "era": "2013年2月",
+   "text": "鞍を載せたままのヤクート馬。冬も屋外で過ごし、雪を掘って草を食む。売り台の仔馬肉の、生きているほうの姿である",
+   "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/A_Yakutian_horse_%289762345674%29.jpg/500px-A_Yakutian_horse_%289762345674%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "credit": "Maarten Takens, CC BY-SA 2.0"
+  },
+  {
+   "name": "サンガルの船着き場",
+   "lat": 63.928,
+   "lng": 127.468,
+   "era": "2016年6月",
+   "text": "レナ河岸の浮き桟橋。夏はこの川が道で、冬は凍った川面が道になる。鮒の郡の玄関口",
+   "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/%D0%A1%D0%B0%D0%BD%D0%B3%D0%B0%D1%80%2C_%D0%AF%D0%BA%D1%83%D1%82%D0%B8%D1%8F._%D0%9D%D0%B0_%D0%BF%D1%80%D0%B8%D1%81%D1%82%D0%B0%D0%BD%D0%B8._%D0%94%D0%B5%D0%B1%D0%B0%D1%80%D0%BA%D0%B0%D0%B4%D0%B5%D1%80.jpg/500px-%D0%A1%D0%B0%D0%BD%D0%B3%D0%B0%D1%80%2C_%D0%AF%D0%BA%D1%83%D1%82%D0%B8%D1%8F._%D0%9D%D0%B0_%D0%BF%D1%80%D0%B8%D1%81%D1%82%D0%B0%D0%BD%D0%B8._%D0%94%D0%B5%D0%B1%D0%B0%D1%80%D0%BA%D0%B0%D0%B4%D0%B5%D1%80.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "credit": "A. L. (loading), CC BY-SA 4.0"
+  }
+ ]
+}
