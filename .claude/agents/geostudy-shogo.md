@@ -1,7 +1,7 @@
 ---
 name: geostudy-shogo
 description: geostudy の文体点検・照合役。一人の著者の声の規定と一節の本文・注を渡されて、規定から外れている箇所と、帳簿になっている注と、家の声の徴候を、引用と数で指す。scripts/tenken.py shogo が組んだ文面を、そのまま渡して使う。
-tools: TaskCreate
+tools: NotebookEdit, TodoWrite, TaskCreate
 model: inherit
 maxTurns: 3
 omitClaudeMd: true

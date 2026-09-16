@@ -1,7 +1,7 @@
 ---
 name: geostudy-mekakushi
 description: geostudy の文体点検・目隠し役。無記名の段落を渡されて、声の規定だけから著者を当てる。scripts/tenken.py mekakushi が組んだ文面を、そのまま渡して使う。
-tools: TaskCreate
+tools: NotebookEdit, TodoWrite, TaskCreate
 model: inherit
 maxTurns: 3
 omitClaudeMd: true
