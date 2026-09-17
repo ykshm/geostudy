@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """tenken.py — 点検役(目隠し役・照合役)に渡す文面を組む(docs/文体改稿の手引き.md 2節)。
 
-三つの用法:
+四つの用法:
 
   python3 scripts/tenken.py mekakushi 章 [--key 答えファイル]
       authors/声の設計表.md から全著者の名前と声の軸(文体・文の長さ・文末の
@@ -14,14 +14,22 @@
       振り、依頼の一文と答えの書式を添えた文面を stdout に出す。番号と出所の
       対応表は --key のファイルに書き、stdout には含めない。
 
-  python3 scripts/tenken.py shogo 章 節 [--taisho]
+  python3 scripts/tenken.py shogo 章 節 [--taisho] [--sai]
       設計表の当該著者の行、その著者の文体カードの全文、文体台帳の全文、
       当該節の本文と注を、一つの文面に組む。--taisho を付けると末尾に
-      「対照を求める」と足す。
+      「対照を求める」と足す。--sai は再照合用の減量版——文体カードは
+      「声」と「観測された癖」の節だけ、文体台帳は項目行だけを載せる。
 
   python3 scripts/tenken.py sample 段落ファイル… [--key 答えファイル]
       工程A用。設計表の声の軸と、著者ごとの試し書きの段落(ファイル名に著者の
       ローマ字名を含める)から、目隠しの文面と答えを組む。
+
+  python3 scripts/tenken.py selfcheck 章 [節]
+      照合役に掛ける前の機械検査。指摘(終了コード1): 400字を超える段落
+      (本文と、注の声の段)、文体台帳と -check の臨時規則から拾った禁句の
+      本文一致。参考情報: 節ごとの文末の内訳、70字を超える文、ダッシュの数、
+      段落末の決め文句(「わけです。」等)、留保の無い称号語。指摘が残る
+      文面を照合役に回さない(docs/文体改稿の手引き.md 5節)。
 
 組んだ文面はそのままサブエージェントに渡す。一語も足さない(WRITING.md 5節)。
 """
@@ -231,7 +239,34 @@ def section_text(chapter, sec_num):
     return "\n".join(out).strip()
 
 
-def cmd_shogo(chapter, sec_num, taisho):
+def slim_card(card):
+    """--sai 用: 文体カードから「声」と「観測された癖」の節だけを残す。"""
+    keep = []
+    keeping = False
+    for line in card.split("\n"):
+        if line.startswith("## "):
+            keeping = ("声" in line and "設計表" in line) or "観測された癖" in line
+        if keeping:
+            keep.append(line)
+    return "\n".join(keep).strip() or card
+
+
+def slim_ledger(ledger):
+    """--sai 用: 文体台帳から項目行(と節見出し)だけを残す。"""
+    keep = []
+    section = None
+    for line in ledger.split("\n"):
+        if line.startswith("## "):
+            section = line
+            continue
+        if line.startswith("- ") and section and "更新記録" not in section:
+            if section not in keep:
+                keep.append(section)
+            keep.append(line)
+    return "\n".join(keep).strip() or ledger
+
+
+def cmd_shogo(chapter, sec_num, taisho, sai=False):
     design = load_design_rows()
     ch_authors = load_chapter_authors()
     author_files = load_author_files()
@@ -256,6 +291,9 @@ def cmd_shogo(chapter, sec_num, taisho):
     if not body:
         print(f"節が見つからない: {sec_num}", file=sys.stderr)
         return 1
+    if sai:
+        card = slim_card(card)
+        ledger = slim_ledger(ledger)
 
     out = []
     out.append(f"著者「{author}」の一節の照合を求める。")
@@ -280,6 +318,133 @@ def cmd_shogo(chapter, sec_num, taisho):
         out.append("対照を求める")
     print("\n".join(out))
     return 0
+
+
+# ---------------------------------------------------------------- selfcheck
+
+RE_QUOTED = re.compile(r"「([^「」]+)」")
+RE_TITLE_WORDS = re.compile(r"(最初の|初めて|世界初|全米初|唯一|元祖)")
+RE_RESERVE = re.compile(r"(とされ|と言われ|と呼ばれ|とみなされ|は諸説|かもしれ|らしい|言い切りません|確かめられて)")
+RE_KIME_END = re.compile(r"(わけです|のである|のだ)[。]?$")
+BAN_HINT = re.compile(r"(禁止|禁句|使わない|しない|避け|封印|再利用)")
+FREQ_HINT = re.compile(r"(連発|毎回|多用|寄る|過半|数回まで|1回まで|一度まで)")
+
+
+def collect_banned_phrases(chapter):
+    """文体台帳と、章の -check の臨時規則の節から、禁句(「」内)を集める。
+
+    プレースホルダ(〜・○・/・…)を含む語や3字以下の語は、素朴な文字列一致が
+    誤爆するので拾わない。台帳は項目行の全部、-check は禁止の言葉を含む行だけ。
+    返り値: [(語, 出どころ)]
+    """
+    phrases = []
+
+    def take(line, source, need_hint):
+        if need_hint and not BAN_HINT.search(line):
+            return
+        freq = bool(FREQ_HINT.search(line))
+        for q in RE_QUOTED.findall(line):
+            if len(q) < 4 or any(c in q for c in "〜○◯/…—"):
+                continue
+            phrases.append((q, source, freq))
+
+    with open(LEDGER, encoding="utf-8") as f:
+        section = None
+        for line in f.read().split("\n"):
+            if line.startswith("## "):
+                section = line
+            elif line.startswith("- ") and section and "更新記録" not in section:
+                take(line, "台帳", need_hint=False)
+
+    check_path = re.sub(r"\.md$", "-check.md", chapter)
+    if os.path.exists(check_path):
+        with open(check_path, encoding="utf-8") as f:
+            in_rinji = False
+            for line in f.read().split("\n"):
+                if line.startswith("## "):
+                    in_rinji = "臨時規則" in line
+                elif in_rinji:
+                    take(line, "臨時規則", need_hint=True)
+
+    seen = set()
+    out = []
+    for q, src, freq in phrases:
+        if q not in seen:
+            seen.add(q)
+            out.append((q, src, freq))
+    return out
+
+
+def cmd_selfcheck(chapter, sec_num=None):
+    parsed = voice.parse_chapter(chapter)
+    sections = parsed["sections"]
+    if sec_num is not None:
+        sections = [s for s in sections if s[0] == sec_num]
+        if not sections:
+            print(f"節が見つからない: {sec_num}", file=sys.stderr)
+            return 2
+
+    findings = []
+    info = []
+
+    # 段落長(本文)と、注の声の段
+    for num, title, paras, notes in sections:
+        for i, p in enumerate(paras, 1):
+            if len(p) > 400:
+                findings.append(f"{num}節 本文段落{i}が400字を超える({len(p)}字)")
+        for n_num, n_text in notes:
+            seg = voice.note_voice_segment(n_text)
+            if len(seg) > 400:
+                findings.append(f"注{n_num}の声の段が400字を超える({len(seg)}字)")
+
+    # 禁句(見出し行は対象外——節題は据え置き部分)
+    banned = collect_banned_phrases(chapter)
+    for num, title, paras, notes in sections:
+        texts = [(f"{num}節 本文段落{i}", p) for i, p in enumerate(paras, 1)]
+        texts += [(f"注{n}", t) for n, t in notes]
+        for label, text in texts:
+            for q, src, freq in banned:
+                if q in text:
+                    if freq:
+                        info.append(f"{label}に頻度の癖の語「{q}」({src}——数を確かめる)")
+                    else:
+                        findings.append(f"{label}に禁句「{q}」({src})")
+
+    # 参考情報: 節ごとの文末、長文、決め文句の段落末、留保の無い称号語
+    for num, title, paras, notes in sections:
+        tally = {}
+        long_sents = []
+        kime = []
+        for i, p in enumerate(paras, 1):
+            sents = voice.split_sentences(p)
+            for s in sents:
+                cat = voice.sentence_ending(s)
+                tally[cat] = tally.get(cat, 0) + 1
+                if len(s) > 70:
+                    long_sents.append(f"段落{i}: {s[:34]}…({len(s)}字)")
+            if sents and RE_KIME_END.search(sents[-1].rstrip("。!?!?」』))")):
+                kime.append(f"段落{i}末: {sents[-1][:30]}…")
+        parts = "  ".join(f"{k}{v}" for k, v in sorted(tally.items(), key=lambda kv: -kv[1]))
+        info.append(f"{num}節 文末: {parts}")
+        for s in long_sents:
+            info.append(f"{num}節 70字超 {s}")
+        for s in kime:
+            info.append(f"{num}節 決め文句 {s}")
+        for i, p in enumerate(paras, 1):
+            for s in voice.split_sentences(p):
+                if RE_TITLE_WORDS.search(s) and not RE_RESERVE.search(s):
+                    info.append(f"{num}節 段落{i} 留保の無い称号語: {s[:40]}…")
+
+    dash = sum(p.count("——") for _, _, ps, _ in sections for p in ps)
+    info.append(f"ダッシュ(——): {dash}本")
+
+    for f_msg in findings:
+        print(f"指摘: {f_msg}")
+    for i_msg in info:
+        print(f"参考: {i_msg}")
+    if not findings:
+        print("指摘: 無し")
+    return 1 if findings else 0
 
 
 # ---------------------------------------------------------------- sample
@@ -333,7 +498,8 @@ def main(argv):
         key_file = args[i + 1]
         del args[i:i + 2]
     taisho = "--taisho" in args
-    args = [a for a in args if a != "--taisho"]
+    sai = "--sai" in args
+    args = [a for a in args if a not in ("--taisho", "--sai")]
 
     if cmd == "mekakushi":
         if len(args) != 1:
@@ -344,7 +510,12 @@ def main(argv):
         if len(args) != 2:
             print(__doc__)
             return 2
-        return cmd_shogo(args[0], int(args[1]), taisho)
+        return cmd_shogo(args[0], int(args[1]), taisho, sai)
+    if cmd == "selfcheck":
+        if len(args) not in (1, 2):
+            print(__doc__)
+            return 2
+        return cmd_selfcheck(args[0], int(args[1]) if len(args) == 2 else None)
     if cmd == "sample":
         if not args:
             print(__doc__)
