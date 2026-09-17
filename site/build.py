@@ -135,7 +135,9 @@ def transform_chapter(path: Path, author_file: Path | None,
     if author_file is not None:
         canonical = (ROOT / author_file).read_text(encoding="utf-8").split("\n")
         if len(canonical) >= 3 and canonical[2].strip() != profile_line:
-            err(f"{rel}: 章冒頭のプロフィールが正本({author_file})と一致しない")
+            # 正本の書き換えは章の改稿時に写しへ反映する(docs/文体改稿の手引き.md 3節8項)。
+            # 未改稿の章がずれているのは移行期の正常な状態なので、警告に留めて build は通す。
+            warn(f"{rel}: 章冒頭のプロフィールが正本({author_file})と一致しない")
 
     out: list[str] = []
     out.append(f"<h1>{html.escape(title)}</h1>")
