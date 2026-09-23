@@ -13,7 +13,12 @@
 
 --compare は authors/index.md を読み、同じ測定を全章と archive/v1/ の全章に
 掛けて、指定章から各章までの距離(文末分布の差の和と、標準化した文長の差の和)を
-近い順に、著者名とともに出す。
+近い順に、著者名とともに出す。-check に改稿の記録が無い章には「(未改稿)」、
+archive/v1/ の章には「(旧)」を付ける。
+
+測定の約束: 本文から注の合図(【注N】)を落として文を切る。文末の括弧書きは
+括弧の前の語で、「〜のだろう」は疑問の語を含めば問いとして数える。
+一人称は「」『』の中を数えない。ダッシュは二倍ダッシュ(——)だけを数える。
 """
 
 import os
@@ -142,6 +147,14 @@ def note_voice_segment(note_text):
 OPEN_Q = "「『(("
 CLOSE_Q = "」』))"
 
+# 本文から注を指す合図(【注3】)。文末の判定と文長の測定の前に落とす——
+# 落とさないと「〜た【注3】。」が「】」で終わる体言止めに数えられ、文長も伸びる。
+RE_NOTE_MARK = re.compile(r"【注\d+】")
+
+
+def strip_note_marks(text):
+    return RE_NOTE_MARK.sub("", text)
+
 
 def split_sentences(text):
     """。!?で区切る。「」『』()の中では区切らない。"""
@@ -171,22 +184,47 @@ RE_KEITAI = re.compile(
 KANA_RUI = set("るいうくすつぬむぶぐずゆふじ")
 
 
+# 「である」に見えて動詞「ある」の文末: 積んである(〜んで+ある)、欄まである(まで+ある)。
+# 繋辞の「なんである」「盛んである」「〜さんである」「3日ぶんである」「ままである」は除かない。
+# 「でもある」は繋辞(で+も+ある)なので「である」に数える。
+RE_ARU_VERB = re.compile(r"((?<![なさぶ盛])んである|(?<!ま)まである)$")
+
+
+# 数詞の「つ」で終わる名詞(一つ・二つ・いくつ)
+RE_COUNTER_TSU = re.compile(r"([一二三四五六七八九幾]つ|ひとつ|ふたつ|みっつ|よっつ|いつつ|むっつ|ななつ|やっつ|ここのつ|いくつ)$")
+# 文末の括弧書き(「〜高い(一月あたり)。」)。括弧の前の語で判定する。
+RE_TAIL_PAREN = re.compile(r"[((][^(()()]*[))]$")
+# 「〜のだろう。」は、疑問の語を含めば問いに数える(「誰が住めるのだろう。」)。
+RE_INTERROGATIVE = re.compile(r"(誰|何|なぜ|なに|どこ|いつ|どう|どれ|どの|どんな|いくら|いくつ|幾)")
+
+
 def sentence_ending(sentence):
-    """文末の種別: である/だ/た/る・い/敬体/体言止め/その他"""
-    core = sentence.rstrip("。!?!?」』))…—―")
+    """文末の種別: である/だ/た/る・い/敬体/体言止め/問い/その他"""
+    core = strip_note_marks(sentence).strip()
+    core = core.rstrip("。!?!?…—― ")
+    m = RE_TAIL_PAREN.search(core)
+    if m and m.start() > 0:  # 文全体が括弧なら、中身で判定する
+        core = core[:m.start()]
+    core = core.rstrip("。!?!?」』))…—―")
     core = core.rstrip("。!?!?")
     if not core:
         return "その他"
     if RE_KEITAI.search(core):
         return "敬体"
+    if RE_ARU_VERB.search(core):
+        return "る・い"
     if re.search(r"(である|であった|であろう|でもある)$", core):
         return "である"
+    if core.endswith("だろう") and RE_INTERROGATIVE.search(core):
+        return "問い"
     if core.endswith("だ") or core.endswith("だろう"):
         return "だ"
     if core.endswith("た"):
         return "た"
     if core.endswith("か"):
         return "問い"
+    if RE_COUNTER_TSU.search(core):  # 「王国一つ。」は体言止め(「つ」を動詞の終止形と読まない)
+        return "体言止め"
     last = core[-1]
     if last in KANA_RUI or core.endswith("ない") or core.endswith("しまう"):
         return "る・い"
@@ -219,8 +257,13 @@ def first_para_type(par):
     return "その他"
 
 
+RE_QUOTED_SPAN = re.compile(r"「[^「」]*」|『[^『』]*』")
+RE_FIRST_PERSON = re.compile(r"私(?![立語物淑心情服製有設営鉄道費財掠企募塾学権邸])|筆者")
+
+
 def measure_text(paras):
-    """段落のリストを測る。"""
+    """段落のリストを測る。文と字数は注の合図(【注N】)を落として数える。"""
+    paras = [strip_note_marks(p) for p in paras]
     sents = []
     for p in paras:
         sents.extend(split_sentences(p))
@@ -243,9 +286,13 @@ def measure_text(paras):
     }
     per1000 = 1000.0 / total_chars if total_chars else 0.0
     joined = "\n".join(paras)
-    ichi = len(re.findall(r"私(?![立語物淑心情服製])|筆者", joined))
+    # 一人称: 「」『』の中(引用・人の言葉)の「私」は著者の一人称ではないので数えない。
+    # 私立・私有・私鉄・私掠船などの熟語も除く。
+    unquoted = RE_QUOTED_SPAN.sub("", joined)
+    ichi = len(RE_FIRST_PERSON.findall(unquoted))
     kakko = len(re.findall(r"[((]", joined))
-    dash = len(re.findall(r"――|——|—|―", joined))
+    # ダッシュは二倍ダッシュ(——)だけを数える。一本の「—」は区間・範囲の記号(モスクワ—ヤクーツク)。
+    dash = len(re.findall(r"――|——", joined))
     result["一人称/千字"] = ichi * per1000
     result["括弧/千字"] = kakko * per1000
     result["ダッシュ/千字"] = dash * per1000
@@ -301,39 +348,111 @@ def load_index_assignments():
     return mapping
 
 
+RE_REVISED = re.compile(r"^## 改稿", re.M)
+
+
+def is_revised(chapter_path):
+    """章の -check に改稿の記録(「## 改稿: …」「## 改稿(…)」の見出し)があるか。"""
+    chk = re.sub(r"\.md$", "-check.md", chapter_path)
+    if not os.path.exists(chk):
+        return False
+    with open(chk, encoding="utf-8") as f:
+        return bool(RE_REVISED.search(f.read()))
+
+
+# 設計表の文の長さの区分(章の本文の平均文長): 短=30字未満、中=30〜40字、長=40字超
+LENGTH_CLASS = {
+    "短": lambda x: x < 30.0,
+    "中": lambda x: 30.0 <= x <= 40.0,
+    "長": lambda x: x > 40.0,
+}
+LENGTH_RANGE = {"短": "30字未満", "中": "30〜40字", "長": "40字超"}
+
+
+def design_length_class(author):
+    """声の設計表から、その著者の文の長さの区分(短/中/長)を返す。"""
+    path = os.path.join(ROOT, "authors", "声の設計表.md")
+    if not author or not os.path.exists(path):
+        return None
+    with open(path, encoding="utf-8") as f:
+        for line in f:
+            cells = [c.strip() for c in line.strip().strip("|").split("|")]
+            if len(cells) > 2 and cells[0] == author:
+                return cells[2] if cells[2] in LENGTH_CLASS else None
+    return None
+
+
+def length_verdict(author, avg):
+    """手引き6節2(a): 章の本文の平均文長が設計表の区分に入るか。"""
+    cls = design_length_class(author)
+    if not cls:
+        return None
+    ok = LENGTH_CLASS[cls](avg)
+    return f"文の長さの区分: 設計表={cls}({LENGTH_RANGE[cls]})、実測={avg:.1f}字 → {'合' if ok else '外れ'}"
+
+
 def compare(target):
     mapping = load_index_assignments()
-    entries = []  # (相対パス, 著者, 測定)
+    entries = []  # (相対パス, 著者名, 表示用の著者, 旧か, 未改稿か, パス)
     for rel, author in sorted(mapping.items()):
         for prefix, tag in (("", ""), (os.path.join("archive", "v1"), "旧")):
             p = os.path.join(ROOT, prefix, rel) if prefix else os.path.join(ROOT, rel)
             if os.path.exists(p):
                 label = os.path.join(prefix, rel) if prefix else rel
-                entries.append((label, author + (f"({tag})" if tag else ""), p))
+                unrevised = not tag and not is_revised(p)
+                if unrevised:
+                    tag = "未改稿"  # 第4版の声のまま——比較相手として数えない
+                entries.append((label, author, author + (f"({tag})" if tag else ""),
+                                tag == "旧", unrevised, p))
 
     target_abs = os.path.abspath(target)
+    target_rel = os.path.relpath(target_abs, ROOT).replace(os.sep, "/")
+    own_author = mapping.get(target_rel)
     measures = {}
-    for label, author, p in entries:
-        measures[label] = (author, measure_chapter(p)["本文"])
+    for label, _, _, _, _, p in entries:
+        measures[label] = measure_chapter(p)["本文"]
     m_target = measure_chapter(target_abs)["本文"]
 
-    lens = [m["平均文長"] for _, m in measures.values()] + [m_target["平均文長"]]
+    lens = [m["平均文長"] for m in measures.values()] + [m_target["平均文長"]]
     std_len = statistics.pstdev(lens) or 1.0
 
     rows = []
-    for label, (author, m) in measures.items():
-        if os.path.abspath(os.path.join(ROOT, label)) == target_abs:
+    for label, author, shown, old, unrevised, p in entries:
+        if os.path.abspath(p) == target_abs:
             continue
+        m = measures[label]
         d_end = sum(
             abs(m["文末"][c] - m_target["文末"][c]) for c in END_CATS[:6]
         )
         d_len = abs(m["平均文長"] - m_target["平均文長"]) / std_len
-        rows.append((d_end + d_len, d_end, d_len, label, author))
+        rows.append((d_end + d_len, d_end, d_len, label, shown, author, old, unrevised))
     rows.sort()
-    print(f"距離(近い順): {os.path.relpath(target_abs, ROOT)} から")
+    print(f"距離(近い順): {target_rel} から")
     print("  距離   (文末   文長)  章 — 著者")
-    for d, de, dl, label, author in rows:
-        print(f"  {d:5.3f}  ({de:5.3f} {dl:5.3f})  {label} — {author}")
+    for d, de, dl, label, shown, *_ in rows:
+        print(f"  {d:5.3f}  ({de:5.3f} {dl:5.3f})  {label} — {shown}")
+
+    # 手引き6節2(b)の判定。「未改稿」の章は比べる相手に数えない。
+    counted = [r for r in rows if not r[7]]
+    if not own_author or not counted:
+        return
+    own_revised = [r for r in counted if r[5] == own_author and not r[6]]
+    top = counted[0]
+    print()
+    if own_revised:
+        if top[5] == own_author and not top[6]:
+            print(f"判定(6節2(b)): 合——最近傍は自分の著者の改稿済み章({top[3]})")
+        elif top[5] == own_author and top[6]:
+            print(f"判定(6節2(b)): 否——最近傍が自分の著者の旧版({top[3]})。旧の声が残っている")
+        else:
+            print(f"判定(6節2(b)): 否——最近傍が他の著者の章({top[3]} — {top[4]})")
+    else:
+        own_old = f"archive/v1/{target_rel}"
+        rank = next((i + 1 for i, r in enumerate(counted) if r[3] == own_old), None)
+        ok = rank is None or rank > 10
+        print(f"判定(6節2(b)、自分の著者の改稿済み章が無いとき): {'合' if ok else '否'}"
+              f"——自章の旧版は近い順で{rank if rank else '圏外'}位(10位以内なら否)。"
+              "あわせて文の長さの区分(6節2(a))を見る")
 
 
 def main(argv):
@@ -350,6 +469,10 @@ def main(argv):
     print(f"測定: {target}")
     print(fmt_measure(m["本文"], "本文"))
     print(fmt_measure(m["注"], "注(声の段)"))
+    rel = os.path.relpath(os.path.abspath(target), ROOT).replace(os.sep, "/")
+    verdict = length_verdict(load_index_assignments().get(rel), m["本文"]["平均文長"])
+    if verdict:
+        print(verdict)
     if do_compare:
         print()
         compare(target)
