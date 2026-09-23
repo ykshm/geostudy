@@ -9,7 +9,7 @@
       "rich": "1959年、キラウエア・イキの溶岩噴泉",
       "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/1959_eruption_of_Kilauea_Volcano.jpg/500px-1959_eruption_of_Kilauea_Volcano.jpg",
       "credit": "USGSハワイ火山観測所, パブリックドメイン" },
-    { "i": 1, "name": "カウアイ島", "note": "2",
+    { "i": 1, "name": "カウアイ島", "sec": "2",
       "lat": 22.0964, "lng": -159.5261,
       "text": "列のいちばん北西、いちばん古い島。数百万年の雨が谷を刻んだ",
       "rich": "ナパリ海岸、カララウ谷の襞",
