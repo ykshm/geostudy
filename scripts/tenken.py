@@ -551,7 +551,8 @@ def collect_banned_phrases(chapter):
             if line.startswith("## "):
                 section = line
             elif line.startswith("- ") and section and "更新記録" not in section:
-                kind = "頻度" if FREQ_HINT.search(line) else "禁句"
+                kind = ("頻度" if FREQ_HINT.search(line)
+                        else "位置" if POS_HINT.search(line) else "禁句")
                 for q in RE_QUOTED.findall(line):
                     if keep(q):
                         phrases.append((q, "台帳", kind))
