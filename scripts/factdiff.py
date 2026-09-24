@@ -14,6 +14,7 @@
 
 新ファイルの -check ファイル(例: tx.md → tx-check.md)に表記の対応表があれば
 読み、対応する組は差分から除く。対応表の書式: 「↔」(または <->)を含む行。
+見出しに「論点」「再点検」「検査」「点検」を含む節の中の行は、記録の説明なので読まない。
 例:
     - 約4割 ↔ およそ40%
 左右それぞれの側から抜き出される要素どうしを対応済みとして扱う。片側から何も
@@ -28,6 +29,7 @@
 
 import os
 import re
+import signal
 import sys
 from collections import Counter
 
@@ -83,13 +85,24 @@ def check_path_for(path):
     return base + "-check" + ext
 
 
+# 対応表として読まない節(検査の記録や論点の中の「↔」は、書き換えの説明であって対応の組ではない)
+RE_NOT_TABLE = re.compile(r"(論点|再点検|検査|点検)")
+
+
 def load_correspondences(check_file):
-    """対応表を [(左側の要素集合, 右側の要素集合, 行)] で返す。"""
+    """対応表を [(左側の要素集合, 右側の要素集合, 行)] で返す。
+    見出しに「論点」「再点検」「検査」「点検」を含む節の中の行は読まない。"""
     pairs = []
     if not os.path.exists(check_file):
         return pairs
     with open(check_file, encoding="utf-8") as f:
+        skipping = False
         for line in f:
+            if line.startswith("#"):
+                skipping = bool(RE_NOT_TABLE.search(line))
+                continue
+            if skipping:
+                continue
             if "↔" in line or "<->" in line:
                 line = line.strip().lstrip("-*  ")
                 sides = re.split(r"↔|<->", line)
@@ -167,4 +180,5 @@ def main(argv):
 
 
 if __name__ == "__main__":
+    signal.signal(signal.SIGPIPE, signal.SIG_DFL)
     sys.exit(main(sys.argv))
