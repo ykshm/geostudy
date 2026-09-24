@@ -9,11 +9,19 @@
 (二文字以上)、英字列、「」内の語を抜き出し、新にあって旧にないもの、旧に
 あって新にないものを列挙する。
 
+章の冒頭の著者プロフィール(「**著者」の行から空行まで)と目次は比べない——
+プロフィールは authors/ の正本から写すもので、改稿で書き換わっても事実の増減ではない。
+
 新ファイルの -check ファイル(例: tx.md → tx-check.md)に表記の対応表があれば
 読み、対応する組は差分から除く。対応表の書式: 「↔」(または <->)を含む行。
 例:
     - 約4割 ↔ およそ40%
-左右それぞれの側から抜き出される要素どうしを対応済みとして扱う。
+左右それぞれの側から抜き出される要素どうしを対応済みとして扱う。片側から何も
+抜き出されない組(「X ↔ (検証記録へ移した)」など)は、表記の揺れではなく
+移した・落とした事実なので、別に一覧を出す——-check の「落とした事実」と照らす。
+
+参考として、両方にあるが回数が減った・増えた数字も出す(同じ数の一部だけを
+落とした・足した箇所を探すため)。終了コードには数えない。
 
 終了コード: 差分が無ければ 0、あれば 1。
 """
@@ -52,8 +60,22 @@ def extract_facts(text):
 
 
 def load_text(path):
+    """章ファイルを読み、プロフィール(「**著者」の行から空行まで)と目次を除いて返す。"""
     with open(path, encoding="utf-8") as f:
-        return f.read()
+        lines = f.read().split("\n")
+    out = []
+    skipping = False
+    for line in lines:
+        s = line.strip()
+        if s.startswith("**著者") or s == "目次":
+            skipping = True
+            continue
+        if skipping:
+            if not s:
+                skipping = False
+            continue
+        out.append(line)
+    return "\n".join(out)
 
 
 def check_path_for(path):
@@ -62,7 +84,7 @@ def check_path_for(path):
 
 
 def load_correspondences(check_file):
-    """対応表を [(左側の要素集合, 右側の要素集合)] で返す。"""
+    """対応表を [(左側の要素集合, 右側の要素集合, 行)] で返す。"""
     pairs = []
     if not os.path.exists(check_file):
         return pairs
@@ -74,13 +96,13 @@ def load_correspondences(check_file):
                 if len(sides) == 2:
                     left = set(extract_facts(sides[0]))
                     right = set(extract_facts(sides[1]))
-                    pairs.append((left, right))
+                    pairs.append((left, right, line))
     return pairs
 
 
 def apply_correspondences(only_old, only_new, pairs):
     """対応表に載った組を差分から除く。左右どちらの表記も、旧のみ・新のみの両方から外す。"""
-    for left, right in pairs:
+    for left, right, _ in pairs:
         for k in left | right:
             only_old.pop(k, None)
             only_new.pop(k, None)
@@ -105,6 +127,9 @@ def main(argv):
 
     pairs = load_correspondences(check_path_for(new_path))
     only_old, only_new = apply_correspondences(only_old, only_new, pairs)
+    paired = set()
+    for left, right, _ in pairs:
+        paired |= left | right
 
     def show(title, items):
         print(title)
@@ -117,6 +142,27 @@ def main(argv):
     show(f"旧にあって新にない({old_path}):", only_old)
     if pairs:
         print(f"(対応表 {check_path_for(new_path)} の {len(pairs)} 組を除外済み)")
+
+    one_sided = [line for left, right, line in pairs if bool(left) != bool(right)]
+    if one_sided:
+        print("片側だけの対応(表記の揺れではなく、移した・落とした事実。-check の記録と照らす):")
+        for line in one_sided:
+            print(f"  {line}")
+
+    # 回数の変化は数字だけを見る(カタカナ語の地名・人名は言い換えで回数が揺れるので拾わない)
+    def is_num(k):
+        return k.startswith("数 ")
+    fewer = {k: (old_facts[k], new_facts[k]) for k in old_facts
+             if is_num(k) and k in new_facts and new_facts[k] < old_facts[k] and k not in paired}
+    more = {k: (old_facts[k], new_facts[k]) for k in new_facts
+            if is_num(k) and k in old_facts and new_facts[k] > old_facts[k] and k not in paired}
+    if fewer or more:
+        print("参考: 両方にあるが回数が変わった数字(注の帳簿を -check へ移した分のほか、"
+              "一部だけ落とした・足した箇所がないか。終了コードには数えない):")
+        for k in sorted(fewer):
+            print(f"  減 {k}  {fewer[k][0]}→{fewer[k][1]}")
+        for k in sorted(more):
+            print(f"  増 {k}  {more[k][0]}→{more[k][1]}")
     return 1 if (only_old or only_new) else 0
 
 
