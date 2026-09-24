@@ -21,7 +21,7 @@
       "rich": "写真は空から見たアップタウン。摩天楼の足もとにスタジアムと高速道路",
       "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Uptown_Charlotte_2018_taking_by_DJI_Phantom_4_pro_-_Perspective_Corrected_Edit.jpg/500px-Uptown_Charlotte_2018_taking_by_DJI_Phantom_4_pro_-_Perspective_Corrected_Edit.jpg",
       "credit": "Precisionviews(補正: Cmao20), CC BY-SA 4.0" },
-    { "i": 3, "name": "アウターバンクス", "sec": "2",
+    { "i": 3, "name": "アウターバンクス", "note": "3",
       "lat": 36.0183, "lng": -75.6678,
       "text": "「大西洋の墓場」と呼ばれた砂州の列。ライト兄弟が風を選んだ場所",
       "rich": "写真はキルデビルヒルズ。初飛行の地の丘の上に記念塔が立つ",
